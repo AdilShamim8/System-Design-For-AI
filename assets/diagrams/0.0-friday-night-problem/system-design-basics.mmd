@@ -1,0 +1,27 @@
+%% System Design for AI — Chapter 0.0
+%% Diagram: System Design Basics (food delivery app)
+%% Source: assets/diagrams/0.0-friday-night-problem/system-design-basics.mmd
+
+graph TB
+    Client[📱 Client App<br/>user's phone]
+    Gateway[🚪 API Gateway<br/>front door, routes requests]
+    Orders[📦 Orders Service<br/>place / track / cancel]
+    Restaurants[🍽️ Restaurants Service<br/>menu, availability]
+    Payments[💳 Payments Service<br/>talks to Stripe]
+    Delivery[🚗 Delivery Service<br/>assigns drivers, tracks]
+    Notifications[📨 Notifications Service<br/>SMS / push to user]
+    DB[(🗄️ Database<br/>orders, restaurants, users)]
+
+    Client -->|request| Gateway
+    Gateway --> Orders
+    Gateway --> Restaurants
+    Orders --> Payments
+    Orders --> Delivery
+    Orders --> Notifications
+    Orders --> DB
+    Restaurants --> DB
+
+    style Gateway fill:#fff3cd,stroke:#856404,stroke-width:2px
+    style Orders fill:#d4edda,stroke:#155724,stroke-width:2px
+    style Client fill:#cce5ff,stroke:#004085
+    style DB fill:#f8f9fa,stroke:#6c757d

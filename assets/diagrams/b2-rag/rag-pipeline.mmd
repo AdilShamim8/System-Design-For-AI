@@ -1,0 +1,32 @@
+%% System Design for AI — Chapter B.2
+%% Diagram: RAG Pipeline (offline prep + online request flow)
+%% Source: assets/diagrams/b2-rag/rag-pipeline.mmd
+
+graph LR
+    subgraph Offline [Offline preparation — runs once + on updates]
+        Wiki[(📚 Knowledge Base<br/>5,000 docs)]
+        Chunk[Split into chunks<br/>~25,000 chunks<br/><i>structural at H2,<br/>50-word overlap</i>]
+        Embed[Embed each chunk<br/>embedding model<br/>e.g. text-embedding-3-small]
+        VDB[(🗄️ Vector DB<br/>25,000 vectors<br/>Pinecone / pgvector)]
+        Wiki --> Chunk --> Embed --> VDB
+    end
+
+    subgraph Online [Online request flow — per question]
+        User[👤 User<br/>asks question]
+        QEmbed[Embed question<br/>same embedding model]
+        Search[Vector search<br/>top-5 chunks<br/>cosine similarity]
+        Prompt[Build prompt<br/>system + context + question]
+        LLM[🧠 LLM<br/>generates answer<br/>grounded in context]
+        Ans[💬 Answer<br/>with citations]
+        User --> QEmbed --> Search
+        VDB -.-> Search
+        Search --> Prompt --> LLM --> Ans
+    end
+
+    style Chunk fill:#fff3cd,stroke:#856404
+    style Embed fill:#fff3cd,stroke:#856404
+    style Search fill:#d4edda,stroke:#155724,stroke-width:2px
+    style LLM fill:#d4edda,stroke:#155724,stroke-width:2px
+    style Wiki fill:#f8f9fa,stroke:#6c757d
+    style VDB fill:#f8f9fa,stroke:#6c757d
+    style Ans fill:#f8f9fa,stroke:#6c757d

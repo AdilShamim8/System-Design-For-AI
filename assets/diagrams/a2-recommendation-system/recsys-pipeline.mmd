@@ -1,0 +1,21 @@
+%% System Design for AI — Chapter A.2
+%% Diagram: Recommendation System Pipeline (two-stage + re-ranking)
+%% Source: assets/diagrams/a2-recommendation-system/recsys-pipeline.mmd
+
+graph LR
+    Catalog[(🎬 Catalog<br/>10M items)]
+    CG[Candidate Generation<br/>fast, lossy<br/>10M → 1,000<br/><i>ANN search, embeddings,<br/>rule-based blends</i>]
+    Rank[Ranking<br/>slow, precise<br/>1,000 → 100<br/><i>GBT / neural net<br/>scores each candidate</i>]
+    ReRank[Re-ranking<br/>policy rules<br/>100 → 10<br/><i>diversity, freshness,<br/>business rules</i>]
+    User[👤 User<br/>Homepage<br/>10 items shown]
+
+    Catalog --> CG
+    CG --> Rank
+    Rank --> ReRank
+    ReRank --> User
+
+    style CG fill:#fff3cd,stroke:#856404,stroke-width:2px
+    style Rank fill:#d4edda,stroke:#155724,stroke-width:2px
+    style ReRank fill:#cce5ff,stroke:#004085,stroke-width:2px
+    style Catalog fill:#f8f9fa,stroke:#6c757d
+    style User fill:#f8f9fa,stroke:#6c757d
