@@ -113,3 +113,16 @@ Every explanation, analogy, and diagram is written fresh.
 ## License
 
 MIT. See [LICENSE](./LICENSE). Free, open, forever.
+
+---
+
+## Developer
+
+Built by **Adil Shamim**.
+
+- Website: [adilshamim.me](https://www.adilshamim.me/)
+- LinkedIn: [linkedin.com/in/adilshamim8](https://www.linkedin.com/in/adilshamim8)
+- GitHub: [github.com/AdilShamim8](https://github.com/AdilShamim8)
+- Kaggle: [kaggle.com/adilshamim8](https://www.kaggle.com/adilshamim8)
+- Twitter / X: [x.com/adil_shamim8](https://x.com/adil_shamim8)
+- Medium: [adilshamim8.medium.com](https://adilshamim8.medium.com/)
