@@ -32,7 +32,25 @@ import {
   Zap,
   Shield,
   DollarSign,
+  Globe,
+  Linkedin,
+  Trophy,
+  Twitter,
 } from "lucide-react";
+
+// Medium doesn't have a dedicated lucide icon, so we create a simple one
+function MediumIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 01.01 12a6.8 6.8 0 016.76-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+    </svg>
+  );
+}
 
 // ============================================================================
 // TYPES
@@ -164,7 +182,7 @@ function MermaidBlock({ chart }: { chart: string }) {
 
   return (
     <div
-      className="my-4 p-4 border border-slate-200 bg-white rounded overflow-x-auto"
+      className="my-4 p-4 border border-slate-200 bg-white rounded overflow-x-auto mermaid-container"
       dangerouslySetInnerHTML={{ __html: svg }}
     />
   );
@@ -234,7 +252,7 @@ function Nav({
             onClick={() => onChange("home")}
             className="flex items-center gap-2 font-semibold text-slate-900 hover:opacity-80"
           >
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-900 text-white text-sm font-bold">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg logo-badge text-sm font-bold">
               SD
             </div>
             <span className="hidden sm:inline">System Design for AI</span>
@@ -249,9 +267,7 @@ function Nav({
                   key={item.id}
                   onClick={() => onChange(item.id)}
                   className={`flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                    active === item.id
-                      ? "bg-slate-900 text-white"
-                      : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                    active === item.id ? "nav-active" : "nav-inactive"
                   }`}
                 >
                   <Icon className="h-4 w-4" />
@@ -261,10 +277,10 @@ function Nav({
             })}
             <Separator orientation="vertical" className="mx-2 h-6" />
             <a
-              href="https://github.com"
+              href="https://github.com/AdilShamim8/system-design-for-ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+              className="flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-medium nav-inactive"
             >
               <Github className="h-4 w-4" />
               GitHub
@@ -272,16 +288,18 @@ function Nav({
           </nav>
 
           {/* Mobile menu button */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 rounded-md text-slate-600 hover:bg-slate-100"
-          >
-            {mobileOpen ? (
-              <X className="h-5 w-5" />
-            ) : (
-              <Menu className="h-5 w-5" />
-            )}
-          </button>
+          <div className="flex md:hidden items-center gap-1">
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="p-2 rounded-md text-slate-600 hover:bg-slate-100"
+            >
+              {mobileOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile nav */}
@@ -297,9 +315,7 @@ function Nav({
                     setMobileOpen(false);
                   }}
                   className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium text-left ${
-                    active === item.id
-                      ? "bg-slate-900 text-white"
-                      : "text-slate-600 hover:bg-slate-100"
+                    active === item.id ? "nav-active" : "nav-inactive"
                   }`}
                 >
                   <Icon className="h-4 w-4" />
@@ -322,29 +338,29 @@ function HomeView({ onStart }: { onStart: (t: Tab) => void }) {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       {/* Hero */}
-      <section className="py-20 text-center">
+      <section className="py-8 sm:py-12 md:py-16 text-center">
         <Badge
           variant="secondary"
-          className="mb-6 bg-slate-100 text-slate-600 border-slate-200"
+          className="mb-4 sm:mb-6 bg-slate-200 text-slate-700 border-slate-300 font-medium"
         >
           <Sparkles className="h-3 w-3 mr-1" /> Free · Open Source · MIT
         </Badge>
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-4 sm:mb-6">
           System Design for AI
         </h1>
-        <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-4">
+        <p className="text-lg sm:text-xl md:text-2xl text-slate-700 max-w-3xl mx-auto mb-3 sm:mb-4">
           Taught like a story — free, from zero to production.
         </p>
-        <p className="text-base text-slate-500 max-w-2xl mx-auto mb-10">
+        <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed">
           A beginner-to-expert curriculum covering how AI systems are actually
           designed and built. ML, GenAI, and Agentic AI system design, with
           real citations, real pricing, and real production patterns.
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-md sm:max-w-none mx-auto">
           <Button
             size="lg"
             onClick={() => onStart("curriculum")}
-            className="bg-slate-900 hover:bg-slate-800"
+            className="bg-slate-900 hover:bg-slate-800 w-full sm:w-auto"
           >
             <Map className="h-5 w-5 mr-2" />
             Explore the Curriculum
@@ -353,6 +369,7 @@ function HomeView({ onStart }: { onStart: (t: Tab) => void }) {
             size="lg"
             variant="outline"
             onClick={() => onStart("reader")}
+            className="w-full sm:w-auto"
           >
             <BookOpen className="h-5 w-5 mr-2" />
             Read Chapter 0.0
@@ -361,7 +378,7 @@ function HomeView({ onStart }: { onStart: (t: Tab) => void }) {
       </section>
 
       {/* Stats */}
-      <section className="py-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+      <section className="py-6 sm:py-8 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
         {[
           { value: "38", label: "Chapters" },
           { value: "6", label: "Tracks" },
@@ -520,22 +537,22 @@ function CurriculumView({
   });
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold mb-2">Curriculum Map</h1>
-      <p className="text-slate-600 mb-8">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">Curriculum Map</h1>
+      <p className="text-sm sm:text-base text-slate-600 mb-4">
         38 chapters across 6 tracks. Click any chapter to read it.
       </p>
 
       {/* Filters */}
-      <div className="flex flex-col sm:flex-row gap-4 mb-8">
+      <div className="flex flex-col sm:flex-row gap-3 mb-4">
         <Input
           placeholder="Search chapters..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="sm:max-w-xs"
+          className="h-11 sm:h-10 sm:max-w-xs text-base sm:text-sm border-slate-300"
         />
         <Select value={trackFilter} onValueChange={setTrackFilter}>
-          <SelectTrigger className="sm:w-64">
+          <SelectTrigger className="h-11 sm:h-10 sm:w-64 text-base sm:text-sm border-slate-300">
             <SelectValue placeholder="Filter by track" />
           </SelectTrigger>
           <SelectContent>
@@ -560,44 +577,46 @@ function CurriculumView({
               className="cursor-pointer hover:shadow-md hover:border-slate-400 transition-all"
               onClick={() => onSelect(c.chapter_id)}
             >
-              <CardContent className="flex items-start gap-4 p-4">
-                <div
-                  className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${track.color}`}
-                >
-                  <Icon className="h-5 w-5" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1">
-                    <Badge variant="outline" className="text-xs font-mono">
-                      {c.chapter_id}
-                    </Badge>
-                    <h3 className="font-semibold text-slate-900 truncate">
+              <CardContent className="p-4 sm:p-5">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div
+                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${track.color}`}
+                  >
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1 flex-wrap">
+                      <Badge variant="outline" className="text-xs font-mono shrink-0">
+                        {c.chapter_id}
+                      </Badge>
+                      {c.status === "stable" && (
+                        <Badge className="text-xs bg-emerald-100 text-emerald-700 hover:bg-emerald-100 shrink-0">
+                          stable
+                        </Badge>
+                      )}
+                    </div>
+                    <h3 className="font-semibold text-slate-900 leading-snug mb-1">
                       {c.title}
                     </h3>
-                    {c.status === "stable" && (
-                      <Badge className="text-xs bg-emerald-100 text-emerald-700 hover:bg-emerald-100">
-                        stable
-                      </Badge>
-                    )}
+                    <p className="text-sm text-slate-600 mb-2">{c.topic}</p>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="flex items-center gap-1 text-xs text-slate-500">
+                        <Clock className="h-3 w-3" />
+                        {c.est_read_minutes} min
+                      </span>
+                      {c.bloom_stage.slice(0, 3).map((b) => (
+                        <Badge
+                          key={b}
+                          variant="secondary"
+                          className={`text-xs capitalize ${BLOOM_COLORS[b] || ""}`}
+                        >
+                          {b}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
-                  <p className="text-sm text-slate-600 mb-2">{c.topic}</p>
-                  <div className="flex items-center gap-3 flex-wrap">
-                    <span className="flex items-center gap-1 text-xs text-slate-500">
-                      <Clock className="h-3 w-3" />
-                      {c.est_read_minutes} min
-                    </span>
-                    {c.bloom_stage.slice(0, 3).map((b) => (
-                      <Badge
-                        key={b}
-                        variant="secondary"
-                        className={`text-xs capitalize ${BLOOM_COLORS[b] || ""}`}
-                      >
-                        {b}
-                      </Badge>
-                    ))}
-                  </div>
+                  <ArrowRight className="h-5 w-5 text-slate-400 shrink-0 hidden sm:block self-center" />
                 </div>
-                <ArrowRight className="h-5 w-5 text-slate-400 shrink-0" />
               </CardContent>
             </Card>
           );
@@ -673,7 +692,7 @@ function ReaderView({
             variant="ghost"
             size="sm"
             onClick={() => onSelect("")}
-            className="mb-6 text-slate-500 hover:text-slate-900"
+            className="mb-3 sm:mb-4 text-slate-500 hover:text-slate-900"
           >
             ← Back to curriculum
           </Button>
@@ -685,29 +704,21 @@ function ReaderView({
           )}
           {chapter && !loading && (
             <>
-              {/* Chapter metadata header */}
-              <div className="mb-8 pb-6 border-b border-slate-200">
-                <div className="flex items-center gap-2 flex-wrap mb-3">
-                  <Badge variant="outline" className="font-mono text-xs">
-                    {chapter.meta.chapter_id}
-                  </Badge>
-                  <Badge
-                    variant="secondary"
-                    className={`text-xs ${TRACKS[chapter.meta.track]?.color || ""}`}
-                  >
-                    {TRACKS[chapter.meta.track]?.label || chapter.meta.track}
-                  </Badge>
-                  <span className="flex items-center gap-1 text-xs text-slate-500">
-                    <Clock className="h-3 w-3" />
-                    {chapter.meta.est_read_minutes} min read
-                  </span>
-                </div>
-                <h1 className="text-3xl font-bold text-slate-900 mb-2">
-                  {chapter.meta.title}
-                </h1>
-                <p className="text-sm text-slate-500 italic">
-                  {chapter.meta.topic}
-                </p>
+              {/* Chapter metadata header — badges only, title is in the content */}
+              <div className="mb-4 flex items-center gap-2 flex-wrap">
+                <Badge variant="outline" className="font-mono text-xs">
+                  {chapter.meta.chapter_id}
+                </Badge>
+                <Badge
+                  variant="secondary"
+                  className={`text-xs ${TRACKS[chapter.meta.track]?.color || ""}`}
+                >
+                  {TRACKS[chapter.meta.track]?.label || chapter.meta.track}
+                </Badge>
+                <span className="flex items-center gap-1 text-xs text-slate-500">
+                  <Clock className="h-3 w-3" />
+                  {chapter.meta.est_read_minutes} min read
+                </span>
               </div>
               {/* Chapter content */}
               <MarkdownRenderer content={chapter.content} />
@@ -728,8 +739,8 @@ function ReaderView({
                   onClick={() => onSelect(c.chapter_id)}
                   className={`w-full text-left px-2.5 py-1.5 rounded text-xs transition-colors ${
                     c.chapter_id === selectedId
-                      ? "bg-slate-900 text-white font-medium"
-                      : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                      ? "nav-active font-medium"
+                      : "nav-inactive"
                   }`}
                 >
                   <span className="font-mono mr-1.5 opacity-60">
@@ -897,23 +908,23 @@ function VisualizerView() {
   };
 
   return (
-    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold mb-2">System Visualizer</h1>
-      <p className="text-slate-600 mb-2">
+    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">System Visualizer</h1>
+      <p className="text-sm sm:text-base text-slate-600 mb-2">
         An interactive RAG (Retrieval-Augmented Generation) pipeline. Click any
         component to learn what it does, why it matters, and what it costs.
       </p>
-      <p className="text-sm text-slate-500 mb-8">
+      <p className="text-xs sm:text-sm text-slate-500 mb-6 sm:mb-8">
         Press &quot;Run request&quot; to watch a request flow through the
         pipeline in real time.
       </p>
 
       {/* Run button */}
-      <div className="mb-8">
+      <div className="mb-6">
         <Button
           onClick={startPlayback}
           disabled={playing}
-          className="bg-slate-900 hover:bg-slate-800"
+          className="bg-slate-900 hover:bg-slate-800 w-full sm:w-auto"
         >
           {playing ? "Running..." : "▶ Run request through pipeline"}
         </Button>
@@ -939,16 +950,16 @@ function VisualizerView() {
                     setActiveStep(-1);
                     setPlaying(false);
                   }}
-                  className={`flex-1 p-4 rounded-lg border-2 text-left transition-all min-w-0 ${
+                  className={`flex-1 p-3 sm:p-4 rounded-lg border-2 text-left transition-all min-w-0 overflow-hidden ${
                     isSelected
-                      ? "border-slate-900 bg-white shadow-lg scale-105"
+                      ? "border-slate-900 bg-white shadow-lg"
                       : isActive
                       ? "border-slate-900 bg-white shadow-md ring-2 ring-slate-900 ring-offset-2"
                       : "border-slate-200 bg-slate-50 hover:border-slate-400 hover:shadow-sm"
                   }`}
                 >
-                  <div className="text-2xl mb-2">{comp.icon}</div>
-                  <div className="text-xs font-semibold text-slate-900 mb-1">
+                  <div className="text-lg sm:text-2xl mb-1 sm:mb-2">{comp.icon}</div>
+                  <div className="text-xs font-semibold text-slate-900 mb-1 leading-tight break-words">
                     {comp.name}
                   </div>
                   <div className="text-xs text-slate-500">{comp.latency}</div>
@@ -1260,15 +1271,15 @@ function QuestionsView() {
   );
 
   return (
-    <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold mb-2">Question Bank</h1>
-      <p className="text-slate-600 mb-8">
+    <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">Question Bank</h1>
+      <p className="text-sm sm:text-base text-slate-600 mb-4">
         Practice scenarios — not bare &quot;design X&quot; prompts. Each
         question is framed as a realistic scenario with a worked answer.
       </p>
 
-      <Select value={trackFilter} onValueChange={setTrackFilter} >
-        <SelectTrigger className="w-64 mb-6">
+      <Select value={trackFilter} onValueChange={setTrackFilter}>
+        <SelectTrigger className="h-11 sm:h-10 w-full sm:w-64 text-base sm:text-sm mb-4 border-slate-300">
           <SelectValue placeholder="Filter by track" />
         </SelectTrigger>
         <SelectContent>
@@ -1284,38 +1295,34 @@ function QuestionsView() {
       <div className="space-y-4">
         {filtered.map((q) => (
           <Card key={q.id}>
-            <CardHeader>
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Badge variant="outline" className="font-mono text-xs">
-                      {q.id}
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className={`text-xs ${TRACKS[q.track]?.color || ""}`}
-                    >
-                      {TRACKS[q.track]?.label || q.track}
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className={`text-xs ${
-                        q.difficulty === "hard"
-                          ? "bg-red-100 text-red-700"
-                          : q.difficulty === "medium"
-                          ? "bg-amber-100 text-amber-700"
-                          : "bg-emerald-100 text-emerald-700"
-                      }`}
-                    >
-                      {q.difficulty}
-                    </Badge>
-                  </div>
-                  <CardTitle className="text-lg">{q.title}</CardTitle>
-                </div>
+            <CardHeader className="p-4 sm:p-6">
+              <div className="flex items-center gap-2 mb-2 flex-wrap">
+                <Badge variant="outline" className="font-mono text-xs shrink-0">
+                  {q.id}
+                </Badge>
+                <Badge
+                  variant="secondary"
+                  className={`text-xs shrink-0 ${TRACKS[q.track]?.color || ""}`}
+                >
+                  {TRACKS[q.track]?.label || q.track}
+                </Badge>
+                <Badge
+                  variant="secondary"
+                  className={`text-xs shrink-0 ${
+                    q.difficulty === "hard"
+                      ? "bg-red-100 text-red-700"
+                      : q.difficulty === "medium"
+                      ? "bg-amber-100 text-amber-700"
+                      : "bg-emerald-100 text-emerald-700"
+                  }`}
+                >
+                  {q.difficulty}
+                </Badge>
               </div>
+              <CardTitle className="text-base sm:text-lg leading-snug">{q.title}</CardTitle>
             </CardHeader>
-            <CardContent>
-              <p className="text-sm text-slate-700 mb-3 italic">
+            <CardContent className="p-4 pt-0 sm:p-6 sm:pt-0">
+              <p className="text-sm text-slate-700 mb-3 italic leading-relaxed">
                 {q.scenario}
               </p>
               <div className="flex items-center gap-2 flex-wrap mb-3">
@@ -1348,8 +1355,9 @@ function QuestionsView() {
                   variant="outline"
                   size="sm"
                   onClick={() => setExpanded(q.id)}
+                  className="border-slate-400 text-slate-700 hover:bg-slate-100 font-medium"
                 >
-                  Show worked answer
+                  Show worked answer →
                 </Button>
               )}
             </CardContent>
@@ -1365,29 +1373,97 @@ function QuestionsView() {
 // ============================================================================
 
 function Footer() {
+  const socialLinks = [
+    {
+      name: "Website",
+      url: "https://www.adilshamim.me/",
+      icon: Globe,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/adilshamim8",
+      icon: Linkedin,
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/AdilShamim8",
+      icon: Github,
+    },
+    {
+      name: "Kaggle",
+      url: "https://www.kaggle.com/adilshamim8",
+      icon: Trophy,
+    },
+    {
+      name: "Twitter / X",
+      url: "https://x.com/adil_shamim8",
+      icon: Twitter,
+    },
+    {
+      name: "Medium",
+      url: "https://adilshamim8.medium.com/",
+      icon: MediumIcon,
+    },
+  ];
+
   return (
     <footer className="mt-auto border-t border-slate-200 bg-slate-50">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-slate-500">
-            <p>
-              <strong>System Design for AI</strong> — Free, open-source,
-              MIT-licensed.
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Project info */}
+          <div>
+            <h3 className="text-sm font-semibold text-slate-900 mb-2">
+              System Design for AI
+            </h3>
+            <p className="text-sm text-slate-600 mb-1">
+              Free, open-source, MIT-licensed.
             </p>
-            <p>Taught like a story, from zero to production.</p>
+            <p className="text-sm text-slate-500">
+              Taught like a story, from zero to production.
+            </p>
           </div>
-          <div className="flex gap-4">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-sm text-slate-600 hover:text-slate-900"
-            >
-              <Github className="h-4 w-4" />
-              GitHub
-              <ExternalLink className="h-3 w-3" />
-            </a>
+
+          {/* Developer profile */}
+          <div>
+            <h3 className="text-sm font-semibold text-slate-900 mb-2">
+              Developer
+            </h3>
+            <p className="text-sm text-slate-600 mb-3">
+              Built by{" "}
+              <a
+                href="https://www.adilshamim.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-slate-900 underline underline-offset-2 hover:text-slate-700"
+              >
+                Adil Shamim
+              </a>
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {socialLinks.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={link.name}
+                    className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium text-slate-600 border border-slate-200 hover:bg-slate-100 hover:text-slate-900 transition-colors"
+                  >
+                    <Icon className="h-3.5 w-3.5" />
+                    <span className="hidden sm:inline">{link.name}</span>
+                  </a>
+                );
+              })}
+            </div>
           </div>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-slate-200 text-center">
+          <p className="text-xs text-slate-400">
+            © 2026 System Design for AI · MIT License · Built with care
+          </p>
         </div>
       </div>
     </footer>
@@ -1420,7 +1496,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-background">
       <Nav active={tab} onChange={setTab} />
       <main className="flex-1">
         {tab === "home" && <HomeView onStart={setTab} />}
