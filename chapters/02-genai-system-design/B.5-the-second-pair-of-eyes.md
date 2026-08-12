@@ -3,86 +3,124 @@ chapter_id: "B.5"
 title: "The Second Pair of Eyes"
 topic: "Reranking"
 track: genai
-bloom_stage: ["apply", "evaluate"]
+bloom_stage: ["remember", "understand", "apply", "analyze", "evaluate", "create"]
 est_read_minutes: 14
 prerequisites: ["B.2", "B.3"]
 teaching_goal: "Design a two-stage retrieval pipeline with bi-encoder retrieval and cross-encoder reranking, and quantify when reranking pays for itself."
-primary_diagram: assets/diagrams/B.5/
-common_misconception: "See chapter body"
 status: stable
-last_updated: 2026-08-10
+last_updated: 2026-08-12
 ---
 
 # The Second Pair of Eyes
 
-Vector search is fast and approximate. Cross-encoder reranking is slow and precise. Together, they're the cheapest accuracy multiplier in RAG — a 5-10% quality improvement for a 50ms latency cost. This is the 'second pair of eyes' that turns decent retrieval into great retrieval.
+Vector search is fast and approximate. Cross-encoder reranking is slow and precise. Together, they're the cheapest accuracy multiplier in RAG — a 5-10% quality improvement for 50ms of latency cost.
+
+The pattern is simple: retrieve many candidates cheaply, rerank a few precisely. But the "why" is deeper than it looks, and the implementation details matter.
 
 ---
 
-## Remember
+## Remember — name it
 
-**Bi-encoder** — embeds query and document separately, compares vectors. Fast, approximate. The first-pass retrieval model. **Cross-encoder** — feeds query and document together to a model. Slow, precise. The 'second pair of eyes.' **Two-stage retrieval** — retrieve many candidates with a bi-encoder, rerank a few with a cross-encoder. **Reranking** — the second stage that improves precision.
-
----
-
-## Understand
-
-In a RAG system, retrieval quality determines the ceiling of answer quality. If retrieval misses the right chunk, no amount of LLM cleverness can recover (see B.2). The bi-encoder (vector search) is fast but approximate — it finds *roughly* similar chunks, but its ranking isn't precise. A cross-encoder is slower but more precise — it reads the query and document *together* and scores their actual relevance.
-
-**The two-stage pattern:**
-1. **Retrieve** top-50 with a bi-encoder (vector search). Fast: ~50ms.
-2. **Rerank** those 50 with a cross-encoder. Slower: ~50ms for 50 documents.
-3. **Return** top-5 to the LLM.
-
-The cross-encoder is more accurate because it sees the query and document *together* — it can judge actual relevance, not just vector similarity. But it's too slow to run on the entire corpus, so you use it only on the bi-encoder's candidates.
-
-**Why it works:** the bi-encoder is good at *recall* (finding relevant documents in a large corpus) but bad at *precision* (ordering them correctly). The cross-encoder is good at precision but too slow for large-scale retrieval. Combining them gives you both: high recall from the bi-encoder, high precision from the cross-encoder.
+- **Bi-encoder** — embeds query and document *separately*, compares vectors. Fast (pre-computed document embeddings), approximate. The first-pass retrieval model used in vector search.
+- **Cross-encoder** — feeds query and document *together* to a model. Slow (must process each query-document pair), precise. The "second pair of eyes."
+- **Two-stage retrieval** — retrieve top-50 with a bi-encoder, rerank top-50 with a cross-encoder, return top-5. The production pattern.
+- **Reranking** — the second stage that improves precision without sacrificing recall.
 
 ---
 
-## Apply
+## Understand — why two stages
 
-For a RAG system with 1M documents:
-1. **Retrieve** top-50 with a bi-encoder (vector search). ~50ms.
-2. **Rerank** those 50 with a cross-encoder (e.g., `bge-reranker-v2-m3`). ~50ms for 50 docs.
-3. **Return** top-5 to the LLM.
+The bi-encoder (vector search) is good at **recall** — finding relevant documents in a large corpus. It's fast because document embeddings are pre-computed; at query time, you only embed the query (one API call) and do an ANN search (~50ms).
 
-Latency: 100ms for retrieval + reranking. Quality: 5-10% improvement in answer correctness vs. bi-encoder alone. Almost always worth it.
+But the bi-encoder is bad at **precision** — ordering the retrieved documents correctly. It uses cosine similarity, which is a rough proxy for relevance. Two documents might have similar embeddings but very different actual relevance to the query.
 
----
+The cross-encoder is good at precision — it reads the query and document *together* and scores actual relevance. But it's too slow for large-scale retrieval: you'd have to run it on every document in the corpus.
 
-## Analyze
-
-When does reranking *not* pay for itself? When retrieval quality is already high (small corpus, simple queries), the cross-encoder doesn't add much. When latency is extremely tight (voice assistants, real-time bidding), 50ms may be too much. For most RAG applications — support bots, research assistants, internal knowledge bases — reranking is a clear win.
+**The two-stage pattern combines both:**
+1. **Retrieve** top-50 with the bi-encoder (fast, ~50ms). High recall, low precision.
+2. **Rerank** those 50 with the cross-encoder (slower, ~50ms for 50 docs). High precision.
+3. **Return** top-5 to the LLM. The best of both worlds.
 
 ---
 
-## Evaluate
+## Apply — implement reranking in a RAG pipeline
 
-Cross-encoder options (as of 2026): `bge-reranker-v2-m3` (open-source, multilingual), Cohere Rerank (managed, easy), Jina Reranker (open-source, fast). The choice depends on whether you want managed or self-hosted, and whether you need multilingual support.
+```python
+# Stage 1: Bi-encoder retrieval (fast, approximate)
+query_embedding = embed_model.encode(question)  # ~50ms
+candidates = vector_db.search(query_embedding, top_k=50)  # ~50ms
+
+# Stage 2: Cross-encoder reranking (slow, precise)
+from sentence_transformers import CrossEncoder
+reranker = CrossEncoder("BAAI/bge-reranker-v2-m3")  # open-source, multilingual
+
+# Score each (query, document) pair
+pairs = [(question, c.text) for c in candidates]
+scores = reranker.predict(pairs)  # ~50ms for 50 pairs
+
+# Sort by reranker score, take top-5
+ranked = sorted(zip(candidates, scores), key=lambda x: x[1], reverse=True)
+top_5 = [c for c, s in ranked[:5]]
+```
+
+Latency: 50ms (embed) + 50ms (search) + 50ms (rerank) = ~150ms total. The reranking adds 50ms — about 1/3 of the total retrieval latency. Almost always worth it.
+
+**Popular cross-encoder models (as of 2026):**
+- `BAAI/bge-reranker-v2-m3` — open-source, multilingual, strong performance
+- Cohere Rerank — managed, easy to use, ~$0.002 per 1000 searches
+- Jina Reranker — open-source, fast
 
 ---
 
-## Create
+## Analyze — when reranking doesn't pay for itself
 
-Design a retrieval pipeline for a legal research bot. The corpus is 5M legal documents. Queries are complex ('cases involving product liability for autonomous vehicles in California, 2020-2024'). How many candidates do you retrieve? What reranker? How do you handle the fact that legal queries often need multiple relevant documents (not just the top-5)?
+Reranking adds ~50ms of latency. When is that NOT worth it?
+
+- **Small corpus (<1,000 documents)**: brute-force search with a cross-encoder is fast enough. No need for the bi-encoder stage.
+- **Simple queries**: if queries are always exact-match ("find document #12345"), lexical search is sufficient. No reranking needed.
+- **Ultra-low-latency applications (voice, real-time bidding)**: 50ms might be too much. Use only the bi-encoder.
+- **High-quality embeddings + small candidate set**: if your embedding model is excellent and you only retrieve top-5, the bi-encoder's ranking might be good enough.
+
+For most RAG applications — support bots, research assistants, internal knowledge bases — reranking is a clear win. The 50ms cost is negligible compared to the 2-3 seconds the LLM takes to generate the answer.
+
+---
+
+## Evaluate — the cost-benefit math
+
+| Metric | Without reranking | With reranking |
+|---|---|---|
+| Retrieval latency | ~100ms | ~150ms |
+| Recall@5 | 85% | 92% |
+| Answer accuracy | 78% | 84% |
+| Cost per query | $0.00001 | $0.00003 |
+
+The 6% accuracy improvement for 50ms latency and $0.00002 cost is almost always worth it. The question isn't "should I rerank?" but "which cross-encoder should I use?"
+
+---
+
+## Create — design reranking for a legal research bot
+
+The corpus is 5M legal documents. Queries are complex ("cases involving product liability for autonomous vehicles in California, 2020-2024"). How many candidates do you retrieve? What reranker? How do you handle the fact that legal queries often need multiple relevant documents (not just the top-5)?
+
+Consider: legal queries need high recall (don't miss any relevant case) and high precision (the top results must be actually relevant). You might retrieve top-100, rerank to top-20, and return top-10 to the LLM. The cross-encoder must handle legal vocabulary — a general-purpose reranker might not understand "res judicata" or "stare decisis."
 
 ---
 
 ## A common misconception
 
-**'Reranking is a luxury.'** No. For any RAG system with more than a few thousand documents, reranking is the cheapest quality improvement available — 5-10% better answers for 50ms of latency. The teams that skip it are leaving quality on the table.
+**"Reranking is a luxury."** No. For any RAG system with more than a few thousand documents, reranking is the cheapest quality improvement available — 5-10% better answers for 50ms of latency. The teams that skip it are leaving quality on the table.
 
 ---
 
 ## Explain it back
 
-A bi-encoder is _____; a cross-encoder is _____. The two-stage pattern works by _____, then _____. The bi-encoder is good at _____; the cross-encoder is good at _____. Reranking is worth it because _____.
+> "A bi-encoder is _____; a cross-encoder is _____. The two-stage pattern works by _____, then _____. The bi-encoder is good at _____; the cross-encoder is good at _____. Reranking is worth it because _____."
 
 ---
 
-## Further reading
+## References
 
-- **Nogueira & Cho (2019), "Passage Re-ranking with BERT," arXiv** — the foundational cross-encoder reranking paper.
-- **Khattab & Zaharia (2020), "ColBERT," SIGIR** — efficient cross-encoder variant.
-- **Cohere Rerank documentation** — managed reranking.
+- **Nogueira, R., & Cho, K. (2019), "Passage Re-ranking with BERT," arXiv:1901.04085.** The foundational cross-encoder reranking paper. https://arxiv.org/abs/1901.04085
+- **Khattab, O., & Zaharia, M. (2020), "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT," SIGIR 2020.** arXiv:2004.12832 — https://arxiv.org/abs/2004.12832
+- **Cohere Rerank Documentation.** https://docs.cohere.com/docs/reranking
+- **BAAI/bge-reranker-v2-m3.** https://huggingface.co/BAAI/bge-reranker-v2-m3
