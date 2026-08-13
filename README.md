@@ -117,7 +117,6 @@ MIT. See [LICENSE](./LICENSE). Free, open, forever.
 ---
 
 ## Developer
-
 Built by **Adil Shamim**.
 
 - Website: [adilshamim.me](https://www.adilshamim.me/)
