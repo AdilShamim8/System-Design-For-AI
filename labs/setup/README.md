@@ -70,7 +70,7 @@ Spending expectation for the whole Track B + C: **under $5** with a small model.
 
 ## 5. The datasets directory
 
-Labs download data into `labs/data/` (gitignored — we don't commit datasets, we commit *instructions*). Each lab's `DATA.md` says exactly what to download and from where; the catalog with licenses lives in [`datasets/`](../datasets/).
+Labs download data into `labs/data/` (gitignored — we don't commit datasets, we commit *instructions*). Each lab's `DATA.md` says exactly what to download and from where; the catalog with licenses lives in [`datasets/`](../../datasets/).
 
 ## 6. Your lab journal
 
