@@ -34,7 +34,7 @@ Every topic follows the same five steps. This structure is the whole course:
 | Step | Folder | What you do | Roughly |
 |---|---|---|---|
 | 1. **Read** | [`chapters/`](./chapters/) | Read one short story-driven chapter that makes the concept click | 38 chapters |
-| 2. **Do** | [`labs/`](./labs/) | Build it yourself, on a **real public dataset** (movie ratings, taxi trips, real fraud data…) | 25 labs + 3 capstones |
+| 2. **Do** | [`labs/`](./labs/) | Build it yourself, on a **real public dataset** (movie ratings, taxi trips, real fraud data…) | 25 labs + 3 capstones (28 total) |
 | 3. **Break** | [`field-notes/`](./field-notes/) | Study a real, documented AI failure — Amazon's biased hiring tool, the chatbot that lost in court — and the lesson it teaches | 12 incidents |
 | 4. **Perform** | [`interview-prep/`](./interview-prep/) | Answer scenario questions, then run full 45-minute mock interviews with a timer | 42 questions · 8 mocks |
 | 5. **Review** | [`cheatsheets/`](./cheatsheets/) + [`flashcards/`](./interview-prep/flashcards/) | One-page reference cards and 102 flashcards so it sticks | 11 cards · 4 decks |
