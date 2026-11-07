@@ -1,0 +1,37 @@
+# Core stack for System-Design-For-AI labs (Track A/B/C + cross-cutting)
+# GPU is NOT required. Track B labs run embedding models fine on CPU.
+
+# --- data & classical ML (Track A) ---
+pandas>=2.0
+numpy>=1.26
+pyarrow>=14.0            # parquet for NYC TLC taxi data
+scikit-learn>=1.4
+lightgbm>=4.0            # GBTs for CTR / forecasting labs
+joblib>=1.3              # model serialization (a1)
+
+# --- serving & HTTP (a1, x3) ---
+fastapi>=0.110
+uvicorn>=0.29
+httpx>=0.27              # async client for load tests
+locust>=2.25             # lab x3
+
+# --- retrieval & NLP (a5, b2-b5, b8) ---
+rank-bm25>=0.2.2         # BM25 baseline (a5)
+sentence-transformers>=2.6   # embedding models (CPU-ok)
+faiss-cpu>=1.7.4         # vector index (b2, b5)
+datasets>=2.18           # Hugging Face datasets (SQuAD etc.)
+
+# --- LLM client (Track B/C) ---
+openai>=1.30             # works with any OpenAI-compatible endpoint incl. Ollama
+tiktoken>=0.6            # token counting (b1)
+python-dotenv>=1.0       # labs/.env loading
+
+# --- evaluation & stats (a8, b4) ---
+scipy>=1.11              # KS test (a7), stats (a8)
+
+# --- plotting & misc ---
+matplotlib>=3.8
+
+# --- optional but handy ---
+tqdm>=4.66
+pytest>=8.0
