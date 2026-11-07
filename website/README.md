@@ -66,3 +66,10 @@ npm start
 - **Colors**: edit Tailwind classes in `src/app/page.tsx` (TRACKS object, BLOOM_COLORS)
 - **Typography**: edit `prose` classes in the MarkdownRenderer component
 - **Mermaid theme**: edit `mermaid.initialize()` in the MermaidBlock component
+
+
+---
+
+## Note on the expanded curriculum (2026)
+
+The repo now includes labs (`labs/`), the datasets catalog (`datasets/`), field notes (`field-notes/`), the interview-prep layer (`interview-prep/`), cheatsheets, reference diagrams, and role-based learning paths (`paths/`). The website currently renders the **chapters** and the question bank; the new layers are first-class markdown on GitHub for now. Surfacing them in the site (labs browser, field-note feed, flashcard mode) is on the roadmap — see the root `ROADMAP.md`.
