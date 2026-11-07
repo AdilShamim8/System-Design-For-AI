@@ -3,16 +3,16 @@
 > **A free, open-source course that teaches you to design AI systems by actually building them — recommenders, RAG chatbots, agents — on real data, then shows you how to explain your designs in interviews.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Chapters: 38](https://img.shields.io/badge/Chapters-38-brightgreen)](#-the-curriculum-at-a-glance)
-[![Labs: 27](https://img.shields.io/badge/Hands--on_Labs-27-blue)](#-the-curriculum-at-a-glance)
-[![Mocks: 8](https://img.shields.io/badge/Interview_Mocks-8-orange)](#-get-interview-ready)
-[![Price: $0](https://img.shields.io/badge/Cost-$0-success)](#-faq)
+[![Chapters: 38](https://img.shields.io/badge/Chapters-38-brightgreen)](#the-curriculum-at-a-glance)
+[![Labs: 28](https://img.shields.io/badge/Hands--on_Labs-28-blue)](#the-curriculum-at-a-glance)
+[![Mocks: 8](https://img.shields.io/badge/Interview_Mocks-8-orange)](#get-interview-ready)
+[![Price: $0](https://img.shields.io/badge/Cost-$0-success)](#faq)
 
 **Beginner friendly · no GPU needed · $0–5 total API spend · 30/60/90-day plans · free forever (MIT)**
 
 ---
 
-## 👋 What is this course, in plain words?
+## What is this course, in plain words?
 
 **System design** means planning how the pieces of software fit together — before you build it wrong. This course teaches you to do that for **AI systems**: the recommendation feeds behind apps like Netflix and Spotify, the chatbots that answer questions from company documents (called **RAG**), and the AI agents that use tools to finish tasks.
 
@@ -20,28 +20,28 @@ Most courses show you slides. This one makes you **build a working mini-version 
 
 By the end you can say: *"I built it, I broke it, I fixed it, and I can defend every decision with numbers."*
 
-## 🎯 What you'll be able to do
+## What you'll be able to do
 
 1. **Design** an AI system end-to-end: from "what's the actual problem?" to boxes-and-arrows architecture to "what breaks at 3AM?"
 2. **Build** working prototypes of the four core AI products: recommenders, fraud/risk models, RAG chatbots, and agents.
 3. **Debug** the failures that only happen in production: data leakage, drift, hallucination, runaway costs.
 4. **Pass** AI system-design interviews: a repeatable 6-step framework, 42 practice questions, and 8 full mock interviews with grading rubrics.
 
-## 🧭 How the course works — one loop, five steps
+## How the course works — one loop, five steps
 
 Every topic follows the same five steps. This structure is the whole course:
 
 | Step | Folder | What you do | Roughly |
 |---|---|---|---|
-| 1️⃣ **Read** | [`chapters/`](./chapters/) | Read one short story-driven chapter that makes the concept click | 38 chapters |
-| 2️⃣ **Do** | [`labs/`](./labs/) | Build it yourself, on a **real public dataset** (movie ratings, taxi trips, real fraud data…) | 24 labs + 3 capstones |
-| 3️⃣ **Break** | [`field-notes/`](./field-notes/) | Study a real, documented AI failure — Amazon's biased hiring tool, the chatbot that lost in court — and the lesson it teaches | 12 incidents |
-| 4️⃣ **Perform** | [`interview-prep/`](./interview-prep/) | Answer scenario questions, then run full 45-minute mock interviews with a timer | 42 questions · 8 mocks |
-| 5️⃣ **Review** | [`cheatsheets/`](./cheatsheets/) + [`flashcards/`](./interview-prep/flashcards/) | One-page reference cards and 102 flashcards so it sticks | 11 cards · 4 decks |
+| 1. **Read** | [`chapters/`](./chapters/) | Read one short story-driven chapter that makes the concept click | 38 chapters |
+| 2. **Do** | [`labs/`](./labs/) | Build it yourself, on a **real public dataset** (movie ratings, taxi trips, real fraud data…) | 25 labs + 3 capstones |
+| 3. **Break** | [`field-notes/`](./field-notes/) | Study a real, documented AI failure — Amazon's biased hiring tool, the chatbot that lost in court — and the lesson it teaches | 12 incidents |
+| 4. **Perform** | [`interview-prep/`](./interview-prep/) | Answer scenario questions, then run full 45-minute mock interviews with a timer | 42 questions · 8 mocks |
+| 5. **Review** | [`cheatsheets/`](./cheatsheets/) + [`flashcards/`](./interview-prep/flashcards/) | One-page reference cards and 102 flashcards so it sticks | 11 cards · 4 decks |
 
 **New here?** That table is all you need to remember. Start at step 1 for Module 0, and the course will pull you through the rest.
 
-## 🚀 Start here — your first 60 minutes
+## Start here — your first 60 minutes
 
 Do these five things in order. Total time: about one hour.
 
@@ -64,9 +64,9 @@ Do these five things in order. Total time: about one hour.
 
 Not sure? If you can write a for-loop, pick the closest match and don't overthink it — every path converges on the same core.
 
-## 🗺️ The curriculum at a glance
+## The curriculum at a glance
 
-**38 chapters · 27 hands-on labs · 12 real failure case studies · a full interview layer.** Every chapter pairs with labs, every lab uses a real dataset, every concept shows up again in the interview layer.
+**38 chapters · 28 hands-on labs (25 labs + 3 capstones) · 12 real failure case studies · a full interview layer.** Every chapter pairs with labs, every lab uses a real dataset, every concept shows up again in the interview layer.
 
 | Track | Read (chapters) | Do (labs) | You finish able to… |
 |---|---|---|---|
@@ -79,7 +79,7 @@ Not sure? If you can write a for-loop, pick the closest match and don't overthin
 
 Then the whole thing gets converted into interview performance in [`interview-prep/`](./interview-prep/).
 
-## 📊 Every lab runs on real data
+## Every lab runs on real data
 
 No toy `data = [1,2,3]`. You learn on real public datasets — with their real messiness (imbalance, leakage traps, licensing) — because that messiness is what real system design is about:
 
@@ -92,7 +92,7 @@ No toy `data = [1,2,3]`. You learn on real public datasets — with their real m
 
 Full catalog with sizes, licenses, and known gotchas: [`datasets/`](./datasets/).
 
-## 🎤 Get interview-ready
+## Get interview-ready
 
 Everything you built becomes interview material in [`interview-prep/`](./interview-prep/):
 
@@ -101,7 +101,7 @@ Everything you built becomes interview material in [`interview-prep/`](./intervi
 - **8 full mock interviews** — 45-minute walkthroughs with curveballs and grading rubrics ([`mock-interviews/`](./interview-prep/mock-interviews/))
 - **12 estimation drills**, a **seniority ladder** (what junior vs. staff answers sound like), 30/60/90-day **study plans**, and 102 **flashcards**
 
-## 🌐 Prefer a website?
+## Prefer a website?
 
 The repo includes a Next.js companion site that renders the chapters with an interactive system visualizer:
 
@@ -111,7 +111,7 @@ cd website && npm install && npm run dev    # then open http://localhost:3000
 
 Everything is also plain markdown — GitHub renders it all, including the diagrams.
 
-## ❓ FAQ
+## FAQ
 
 **Do I need to know machine learning already?** No. Module 0 assumes nothing, and the beginner path ([`paths/from-student.md`](./paths/from-student.md)) sequences everything from zero. If you already know ML, your path file tells you what to skip.
 
@@ -127,20 +127,20 @@ Everything is also plain markdown — GitHub renders it all, including the diagr
 
 **Is this good for interviews?** That's a third of the course by design: a field-tested answer framework, 42 graded scenarios, 8 timed mocks, and flashcards — plus the real numbers from your own labs, which no other candidate will have.
 
-## 🤝 Contributing & acknowledgments
+## Contributing & acknowledgments
 
 Found a wrong number, a broken link, or a lab that confused you? [Open an issue](https://github.com/AdilShamim8/System-Design-For-AI/issues) — every fix makes the course better. See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for how each layer accepts help, and [`docs/STYLING.md`](./docs/STYLING.md) for the writing rules.
 
 This course complements (and cites — it never copies) excellent free resources: [ai-system-design-guide](https://github.com/ombharatiya/ai-system-design-guide), [ByteByteGo](https://bytebytego.com), [Awesome-Agentic-System-Design](https://github.com/gtzheng/Awesome-Agentic-System-Design), and [Stanford CS 329S](https://stanford-cs329s.github.io/). Sources for every real incident live in [`field-notes/`](./field-notes/) and [`docs/CITATIONS.md`](./docs/CITATIONS.md).
 
-## 📄 License
+## License
 
 MIT — free forever, for everyone. See [`LICENSE`](./LICENSE).
 
 ---
 
 ## Developer
-Built with ❤️ by **Adil Shamim**.
+Built and maintained by **Adil Shamim**.
 
 ## Connect With Me
 <p align="center">
