@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Prerequisites** | Chapter A.3 (the search bar that almost understands you) · Chapter B.3 (embeddings) can be read in parallel |
-| **Dataset** | ANTIQUE — ~2,600 non-factoid questions, ~34K candidate passages ([card](../../datasets/search-rank-retrieval.md)) |
+| **Dataset** | ANTIQUE — ~2,600 non-factoid questions, ~34K candidate passages ([card](../../../datasets/search-rank-retrieval.md)) |
 | **You will build** | Two full retrieval systems (lexical + semantic), a hybrid that beats both, and the NDCG-vs-latency tradeoff table that every search interview asks for |
 | **Est. time** | 2–3 hours |
 | **Hardware** | Laptop CPU (embedding 34K passages takes ~2–5 min with `all-MiniLM-L6-v2`). No API key. |
