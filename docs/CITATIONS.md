@@ -59,3 +59,15 @@ Last updated: 2026-08-10.
 - NYC MyCity bot (2024): reported by *The Markup*.
 - OWASP Top 10 for LLM Applications (2024).
 - AI Incident Database: incidentdatabase.ai
+
+
+---
+
+## The production-grade expansion (2026-11)
+
+The labs, field notes, datasets catalog, and interview layer cite their sources inline. Summary of the primary sources relied upon:
+
+- **Production incidents (field-notes/):** Reuters (Amazon recruiting tool, 2018); ProPublica "Machine Bias" (COMPAS, 2016); the BC Civil Resolution Tribunal decision *Moffatt v. Air Canada, 2024 BCCRT 149*; The Markup (NYC MyCity, 2024); the NYT Bing/Sydney transcript (Feb 2023); Wired's Google Photos follow-up (2018); BBC/Guardian coverage of Tay (2016), DPD (2024), and the Chevrolet chatbot (2023); Netflix's own engineering retrospective on the Prize; Kleinberg et al. and Chouldechova's fairness impossibility results; Narayanan & Shmatikov (IEEE S&P 2008) on de-anonymization; Buolamwini & Gebru "Gender Shades" (ACM FaccT 2018).
+- **Dataset cards (datasets/):** each card links the primary host (GroupLens, Kaggle, UCI, NYC TLC, SEC EDGAR, Hugging Face, OpenSLR, Common Crawl, etc.) with license and access notes date-stamped.
+- **Interview layer:** the answer framework synthesizes the six-step structure popularized by KodeKloud's interview-prep course and the five-step senior-engineer framing common to freeCodeCamp's system-design courses; job-market context (RAG ~40%, agents ~55%, fine-tuning <5% of AI-engineer postings) is from the AI Engineering Field Guide's job-description dataset — always re-verify before quoting.
+- **Course-research videos** (pedagogy reference, not content sources): freeCodeCamp system-design courses (Hayk Simonyan), KodeKloud's beginner interview course, Chai aur Code's system-design verticals, JavaScript Mastery's evolutionary-architecture course, codebasics' AI system design tutorial, Aishwarya Srinivasan's agentic architecture video, and Telusko's full course. All course text, labs, and diagrams are original; these informed structure and emphasis only.
