@@ -1,6 +1,6 @@
 # Lab b3 — Worked Solution and What the Numbers Mean
 
-## Expected results (our runs, Apple FY2023 10-K, 12 questions, MiniLM embeddings)
+## Expected results (our runs, Apple FY2023 10-K, 12 questions, all-MiniLM-L6-v2 embeddings)
 
 | Chunker | n_chunks | hit@3 | Prompt cost @ k=3 |
 |---|---|---|---|
