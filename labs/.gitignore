@@ -1,0 +1,13 @@
+# Never commit datasets, keys, or your personal journal
+data/
+.env
+JOURNAL.md
+*.joblib
+*.pkl
+*.parquet
+*.csv
+*.log
+__pycache__/
+*.pyc
+.venv/
+HF_HOME/
