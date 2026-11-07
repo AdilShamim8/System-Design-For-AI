@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Prerequisites** | Chapter A.4 (the penny that decides a billion dollars) · Lab a3 |
-| **Dataset** | Criteo Display Advertising — ~45M ad impressions; you'll use a 500K-row subsample ([card](../../datasets/ctr-ads.md)) |
+| **Dataset** | Criteo Display Advertising — ~45M ad impressions; you'll use a 500K-row subsample ([card](../../../datasets/ctr-ads.md)) |
 | **You will build** | A CTR model whose *probabilities mean what they say*, plus the argument for why an ad bidder needs calibration, not just ranking |
 | **Est. time** | 2–3 hours |
 | **Hardware** | Laptop CPU (500K rows trains in ~1–2 min with LightGBM). No GPU. |
