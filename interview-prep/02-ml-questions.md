@@ -22,7 +22,7 @@ Start by NOT reaching for a model: is candidate generation surfacing new content
 
 ### Worked answer
 
-First hour: contain — tighten thresholds, route more to manual review, pull the actual transactions and LOOK (what changed? new merchant category? card-testing pattern?). First day: diagnose drift type — data drift (inputs moved: schema change, new issuer) vs concept drift (same inputs, new fraud behavior — the adversary adapted, A.7). Check label maturity windows before trusting any metric (a3). First quarter: drift detection as code (PSI per feature, output-distribution monitor), trigger-based retraining, champion/challenger for the new model, and layered rules for velocity patterns the model can't see. The quiet part: this system was already degraded — the monitoring gap is the root cause.
+First hour: contain — tighten thresholds, route more to manual review, pull the actual transactions and LOOK (what changed? new merchant category? card-testing pattern?). First day: diagnose drift type — data drift (inputs moved: schema change, new issuer) vs concept drift (same inputs, new fraud behavior — the adversary adapted, A.7). Check label maturity windows before trusting any metric (a3). First quarter: drift detection as code (PSI per feature with explicit bands — <0.1 stable, 0.1–0.2 investigate, >0.2 act — plus an output-distribution monitor that alerts after two consecutive days out of band), trigger-based retraining, champion/challenger for the new model, and layered rules for velocity patterns the model can't see. The quiet part: this system was already degraded — the monitoring gap is the root cause.
 
 **Grounding:** Chapter A.5, A.7 · Labs a3, a7 · FN-02
 
