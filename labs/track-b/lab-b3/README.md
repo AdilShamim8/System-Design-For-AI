@@ -57,6 +57,8 @@ def fixed_chunks(text, size=1800, overlap=200):
     return [text[i:i+size] for i in steps]
 
 def recursive_chunks(text, size=1800, overlap=200):
+    if not text or not text.strip():   # empty/whitespace input -> no chunks
+        return []
     # split on natural boundaries, largest first, then pack
     seps = ["\n\n", "\n", ". ", " "]
     pieces = [text]
