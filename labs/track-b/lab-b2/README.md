@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Prerequisites** | Chapters B.2 (the librarian), B.3 (the index that speaks in numbers) · Lab b1 |
-| **Dataset** | SQuAD v1.1 contexts — 18,896 real Wikipedia paragraphs ([card](../../datasets/qa-knowledge.md)) |
+| **Dataset** | SQuAD v1.1 contexts — 18,896 real Wikipedia paragraphs ([card](../../../datasets/qa-knowledge.md)) |
 | **You will build** | The entire RAG pipeline with your own hands: chunk → embed → index → retrieve → generate → cite — **no framework**, so you know exactly what LangChain is doing *for* you (and hiding from you) |
 | **Est. time** | 3–4 hours |
 | **Cost** | Embedding: local & free (`all-MiniLM-L6-v2`). Generation: < $0.10 with a small model, or free with Ollama |
