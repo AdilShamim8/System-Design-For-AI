@@ -7,7 +7,7 @@ Everything before this folder made you capable. This folder makes you *demonstra
 | File | What it is | When to use |
 |---|---|---|
 | [01-the-framework.md](./01-the-framework.md) | The 6-step answer framework with time budgets | Learn first; it's the spine of every interview |
-| [02–06 Question banks](./02-ml-questions.md) | Scenario questions with worked answers, by track | Write YOUR answer before reading the worked one |
+| Question banks: [ML](./02-ml-questions.md) · [GenAI](./03-genai-questions.md) · [Agents](./04-agentic-questions.md) · [Cross-cutting](./05-cross-cutting-questions.md) · [Classical bridge](./06-classical-bridge-questions.md) | 42 scenario questions with worked answers, by track | Write YOUR answer before reading the worked one |
 | [07-estimation-drills.md](./07-estimation-drills.md) | 12 capacity-math drills with full solutions | Do all on paper before any interview |
 | [08-curveball-questions.md](./08-curveball-questions.md) | The follow-ups interviewers actually ask | After the banks; pairs with mocks |
 | [09-behavioral-questions.md](./09-behavioral-questions.md) | AI-engineer behavioral questions + your lab stories | T-1 week |
@@ -17,6 +17,8 @@ Everything before this folder made you capable. This folder makes you *demonstra
 | [mock-interviews/](./mock-interviews/) | 8 full 45-minute walkthroughs | Timed, out loud, paper only |
 | [study-plans/](./study-plans/) | 30 / 60 / 90-day plans | Pick one and commit |
 | [flashcards/](./flashcards/) | Spaced-repetition decks by topic | 10 min/day, forever |
+
+*Note: the original 16-question `06-question-bank` scenarios were expanded and absorbed into banks 02–05 — one source of truth, no duplication.*
 
 ## The rules of this layer
 
