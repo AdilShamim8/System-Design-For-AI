@@ -25,10 +25,10 @@ output guardrail ──▶ user        ──▶ per-tenant logs / metrics / cos
 
 | Decision point | Measured | Choice |
 |---|---|---|
-| Index-per-tenant (3 tenants) | +1 ms routing, 3× memory | ✅ at this scale |
+| Index-per-tenant (3 tenants) | +1 ms routing, 3× memory | right choice at this scale |
 | Shared index + filter | +18% query latency, 1 collection | wins at 50+ tenants |
-| Per-tenant concurrency cap | innocent-tenant p99 impact: 3–5× → <10% | ✅ mandatory |
-| Namespaced cache | zero cross-tenant hits in 10K requests | ✅ (keys: tenant+corpus+embed) |
+| Per-tenant concurrency cap | innocent-tenant p99 impact: 3–5× → <10% | mandatory |
+| Namespaced cache | zero cross-tenant hits in 10K requests | yes (keys: tenant+corpus+embed) |
 | Cross-tenant phrasing queries | 0/10 leaks with verified filters | the test that matters |
 
 ## What the build teaches that labs couldn't
