@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Prerequisites** | Chapter B.4 (splitting knowledge without losing it) · Lab b2 |
-| **Dataset** | Real SEC 10-K filings — 100+ page corporate disclosures ([card](../../datasets/qa-knowledge.md)) |
+| **Dataset** | Real SEC 10-K filings — 100+ page corporate disclosures ([card](../../../datasets/qa-knowledge.md)) |
 | **You will build** | Three chunkers (fixed / recursive / section-aware), one eval harness, and the numbers behind every chunk-size argument you'll ever have |
 | **Est. time** | 2–3 hours |
 | **Cost** | Embedding local & free. Generation optional (only Part 4, < $0.05) |
