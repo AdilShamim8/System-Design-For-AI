@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Prerequisites** | Chapter A.2 (the three-stage pattern) · Lab a1 |
-| **Dataset** | MovieLens 100K — 100,000 real ratings, 943 users, 1,682 movies ([card](../../datasets/recommendation.md)) |
+| **Dataset** | MovieLens 100K — 100,000 real ratings, 943 users, 1,682 movies ([card](../../../datasets/recommendation.md)) |
 | **You will build** | Candidate generation → ranking → offline evaluation, the architecture behind every "For You" feed |
 | **Est. time** | 3–4 hours |
 | **Hardware** | Laptop CPU. No GPU. No API key. |
