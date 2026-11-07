@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Prerequisites** | Chapter B.7 (beyond text) · Lab b2 |
-| **Dataset** | Flickr8k — 8,000 real photos, each with 5 human captions ([card](../../datasets/vision.md)) |
+| **Dataset** | Flickr8k — 8,000 real photos, each with 5 human captions ([card](../../../datasets/vision.md)) |
 | **You will build** | A CLIP-style joint embedding space: search images by text, and — the honest part — *measure* where image-text search is weaker than text-text search |
 | **Est. time** | 2–3 hours |
 | **Cost** | Free (local CLIP model, ~400 MB download) |
