@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Prerequisites** | Chapter A.1 (feature stores) · Chapter X.0 (the pipes behind the magic) |
-| **Dataset** | NYC TLC Yellow Taxi — one month of real trip records ([card](../../datasets/time-series-geo.md)) |
+| **Dataset** | NYC TLC Yellow Taxi — one month of real trip records ([card](../../../datasets/time-series-geo.md)) |
 | **You will build** | An hourly demand forecaster with point-in-time-correct features — and you'll watch a leakage bug corrupt your metrics before your eyes |
 | **Est. time** | 3–4 hours |
 | **Hardware** | Laptop CPU. No GPU. No API key. |
