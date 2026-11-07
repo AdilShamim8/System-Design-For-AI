@@ -50,3 +50,18 @@ The quality bar: a reader with zero prior exposure can follow start to finish wi
 All contributions are MIT-licensed.
 
 See [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) for community standards.
+
+
+---
+
+## Contributing to the expanded layers (2026+)
+
+The course now spans five layers, and each has its own contribution shape:
+
+- **Labs (`labs/`)** — the most valuable PRs are *measured numbers*: run a lab on your setup and PR your journal results into the SOLUTION file's context (different machines/models produce different numbers; the shape is the lesson). New lab proposals: follow the existing anatomy (README + DATA + SOLUTION), use a real dataset with a card in `datasets/`, and state the prerequisite chapters.
+- **Field notes (`field-notes/`)** — incident PRs must cite primary reporting (publication, title, date; link if stable) and follow the existing format: what happened → why (design lens) → lessons → the 30-second interview version. No unsourced incidents.
+- **Interview prep (`interview-prep/`)** — new question-bank entries must map to grounding (chapter/lab/field note), and worked answers must carry the reasoning pattern, not just the conclusion.
+- **Datasets (`datasets/`)** — new cards must include size, access, license, quirks, and a date-stamp. Dead links are issues; fixed links are PRs.
+- **Translation** — the pedagogy contract (short paragraphs, story-first, terms defined on first use) is designed to survive translation. Open an issue before starting a language so efforts don't collide.
+
+**Style:** see `docs/STYLING.md` for the writing contract every layer follows.
