@@ -169,8 +169,8 @@ Fork this repo (or copy this file) and check boxes off as you go. This file is y
 **Reference:**
 
 - [ ] Read `interview-prep/01-the-framework.md` and rehearse the framework cold
-- [ ] Read `interview-prep/09-seniority-ladder.md` — know what level you interview at
-- [ ] Read `interview-prep/10-common-mistakes.md`
+- [ ] Read `interview-prep/11-seniority-ladder.md` — know what level you interview at
+- [ ] Read `interview-prep/12-common-mistakes.md`
 - [ ] Flashcards: foundations & numbers / ML / GenAI / agents
 - [ ] Choose and follow a study plan (30 / 60 / 90 days)
 
