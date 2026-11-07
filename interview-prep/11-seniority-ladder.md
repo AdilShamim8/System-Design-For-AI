@@ -1,6 +1,6 @@
 # The Seniority Ladder — Same Question, Four Depths
 
-"What level do you interview at?" is decided by *how* you answer, not what you've memorized. Below: the question "design a support bot for our docs" answered at four levels. Find yourself; know what the next rung sounds like; calibrateMocks accordingly.
+"What level do you interview at?" is decided by *how* you answer, not what you've memorized. Below: the question "design a support bot for our docs" answered at four levels. Find yourself; know what the next rung sounds like; calibrate mocks accordingly.
 
 ## Junior — the map (accurate, guided)
 
