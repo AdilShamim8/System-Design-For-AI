@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Prerequisites** | Chapter A.5 (the 3AM fraud alarm) · Lab a1 |
-| **Dataset** | ULB Credit Card Fraud — 284,807 real transactions, 492 frauds ([card](../../datasets/fraud-anomaly.md)) |
+| **Dataset** | ULB Credit Card Fraud — 284,807 real transactions, 492 frauds ([card](../../../datasets/fraud-anomaly.md)) |
 | **You will build** | A fraud scorer with a threshold chosen by *money*, not by F1; plus the monitoring story that keeps it honest |
 | **Est. time** | 2–3 hours |
 | **Hardware** | Laptop CPU. No GPU. No API key. |
