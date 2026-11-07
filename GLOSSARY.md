@@ -123,3 +123,56 @@ Last updated: 2026-08-10.
 **Calibration** — When predicted probabilities match actual accuracy.
 
 **TTFT** — Time To First Token. Key metric for streaming applications.
+
+
+---
+
+## Terms added in the production-grade expansion (2026)
+
+**TTFT (time to first token)** — how long until an LLM's first streamed token arrives; the metric chat users feel as "thinking." (Lab b1)
+
+**Tokens per second (TPS)** — streaming generation speed; humans read ≈5 words/s ≈ 7 tokens/s. (Lab b1)
+
+**Semantic cache** — a cache whose key is a query's embedding (meaning, not bytes); hits serve in ~50–100ms vs. seconds for full generation. Threshold trades hit rate against wrong hits. (Lab b5)
+
+**PSI (population stability index)** — drift statistic comparing a feature's current distribution to a reference; bands <0.1 / 0.1–0.25 / >0.25 are heuristics to calibrate, not laws. (Lab a7)
+
+**KS test (Kolmogorov–Smirnov)** — two-sample distribution-distance test; the numeric-feature companion to PSI. (Lab a7)
+
+**RRF (reciprocal rank fusion)** — combining ranked lists by score Σ 1/(k+rank); wins over score-fusion because scores from different systems aren't comparable. (Lab a5)
+
+**Hit@k / MRR** — retrieval metrics: does the gold item appear in the top-k; 1/rank of the first gold hit. Free, exact, CI-runnable. (Lab b2)
+
+**Faithfulness / relevance** — RAG generation metrics: every answer claim supported by retrieved context (trust) / the answer addresses the question asked (usefulness). (Lab b4)
+
+**LLM-as-judge** — using a model to grade outputs; requires temperature 0, randomized comparison order, and calibration against hand labels. (Lab b4)
+
+**Point-in-time correctness** — every feature value must be knowable at the prediction moment; the feature-store law against leakage. (Lab a6)
+
+**Training/serving skew** — the same feature computed differently offline and online, drifting apart until serving breaks. (Chapter A.1)
+
+**Champion/challenger** — deployment pattern where a new model runs alongside the incumbent (shadow or partial traffic) and promotes only on evidence. (Chapter A.6)
+
+**Label maturity** — the delay before labels are trustworthy (chargebacks, defaults); comparing windows of different maturity is a classic dashboard lie. (Lab a3)
+
+**Calibration / ECE** — predicted probabilities matching observed frequencies; expected calibration error summarizes the reliability-diagram gap. Vital for bidders, free for rankers. (Lab a4)
+
+**Agent loop** — while budget: model decides (tool call or final answer), code executes, result returns. Budgets (steps/tokens/cost) live outside the model. (Lab c1)
+
+**Tool contract** — the full specification of an agent tool: purpose (stated negatively too), constrained params, errors-as-data, declared side effects, idempotency. (Lab c2)
+
+**Reversibility × cost grid** — tool-gating matrix: reversible-cheap (no gate) → irreversible-cheap (token confirm) → irreversible-expensive (human approval). (Lab c2)
+
+**Prompt injection (direct/indirect)** — user text or *retrieved content* overriding system instructions; the Chevy/Air Canada family of failures. Defense is the layer stack. (FN-07, Lab c5)
+
+**Trajectory grading** — evaluating an agent's path (steps, loops, tool choices), not just its outcome; catches right-answers-via-garbage-paths. (Lab c5)
+
+**Degradation ladder** — the pre-built sequence of degraded modes (shed batch → cache-only → honest queueing) that keeps a system useful under stress. (Lab x3)
+
+**Noisy neighbor** — one tenant's load degrading others' performance; fixed by per-tenant rate and concurrency caps. (Capstone cap2)
+
+**Cost per successful answer** — request cost divided by end-to-end success rate; prices quality into unit economics. (Lab x2)
+
+**Attack-to-layer table** — the security artifact mapping each known attack to the guardrail layer that catches it. (Lab c5)
+
+**Eval gate** — the CI check blocking any prompt/model/tool change that regresses the versioned eval set. (Lab b4, c5)
