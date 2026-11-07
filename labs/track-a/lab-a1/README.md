@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Prerequisites** | Chapters 0.0, A.0, A.6 · [setup](../../setup/) done |
-| **Dataset** | UCI Adult Income — 48,842 rows, 1994 US Census ([card](../../datasets/tabular-classification.md)) |
+| **Dataset** | UCI Adult Income — 48,842 rows, 1994 US Census ([card](../../../datasets/tabular-classification.md)) |
 | **You will build** | A trained model, serialized, served behind an HTTP API, load-timed, and broken on purpose |
 | **Est. time** | 2–3 hours |
 | **Hardware** | Laptop CPU. No GPU. No API key. |
