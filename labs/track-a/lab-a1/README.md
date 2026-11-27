@@ -198,3 +198,15 @@ Out loud, no notes:
 ## What you can now claim in an interview
 
 "I trained, serialized, and served a model behind a validated HTTP API, measured p50/p99 under sequential and concurrent load, and can explain where the latency goes and what breaks first." That sentence is worth more than a certificate.
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-ML-6** — a scenario question whose worked answer quotes this lab
+- **cheatsheet #1** — the reference card that carries this lab's numbers
+- **The numbers to quote:** point-in-time joins; pipeline-vs-model blame
+
+**The pitch, one line:** the feature-store question's origin story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
