@@ -35,3 +35,7 @@ Every layer of this course follows one contract. Read before contributing; it ex
 - **interview-prep/** — answers carry the reasoning *pattern*, never just the conclusion; every question grounds to chapters/labs.
 
 *Adapted in spirit from the field guide's STYLING.md pattern: a short, enforceable contract beats a long style guide nobody reads.*
+
+## The interview-layer additions (styling rules for the round-2 expansion)
+
+The interview layer's newer files (round-2 banks, coding problems, STAR bank, process guides, drills round 2) follow three added conventions: (1) **numbers carry provenance** — every figure is either from this course's labs (name the lab) or is flagged as a rule of thumb with its origin; (2) **question IDs are stable** — Q-ML-10..14, Q-GEN-10..14, Q-AG-10..14, Q-CC-10..14, Q-BR-9..13, BQ-7..16 — cross-references elsewhere use these IDs, never renumber; (3) **the survives/collapses pattern** — behavioral and defense guidance always shows both the answer that works and the answer that fails, because the contrast is what makes the guidance usable under pressure.
