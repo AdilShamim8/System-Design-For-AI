@@ -26,3 +26,13 @@ A government chatbot whose job is *regulatory accuracy* is a **liability-shaped 
 - The Markup, Colin Lecher, "NYC's New Chatbot Gets Caught Advising Businesses to Break the Law" (March 2024) — https://themarkup.org/
 - Follow-up coverage: The Verge, City & State NY (spring 2024).
 - Context: Chapters X.2, B.2; Labs b2, b4, c5.
+
+---
+
+## The interview angle
+
+- **Use it in:** the government/public-sector AI question; procurement rounds
+- **The lesson, one line:** the chatbot gave wrong business-compliance advice with official confidence — authority-styling plus generation equals misinformation at civic scale
+- **The interview line:**
+
+> 'when the interface has institutional authority, refusal and citation carry more weight than fluency'
