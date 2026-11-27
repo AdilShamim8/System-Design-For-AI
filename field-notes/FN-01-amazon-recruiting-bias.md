@@ -25,3 +25,13 @@ The root cause is a **feedback loop over historical data**: the target variable 
 
 - Reuters, Jeffrey Dastin, "Amazon scraps secret AI recruiting tool that showed bias against women" (Oct 2018) — https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G/
 - Context: Chapter X.2 (evaluation); Chapter 0.1 (why AI breaks differently).
+
+---
+
+## The interview angle
+
+- **Use it in:** the bias question you WILL get ('how do you prevent biased outcomes?')
+- **The lesson, one line:** labels encode history; the model was right about the past and wrong for the future — audit the label definition, not just the model
+- **The interview line:**
+
+> 'I'd audit the training data's provenance before I'd trust any fairness metric on the model'
