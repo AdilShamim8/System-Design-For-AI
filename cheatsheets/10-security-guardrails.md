@@ -30,3 +30,7 @@ Lab numbers: unguarded agents comply with 30–60% of injections; the stack → 
 
 ## The governance artifacts that prove seriousness
 Attack-to-layer table (c5) · reversibility × cost grid per tool (c2) · eval gate with attack cases in CI · kill switch tested pre-launch (FN-03) · incident runbook for "model said something wrong" (FN-04/08: rollback + transcript + legal review)
+
+---
+
+**Where this card shows up in the interview layer:** Q-AG-13/14 · Mock 11/12 · FN-04/07
