@@ -32,3 +32,9 @@ No matter where you start, these are non-negotiable — they cover the most-aske
 ## Which track do the jobs want?
 
 The [AI Engineering Field Guide](https://github.com/alexeygrigorev/ai-engineering-field-guide) analyzed thousands of 2026 AI-engineer job postings and found (their numbers, their dataset): RAG appears in ~40% of AI-first postings, agents in ~55%, while fine-tuning is a focus of under 5%. The practical reading: **RAG + agents + evaluation + cost are the employable core**; classical ML depth is what makes you senior rather than junior. Our Track B, Track C, and the cross-cutting chapters are weighted accordingly.
+
+---
+
+## Interview readiness
+
+Every path file now ends with an **Interview readiness** checklist — the exit criteria for entering the market from that starting point: the framework automatic, six lab numbers spoken precisely, two mocks at strong-hire, five STAR stories at 90 seconds, three coding problems rehearsed, and the process layer loaded (tiers, salary, sprint).
