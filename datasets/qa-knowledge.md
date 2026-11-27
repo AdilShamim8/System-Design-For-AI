@@ -79,3 +79,9 @@ These power the RAG labs (b2, b4). The shape to internalize: (question, context 
 **Used in:** Reading for B.8; capstone cap1 extension.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: the RAG family (Mock 1, b3, coding-5): SQuAD's verified answers are what make hit@k exact-gradable — say why your eval is free and in CI. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
