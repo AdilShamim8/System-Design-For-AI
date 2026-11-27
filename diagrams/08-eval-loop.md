@@ -30,3 +30,7 @@ A prompt change is proposed → CI runs the eval set (hit@k, faithfulness, refus
 ## Tool families for each role
 
 CI: any · Evals: RAGAS-class, promptfoo, Langfuse datasets · Experiments: in-house stats or vendor platforms · Monitors: Lab x1's horizons.
+
+---
+
+**Interview use:** Q-GEN-14, Q-CC-12 (eval as a product): golden set → CI gate → production sampling → back into the set — the loop that makes evals compound
