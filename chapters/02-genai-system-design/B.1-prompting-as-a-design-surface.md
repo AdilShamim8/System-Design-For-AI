@@ -149,3 +149,10 @@ Consider: code review is subjective. "This variable name is unclear" is opinion,
 - **OpenAI (2024), "GPT Best Practices."** https://platform.openai.com/docs/guides/prompt-engineering
 - **White, J., et al. (2023), "A Prompt Pattern Catalog for Enhancing Prompt Engineering with ChatGPT," arXiv:2302.11382.** https://arxiv.org/abs/2302.11382
 - **Wei, J., et al. (2022), "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models," NeurIPS 2022.** arXiv:2201.11903 — https://arxiv.org/abs/2201.11903
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-GEN-14 (the eval-gated prompt change); b2's refusal numbers
+- **The number to carry:** prompts are code: versioned, tested, rolled back
