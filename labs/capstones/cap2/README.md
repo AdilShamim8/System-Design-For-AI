@@ -44,3 +44,15 @@ cap1 shipped *a* support bot. cap2 ships the *machine that makes support bots* �
 ## What this capstone earns you
 
 The strongest seniority signal in this course. Multi-tenancy is where "the model is 5% of the system" becomes literal — the model barely changes, and everything hard (isolation, fairness, quotas, cost attribution) is systems engineering. This is Mock 2 territory: design interviews for platform roles probe exactly this capstone's decisions.
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Mock 12** — a mock interview where this lab's system is the design
+- **Q-CC-11** — a scenario question whose worked answer quotes this lab
+- **The numbers to quote:** multi-tenant economics and isolation
+
+**The pitch, one line:** the platform capstone story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
