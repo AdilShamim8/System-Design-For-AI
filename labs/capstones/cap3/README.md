@@ -48,3 +48,14 @@ The hardest capstone and the most current one. A coding agent is where every Tra
 ## What this capstone earns you
 
 The most current conversation piece in AI engineering interviews. You'll discuss *from experience*: why agents that read failing tests beat agents that guess, why sandboxes are non-negotiable, why trajectory grading catches what outcome grading misses — and you'll have the traces to prove it.
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Mock 5** — a mock interview where this lab's system is the design
+- **The numbers to quote:** a coding agent with verification and restraint
+
+**The pitch, one line:** the agent capstone story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
