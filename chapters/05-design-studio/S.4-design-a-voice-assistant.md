@@ -60,3 +60,10 @@ With these: simple commands ~350ms, complex queries ~650ms. Both under budget.
 - **OpenAI Realtime API.** Streaming voice interactions. https://platform.openai.com/docs/guides/realtime
 - **Google Dialogflow.** Voice assistant platform. https://cloud.google.com/dialogflow
 - **Amazon Alexa Skills Kit.** Voice assistant design patterns. https://developer.amazon.com/alexa
+
+---
+
+## Interview lens
+
+- **Arms you for:** Mock 9 (the clinical voice assistant)
+- **The number to carry:** latency is the user experience in voice; design the ears and the mouth separately
