@@ -20,7 +20,7 @@ Recall@50 meaningfully above popularity-only (typical: 0.15–0.30 for popularit
 
 ## Dataset
 
-Dataset: [MovieLens via the recommendation card](../../datasets/recommendation.md). Same data as Lab a2 — if you did that lab, you have a head start; do not paste the lab solution verbatim, this variant is smaller-scoped.
+Dataset: [MovieLens via the recommendation card](../../../datasets/recommendation.md). Same data as Lab a2 — if you did that lab, you have a head start; do not paste the lab solution verbatim, this variant is smaller-scoped.
 
 ## After your attempt
 
