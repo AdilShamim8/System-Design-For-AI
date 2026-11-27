@@ -86,3 +86,15 @@ Wire it into "CI": a script that runs the 30-episode eval set and fails if outco
 ## What you can now claim in an interview
 
 "I evaluate agents on outcomes AND trajectories — because right answers via looping paths are scheduled regressions — with programmatic checks, calibrated LLM judges, and an attack-driven guardrail stack: input filters, tool contracts, output validation, budget guards, human escalation. My eval gate blocks any prompt/tool/model change that regresses it, and I bring the attack-to-layer table to every 'agent safety' conversation."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-AG-11** — a scenario question whose worked answer quotes this lab
+- **Q-CC-12** — a scenario question whose worked answer quotes this lab
+- **The numbers to quote:** traces as the product; the audit log schema
+
+**The pitch, one line:** the observability story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
