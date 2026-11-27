@@ -146,3 +146,16 @@ Pick your two best chunking configs and answer 5 questions end-to-end (b2's `ans
 ## What you can now claim in an interview
 
 "I've measured chunking strategies on real 100-page SEC filings with a labeled question set: section-aware chunking beat fixed-size by [your number] hit points, and the size sweep's quality/cost knee on my corpus was [your number] characters. I run this exact harness before believing any chunking blog post — including my own."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-GEN-10** — a scenario question whose worked answer quotes this lab
+- **coding-5** — a coding problem that compresses this lab into a screen
+- **Mock 7** — a mock interview where this lab's system is the design
+- **The numbers to quote:** hit@3 0.50–0.65 fixed → 0.65–0.80 structure-aware; MiniLM
+
+**The pitch, one line:** the chunking-is-quality's-cheapest-lever story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
