@@ -63,3 +63,10 @@ The agent can write code and run tests, but it cannot deploy, cannot access prod
 - **Devin / Cognition Labs.** An early autonomous coding agent. https://devin.ai/
 - **GitHub Copilot Workspace.** https://githubnext.com/projects/copilot-workspace/
 - **SWE-bench.** Benchmark for coding agents. https://arxiv.org/abs/2310.06770
+
+---
+
+## Interview lens
+
+- **Arms you for:** Mock 5; Q-AG-13's sandbox tiers
+- **The number to carry:** verification is the product; generation is the easy part
