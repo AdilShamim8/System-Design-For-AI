@@ -184,3 +184,9 @@ Last updated: 2026-08-10.
 **golden set** — the frozen, versioned eval sample (100–300 stratified real queries) that gates changes; retrieval graded exactly, generation judged — the asset that appreciates
 
 **drift (data vs concept)** — data drift: inputs moved (schema, population); concept drift: same inputs, new relationship to the label (the adversary adapted) — the fix differs per type
+
+**fan-out on write vs read** — the feed economics: write each post to followers' queues (fast reads, stormy writes) vs compute at read (cheap writes, slow reads) — the hybrid resolves celebrity accounts
+
+**merge_asof / point-in-time join** — the SQL/pandas pattern where each event joins the most recent strictly-prior snapshot — allow_exact_matches=False is the leak-proof flag
+
+**GSP / second-price auction** — the ad auction family where the winner pays the second price (or its quality-weighted equivalent) — truthful bidding stays rational, which keeps advertisers
