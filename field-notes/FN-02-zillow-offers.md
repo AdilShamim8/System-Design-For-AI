@@ -25,3 +25,13 @@ This is not a "bad model" story — Zestimates are among the most-studied home-p
 
 - Widely covered Nov 2021: e.g., CNBC and The Wall Street Journal reporting on the shutdown call and write-down; Zillow's Q3 2021 shareholder letter.
 - Context: Chapters A.4–A.5, A.7, X.4; Labs a3 (cost of errors), a6 (quantile forecasts), a7 (drift).
+
+---
+
+## The interview angle
+
+- **Use it in:** any feedback-loop question: recsys, marketplace, pricing
+- **The lesson, one line:** the model trained on its own outputs (Zillow's offers shaped the market it predicted) — the footprint problem
+- **The interview line:**
+
+> 'every model that acts on its own predictions needs an exploration budget and a ground-truth escape hatch'
