@@ -6,6 +6,7 @@ Everything before this folder made you capable. This folder makes you *demonstra
 
 | File | What it is | When to use |
 |---|---|---|
+| [00-interview-selection-map.md](./00-interview-selection-map.md) | The master index: every artifact routed by timeline, round type, level, and gap | Start here; it routes everything else |
 | [01-the-framework.md](./01-the-framework.md) | The 6-step answer framework with time budgets | Learn first; it's the spine of every interview |
 | Question banks: [ML](./02-ml-questions.md) · [GenAI](./03-genai-questions.md) · [Agents](./04-agentic-questions.md) · [Cross-cutting](./05-cross-cutting-questions.md) · [Classical bridge](./06-classical-bridge-questions.md) | 42 scenario questions with worked answers, by track | Write YOUR answer before reading the worked one |
 | Round-2 banks: [ML](./02-ml-questions-round2.md) · [GenAI](./03-genai-questions-round2.md) · [Agents](./04-agentic-questions-round2.md) · [Cross-cutting](./05-cross-cutting-questions-round2.md) · [Bridge](./06-classical-bridge-questions-round2.md) | 25 more, senior-level: sequencing, operations, and the business boundary | After round 1; the level-up material |
