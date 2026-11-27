@@ -15,3 +15,9 @@
 ## What's new in the interview layer (the round-2 expansion)
 
 The plans above were written when the layer had 42 questions, 8 mocks, and 4 decks. Since then: **25 round-2 questions** (senior-level), **8 coding problems** (`../coding/`), **4 more mocks** (9–12: voice, fine-tune economics, safety, platform), **3 more decks** (metrics, process, coding), **STAR story bank + deep-dive defense** (09a/09b), **12 more estimation drills** (07b), and the **process guides** (13–18: tiers, negotiation, rejection, 72-hour protocol, 7-day sprint, salary research). If your timeline is short, the [7-day sprint](../17-the-7-day-sprint.md) sequences the highest-leverage new material by YOUR gap.
+
+---
+
+## Round-5 additions (drill these too)
+
+The layer has grown again: **16 mocks** (13–16: code-review bot, live translation, ads auction, shopping assistant), **12 coding problems** (9–12: attribution joins, injection fuzzing, RRF fusion, cost simulation), the **rapid-fire bank** (40 kernels — a partner drill), the **manager screens**, the **one-pager library** (ten classics, cold), and the **whiteboard templates**. If you're mid-plan, don't restart — swap the new material into the plan's matching weeks (mocks for mocks, problems for problems).
