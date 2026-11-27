@@ -35,3 +35,7 @@ flowchart TB
 ## Tool families for each role
 
 Indexes: pgvector → Qdrant/Weaviate → Vespa by scale · Cache: Redis + embeddings · Reranker: cross-encoder · Eval: RAGAS-class, Langfuse/LangSmith (Lab b4's machinery). Full design: Mock 1 + capstone cap1.
+
+---
+
+**Interview use:** the RAG family (Q-GEN-1/10, Mock 1/9): the diagram IS the first 5 minutes of the whiteboard — ingest and query paths, labeled with latencies
