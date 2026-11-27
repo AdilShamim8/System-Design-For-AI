@@ -20,7 +20,7 @@ A time-based split (train on months 1–10, validate on 11, test on 12) — the 
 
 ## Dataset
 
-The dataset: any churn dataset works — the [`tabular-classification`](../../datasets/tabular-classification.md) card lists two; Telco Customer Churn (7K rows) is the right size. Label: `churned_within_30d`.
+The dataset: any churn dataset works — the [`tabular-classification`](../../../datasets/tabular-classification.md) card lists two; Telco Customer Churn (7K rows) is the right size. Label: `churned_within_30d`.
 
 ## After your attempt
 
