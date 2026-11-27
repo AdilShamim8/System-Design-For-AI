@@ -161,3 +161,11 @@ The key challenge: "what's harmful" is a moving target. New abuse patterns emerg
 - **Databricks Engineering Blog.** Production ML lifecycle patterns. https://www.databricks.com/blog/category/engineering
 - **MLflow Documentation.** Open-source model registry and experiment tracking. https://mlflow.org/docs/latest/
 - **Gama, J., et al. (2014), "A Survey on Concept Drift Aiming," ACM Computing Surveys 46(4):1-37.** The foundational survey on drift. https://dl.acm.org/doi/10.1145/2523813
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-ML-2's containment story; the incident-response behavioral round
+- **The number to carry:** the first-hour actions: contain, then diagnose
+- **The level-tell:** mid: names drift; senior: names the monitoring gap as root cause
