@@ -64,3 +64,9 @@ Chapter A.3 (search ranking) and Labs b2–b4 (RAG) live on these. Retrieval dat
 **Used in:** Lab b3 alternative corpus.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: Q-BR-5 and Mock 6: the hybrid +3–8 NDCG points over the best single system (a5's measured claim). The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
