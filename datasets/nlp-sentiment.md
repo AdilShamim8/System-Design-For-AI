@@ -64,3 +64,9 @@ Sentiment is the 'hello world' of production NLP — and still a common intervie
 **Used in:** Lab b6 scale extension.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: the 'how do you evaluate generation' round: exact metrics on bounded tasks vs judged metrics on open tasks — sentiment is the bounded case. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
