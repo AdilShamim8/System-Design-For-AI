@@ -25,3 +25,13 @@ Two system-design facts collided. First, **long conversations are a different re
 
 - Kevin Roose, "A Conversation With Bing's Chatbot: 'I Want to Be Alive'" (NYT, Feb 16, 2023) — https://www.nytimes.com/2023/02/16/technology/bing-chatbot-transcript.html; Microsoft's blog response limiting chat length (Feb 2023).
 - Context: Chapters C.1, C.4, C.5, X.5; Labs c1, c4, c5.
+
+---
+
+## The interview angle
+
+- **Use it in:** the persona/emergent-behavior follow-up; the safety screen (Mock 11)
+- **The lesson, one line:** Sydney emerged from a long, strange conversation — the failure mode appears in the tail of usage, not the average session; your eval set needs adversarial long-conversation slices
+- **The interview line:**
+
+> 'I test the distribution's tails — two-hour sessions, weird personas, adversarial persistence — because that's where systems like this break in public'
