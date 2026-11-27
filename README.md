@@ -94,7 +94,7 @@ Full catalog with sizes, licenses, and known gotchas: [`datasets/`](./datasets/)
 
 ## Get interview-ready
 
-Everything you built becomes interview material in [`interview-prep/`](./interview-prep/):
+Everything you built becomes interview material in [`interview-prep/`](./interview-prep/) — start from the [selection map](./interview-prep/00-interview-selection-map.md), which routes every artifact by your timeline, round type, level, and gap:
 
 - **The framework** — a 6-step answer structure with minute-by-minute timing ([`01-the-framework.md`](./interview-prep/01-the-framework.md))
 - **67 scenario questions** with worked answers across two rounds: [ML](./interview-prep/02-ml-questions.md), [GenAI](./interview-prep/03-genai-questions.md), [agents](./interview-prep/04-agentic-questions.md), [cross-cutting](./interview-prep/05-cross-cutting-questions.md), and [classical-to-AI bridge](./interview-prep/06-classical-bridge-questions.md) — plus senior-level [round 2](./interview-prep/02-ml-questions-round2.md) banks
