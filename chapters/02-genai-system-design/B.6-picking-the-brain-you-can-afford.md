@@ -83,3 +83,10 @@ Tenants have different quality expectations and budgets. How do you route per te
 - **OpenAI Pricing.** https://openai.com/api/pricing/
 - **Google AI Pricing.** https://ai.google.dev/pricing
 - **Artificial Analysis.** Independent model benchmarks. https://artificialanalysis.ai/
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-GEN-13 (the context bill); Mock 10 (fine-tune vs RAG economics)
+- **The number to carry:** routing + caching = 10x headroom before fine-tuning anything
