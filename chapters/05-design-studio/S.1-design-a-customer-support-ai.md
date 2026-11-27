@@ -92,3 +92,10 @@ Before shipping:
 - **See chapters B.2, B.6, B.8, C.5, X.1, X.4 for the component patterns.**
 - **Air Canada Chatbot Case (2024), *Moffatt v. Air Canada*, 2024 BCCRT 149.** https://decisions.civlresolutiontb.ca/crt/crtd/en/item/522164/index.do
 - **Intercom Fin AI Documentation.** A production customer support AI. https://www.intercom.com/ai
+
+---
+
+## Interview lens
+
+- **Arms you for:** Mock 1 end-to-end; the takehome defense
+- **The number to carry:** the full loop: clarify → architecture → evals → cost → failure modes
