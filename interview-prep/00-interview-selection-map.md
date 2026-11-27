@@ -9,13 +9,18 @@
 | Scenario questions | 67 (42 round-1 + 25 round-2) | [`02`](./02-ml-questions.md)–[`06`](./06-classical-bridge-questions.md) + `*‑round2` |
 | Behavioral screens | 16 (6 + 10 AI-specific) | [`09`](./09-behavioral-questions.md), [`09c`](./09c-behavioral-round2.md) |
 | STAR stories + drills | 6 stories, 5 attack patterns | [`09a`](./09a-star-story-bank.md), [`09b`](./09b-deep-dive-defense.md) |
-| Mock interviews | 12 | [`mock-interviews/`](./mock-interviews/) |
-| Coding problems | 8 (problem + solution each) | [`coding/`](./coding/) |
+| Mock interviews | 16 | [`mock-interviews/`](./mock-interviews/) |
+| Coding problems | 12 (problem + solution each) | [`coding/`](./coding/) |
 | Estimation drills | 24 (12 + 12 AI-native) | [`07`](./07-estimation-drills.md), [`07b`](./07b-estimation-drills-round2.md) |
 | Take-home coverage | guide + 3 worked examples | [`10`](./10-takehome-guide.md), [`10b`](./10b-takehome-examples.md) |
-| Flashcards | 171 cards, 7 decks | [`flashcards/`](./flashcards/) |
-| Cheatsheets | 12 (incl. the day-of card) | [`../cheatsheets/`](../cheatsheets/) |
+| Flashcards | 232 cards, 10 decks | [`flashcards/`](./flashcards/) |
+| Cheatsheets | 14 (incl. the day-of, manager, and rapid-fire cards) | [`../cheatsheets/`](../cheatsheets/) |
 | Process guides | 6 (tiers, offer, rejection, 72h, sprint, salary) | [`13`](./13-company-tiers.md)–[`18`](./18-salary-research.md) |
+| Rapid-fire | 40 kernels + the rapid-fire card | [`08b`](./08b-rapid-fire.md), cheatsheet #14 |
+| Manager screens | 10 (M-1–10) + the manager card | [`09d`](./09d-manager-screens.md), cheatsheet #13 |
+| One-pagers | 10 classic systems | [`one-pagers/`](./one-pagers/) |
+| Whiteboard templates | 6 diagrams | [`whiteboard-templates.md`](./whiteboard-templates.md) |
+| Templates | pipeline tracker, day-of checklist, first 90 days, continuous practice | [`19`](./19-application-pipeline-tracker.md)–[`22`](./22-continuous-practice.md) |
 | Study plans | 30/60/90-day + 7-day sprint | [`study-plans/`](./study-plans/), [`17`](./17-the-7-day-sprint.md) |
 | Grading | interviewer's guide + calibration | [`interviewer-guide.md`](./interviewer-guide.md), [`interview-calibration.md`](./interview-calibration.md) |
 
