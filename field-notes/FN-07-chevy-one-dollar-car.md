@@ -25,3 +25,13 @@ The bot's rules lived in its **prompt**, and the prompt is part of the input —
 
 - Widely covered Dec 2023 (Business Insider, CNN, The Verge), with the original screenshots by Chris Bakke on X/Twitter.
 - Context: Chapters C.2, C.5; Labs c2, c5.
+
+---
+
+## The interview angle
+
+- **Use it in:** the agent-capability audit (Q-AG-14); the prompt-injection family
+- **The lesson, one line:** the bot's rules lived in the prompt — the part any user can rewrite; policy commitments flowed through free text
+- **The interview line:**
+
+> 'the prompt is advice; code is law — anything with a price tag gets computed, not generated'
