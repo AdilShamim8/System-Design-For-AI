@@ -74,3 +74,10 @@ What goes in short-term memory (current task, files being edited)? What goes in 
 - **Park, J. S., et al. (2023), "Generative Agents: Interactive Simulacra of Human Behavior," UIST 2023.** arXiv:2304.03442 — https://arxiv.org/abs/2304.03442
 - **MemGPT (2024), "Towards LLMs as Operating Systems."** Memory hierarchy for LLM agents. https://memgpt.ai/
 - **LangChain Memory Documentation.** https://python.langchain.com/docs/modules/memory/
+
+---
+
+## Interview lens
+
+- **Arms you for:** the memory-governance follow-up in Mock 11; Q-AG-13
+- **The number to carry:** memory is a liability surface with a retention policy, not a feature flag
