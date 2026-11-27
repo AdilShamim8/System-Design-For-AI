@@ -33,3 +33,9 @@ Everything senior does, reframed as decisions *other people* will execute: the p
 ## A calibration truth
 
 Levels aren't knowledge, they're *defaults*. Mid defaults to the diagram; senior defaults to the money; staff defaults to the org. Your labs gave you mid-level content — the ladder files tell you which default to rehearse.
+
+---
+
+## Practicing the rungs with the round-2 expansion
+
+The newer artifacts map directly onto the rungs: the round-2 banks (02r–06r) are written at the senior line — their answers assume the mid-level machine works and test the money/org layer on top. The mocks split cleanly: 1–8 interview you at mid (get the machine right), 9–12 at senior (voice's verification layers, fine-tune economics, the safety refusal list, the platform's don't-build list). If you can pass mock 11's curveball 3 (the dependency-signal escalation) with structure and without melodrama, you're rehearsing staff-level judgment in a senior-level exercise. Grade yourself with [interview-calibration.md](./interview-calibration.md) — the one-gap diagnosis tells you which rung's material is next.
