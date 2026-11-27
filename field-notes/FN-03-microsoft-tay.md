@@ -25,3 +25,13 @@ Tay's learning mechanism had **no adversarial model of its users**. The system a
 
 - Widely covered March 2016 (The Guardian, The Verge, and others); Microsoft's official apology statement.
 - Context: Chapters C.5, X.5; Labs c2, c5.
+
+---
+
+## The interview angle
+
+- **Use it in:** the safety screen (Mock 11); 'who's responsible when the AI misbehaves?'
+- **The lesson, one line:**  Tay learned from users in 16 hours; adversarial users are a design input, not an edge case
+- **The interview line:**
+
+> 'abuse is a load case — I design for the 4chan user, not the average user'
