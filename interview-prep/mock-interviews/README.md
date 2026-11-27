@@ -1,4 +1,4 @@
-# Mock Interviews — Twelve Full Walkthroughs
+# Mock Interviews — Sixteen Full Walkthroughs
 
 **The rules:** timer ON, paper or blank doc, attempt COLD before reading the walkthrough, then grade yourself against the rubric, then re-attempt the same mock after 3 days. Two mocks per day maximum — the third is noise.
 
@@ -16,6 +16,10 @@
 | [10](./mock-10-fine-tune-vs-rag-decision.md) | Fine-tune vs RAG | Economics | decompose the either/or, price both paths | b1, b6, x2, Q-CC-10 |
 | [11](./mock-11-safety-and-alignment-screen.md) | Teen companion app | Safety | the refusal list; layered, measured safety | c3, c5, FN-03/12 |
 | [12](./mock-12-agent-platform-infra.md) | Internal agent platform | Platform/Staff | v1 scope discipline, the don't-build list | c1–c5, x2, mock 4 |
+| [13](./mock-13-design-a-code-review-bot.md) | AI code-review bot | Platform/Trust | precision as the product; deterministic tools first | b7, c2, c5, Q-GEN-12 |
+| [14](./mock-14-design-live-translation.md) | Live speech translation | Multimodal/Streaming | partials, per-stage budgets, the p95 promise | b8, x3, drill 23 |
+| [15](./mock-15-design-ads-ranking.md) | Ads ranking + auction | ML/Economics | calibration as the money bug; incentive alignment | a2, a4, a8, x2 |
+| [16](./mock-16-design-an-ecommerce-assistant.md) | Shopping assistant | Agents/Commerce | the guarded money path; capability scoping | b2–b5, c2, c3 |
 
 **Recommended order:** your own domain second (confidence), your weakest domain third (growth), Mock 4 or 1 somewhere in the middle (most transferable). Mock 1 and 4 are the commonest real-world prompts.
 
