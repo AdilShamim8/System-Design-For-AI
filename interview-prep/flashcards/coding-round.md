@@ -1,6 +1,6 @@
 # Flashcards — The Coding Round
 
-22 cards. The ML coding screen's reflexes: what to reach for first, what to say while typing, and the traps that fail good candidates.
+21 cards. The ML coding screen's reflexes: what to reach for first, what to say while typing, and the traps that fail good candidates.
 ---
 
 **The first 60 seconds of any ML coding problem.**
