@@ -24,3 +24,7 @@
 
 ## Style rules
 State assumptions out loud, round to powers of 10, keep units visible, end with "so we'd need roughly N of X" — a number, not a paragraph.
+
+---
+
+**Where this card shows up in the interview layer:** drills 13–24 · Mock 4/7's opening math
