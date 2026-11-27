@@ -37,3 +37,9 @@ Every item here is a real, repeated pattern (the course's videos, the field guid
 ## The meta-mistake
 
 Reading this list and changing nothing. Pick your three — the ones that made you wince — and drill their antidotes in one mock each. That's what mocks are for.
+
+---
+
+## Coding-round mistakes (added with the coding module)
+
+The eight [coding problems](./coding/README.md) exist because these mistakes end screens: **the silent random split** (temporal data, shuffled — already failed, question not yet asked); **model-first time allocation** (30 of 40 minutes on hyperparameters, none on the leak audit); **no narration** (correct code, zero spoken tradeoffs — indistinguishable from memorized code); **the improvised threshold** ("I'll use 0.5" — the screen's actual question was the cost matrix); **production-blindness** (complexity stated, no note on what breaks at 100x or who computes this feature in production). Each coding SOLUTION ends with a self-check that names these — the checklist IS the grading rubric.
