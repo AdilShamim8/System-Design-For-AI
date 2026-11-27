@@ -29,3 +29,7 @@ Weights shrink: fp16 → 8-bit (GPTQ/AWQ-class) → 4-bit (GGUF Q4/AWQ) with mod
 Model artifacts and versioning (a1's `model.joblib` lesson, scaled up), health/readiness (x3's warm-up probes), autoscaling on *queue depth* not CPU (GPU boxes idle hot), rollout (A.6's shadow/canary — models are stateful-ish), and monitoring *token throughput and KV-cache hit rate* alongside latency. This is a platform team's job description; a lone engineer can run one box well (Lab b1's Ollama path) but should not pretend a cluster is free.
 
 **Read next:** [gpu-compute.md](./gpu-compute.md) for the hardware math that decides if this is worth it.
+
+---
+
+**Interview relevance:** Mock 4/12, Q-ML-13 (edge): the serving tier list with latency numbers per hop
