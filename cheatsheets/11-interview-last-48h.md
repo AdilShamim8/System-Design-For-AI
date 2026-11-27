@@ -34,3 +34,7 @@ Don't name a tool before the shape · don't draw without requirements · don't c
 
 ## After
 Write down every question you fumbled, same day. Each one becomes a flashcard (that's how the flashcard files were born — keep the habit alive).
+
+---
+
+**Where this card shows up in the interview layer:** the final 48 hours — everything, once, fast
