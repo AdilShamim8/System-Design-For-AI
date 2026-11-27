@@ -79,3 +79,9 @@ For learning the ML-system fundamentals — training/serving splits, feature sto
 **Used in:** Alternative base for Lab a1.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: coding-1's churn screen: Telco churn is the right size (7K rows) for the time-split + leak-audit exercise. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
