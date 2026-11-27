@@ -121,3 +121,16 @@ Your in-memory cache dies with the process and lives on one machine. Sketch the 
 ## What you can now claim in an interview
 
 "I built a semantic cache and tuned its threshold against both hit rate and wrong-hit rate — because a miss costs money but a wrong hit costs trust. I can compute the break-even, name the two failure modes teams forget (invalidation on corpus change, stampede on cold cache), and I know the cache is also the fastest serving tier, which is why it sits first in the gateway."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-BR-6** — a scenario question whose worked answer quotes this lab
+- **coding-4** — a coding problem that compresses this lab into a screen
+- **Q-CC-13** — a scenario question whose worked answer quotes this lab
+- **The numbers to quote:** 30–50% hit rate on support traffic; 0.85–0.92 trust band
+
+**The pitch, one line:** the semantic cache policy story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
