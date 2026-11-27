@@ -152,3 +152,15 @@ On paper, for a search box on a 34-million-passage corpus (1000× ANTIQUE):
 ## What you can now claim in an interview
 
 "I built lexical, semantic, and RRF-hybrid retrieval on a real graded dataset, measured NDCG@10 and latency for each, and can design the candidate→fuse→rerank funnel with a latency budget — because I've run every stage myself."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-BR-5** — a scenario question whose worked answer quotes this lab
+- **Mock 6** — a mock interview where this lab's system is the design
+- **The numbers to quote:** hybrid +3–8 NDCG points over best single system
+
+**The pitch, one line:** the 2026 search answer: hybrid + fusion — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
