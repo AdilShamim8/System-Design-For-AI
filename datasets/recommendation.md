@@ -94,3 +94,9 @@ The canonical lab here is **MovieLens 100K** — small enough to train in second
 **Used in:** Reading for A.2; interview-prep Mock 2 background.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: the recommender family (Q-ML-1/7, Mock 2, coding-2): 'top-decile ≈ 50% of ratings' and the three-stage redesign are quotable from your a2 runs. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
