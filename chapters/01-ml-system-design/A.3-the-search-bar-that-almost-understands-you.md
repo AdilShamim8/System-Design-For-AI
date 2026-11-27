@@ -106,3 +106,10 @@ Consider: legal search needs high precision (the top result must be the right st
 - **Robertson, S., & Zaragoza, H. (2009), "The Probabilistic Relevance Framework: BM25 and Beyond."** https://doi.org/10.1561/1500000019
 - **Karpukhin, V., et al. (2020), "Dense Passage Retrieval," EMNLP 2020.** arXiv:2004.04906 — https://arxiv.org/abs/2004.04906
 - **Elasticsearch Documentation.** https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-BR-5 (the 2026 search answer); Mock 6
+- **The number to carry:** vocabulary mismatch and rare-entity failure are different problems — that's why hybrid wins
