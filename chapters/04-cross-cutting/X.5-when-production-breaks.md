@@ -108,3 +108,10 @@ The four incidents I studied are _____, _____, _____, and _____. The lesson from
 - **The Markup (2024), NYC MyCity bot investigation** — the legal advice incident.
 - **OWASP Top 10 for LLM Applications (2024)** — the taxonomy of LLM security risks.
 - **AI Incident Database (incidentdatabase.ai)** — a public database of AI failures.
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-AG-10 (the 3 AM fleet); the incident behavioral round
+- **The number to carry:** the degradation ladder: degrade, don't die
