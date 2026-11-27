@@ -365,3 +365,10 @@ This chapter is self-contained, but if you want to go deeper:
 - **Karpukhin, V., et al. (2020), "Dense Passage Retrieval for Open-Domain Question Answering," EMNLP.** The DPR paper, foundational for bi-encoder retrieval. The technique that made dense retrieval practical.
 - **Es, S., et al. (2023), "RAGAS: Automated Evaluation of Retrieval Augmented Generation," arXiv:2309.15217.** A practical evaluation framework for RAG systems. Use it to measure faithfulness, answer relevance, context precision, and context recall. https://github.com/shahules786/ragas
 - **Malkov, Y. A., & Yashunin, D. A. (2020), "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs," IEEE TPAMI 42(4).** The HNSW algorithm that powers most production vector databases. (arXiv preprint: arXiv:1603.09320, 2016)
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-GEN-1 (docs bot); Mock 1; Q-BR-9 (stale citations)
+- **The number to carry:** retrieval quality is the ceiling on generation quality
