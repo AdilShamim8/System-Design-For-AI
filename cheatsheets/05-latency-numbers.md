@@ -37,3 +37,7 @@
 - Budget math: "RAG p95 ≤ 2 s → retrieval 100 ms + rerank 200 ms + TTFT 700 ms + generation 800 ms + slack" — *show the allocation, defend the slack.*
 - The p99 rule: users are the tail. p50 can lie all it wants; p99 is the SLO (Lab a1/x3).
 - Cache economics: a 10 ms cache-hit path replacing a 3 s RAG path is *both* the cost fix and the availability plan (x3's ladder).
+
+---
+
+**Where this card shows up in the interview layer:** every design round · drill 18/23 · Mock 9's pipeline math
