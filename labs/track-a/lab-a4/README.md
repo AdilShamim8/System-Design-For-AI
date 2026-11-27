@@ -164,3 +164,14 @@ Expect 0.5–3 ms for a single row on a laptop — fine for 100ms, uncomfortable
 ## What you can now claim in an interview
 
 "I can diagnose miscalibration with reliability diagrams and ECE, fix it with Platt or isotonic on a held-out set, and explain why calibration is invisible to AUC but decisive for bid economics — because I've measured both."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-ML-3** — a scenario question whose worked answer quotes this lab
+- **The numbers to quote:** calibration fix preserves AUC; 10ms budget split
+
+**The pitch, one line:** the miscalibrated-bids money bug — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
