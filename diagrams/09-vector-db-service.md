@@ -35,3 +35,7 @@ Tenant query → token auth → quota check → router: small tenant to a shared
 ## Tool families for each role
 
 Data plane: Qdrant/Milvus/Vespa/pgvector by tier · Control plane: boring CRUD · Canary: known-answer sets. Full design: Mock 7 + cap2's isolation tests.
+
+---
+
+**Interview use:** Mock 7 and drill 14: shards, replicas, the K-way merge, and the memory math in the corner — recall-at-scale is the SLO that replaced 'rows served'
