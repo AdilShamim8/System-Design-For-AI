@@ -81,3 +81,10 @@ You have 10ms per bid, 1M ads in the catalog, 100M users. What features? What mo
 - **He, X., et al. (2014), "Practical Lessons from Predicting Clicks on Ads at Facebook," ADKDD 2014.** The canonical practical paper on CTR prediction. https://research.facebook.com/publications/practical-lessons-from-predicting-clicks-on-ads-at-facebook/
 - **McMahan, H. B., et al. (2013), "Ad Click Prediction: a View from the Trenches," KDD 2013.** Google's perspective. https://research.google/pubs/pub41159/
 - **Google Ads Engineering Blog.** https://ads.google.com/home/resources/
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-ML-3 (the miscalibrated bids); coding-1's calibration check
+- **The number to carry:** AUC ranks; bids multiply probabilities — calibration is the money bug
