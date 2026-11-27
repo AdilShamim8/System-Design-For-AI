@@ -31,3 +31,7 @@ flowchart TB
 ## Tool families for each role
 
 Frameworks: LangGraph-class or your own ~100 lines (Lab c1) · Sandbox: containers · Traces: OpenTelemetry/LLM observability. Full design: Mock 5 + capstone cap3.
+
+---
+
+**Interview use:** coding-7 and Q-AG-10: the loop with the three budget checks OUTSIDE the model call — draw the stop-reason taxonomy next to it
