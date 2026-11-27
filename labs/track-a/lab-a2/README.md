@@ -166,3 +166,17 @@ Evaluate three systems on the same test users: **(1)** popularity, **(2)** CF-on
 ## What you can now claim in an interview
 
 "I built a three-stage recommender — blended candidate generation, a feature-based pointwise ranker, time-split top-K evaluation with coverage — and I can explain why offline wins don't guarantee A/B wins, with numbers from my own lab."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-ML-1** — a scenario question whose worked answer quotes this lab
+- **Q-ML-7** — a scenario question whose worked answer quotes this lab
+- **Mock 2** — a mock interview where this lab's system is the design
+- **coding-2** — a coding problem that compresses this lab into a screen
+- **The numbers to quote:** top-decile ≈ 50% of ratings; offline/online rank flip
+
+**The pitch, one line:** the recommender system design, with your own numbers — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
