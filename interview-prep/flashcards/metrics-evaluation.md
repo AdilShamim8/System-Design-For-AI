@@ -1,6 +1,6 @@
 # Flashcards — Metrics & Evaluation
 
-26 cards. The numbers layer: what to measure, what it hides, and what to say when asked "how do you evaluate it?"
+25 cards. The numbers layer: what to measure, what it hides, and what to say when asked "how do you evaluate it?"
 ---
 
 **Precision@K vs hit@K — the difference in one line.**
