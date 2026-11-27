@@ -79,3 +79,14 @@ The professional system uses **all three**: verbatim for flow, summary for arc, 
 ## What you can now claim in an interview
 
 "I manage agent memory as a budget across three layers — verbatim window for flow, rolling summary for arc, structured fact table for exactness — and I've measured each strategy's recall-per-token and its failure mode, including summary hallucination. IDs and amounts never live in a summary; they live in a table and get injected."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-AG-13** — a scenario question whose worked answer quotes this lab
+- **The numbers to quote:** strict isolation costs ~30% latency — the price of the worst day
+
+**The pitch, one line:** the sandbox tier story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
