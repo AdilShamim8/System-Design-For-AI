@@ -115,3 +115,14 @@ Your 150-question set + judgments is now an artifact: `evals/rag_eval_v1.jsonl`.
 ## What you can now claim in an interview
 
 "I evaluate RAG in two tiers: exact retrieval metrics (hit, MRR — free, in CI) and LLM-judged faithfulness/relevance with tested, temperature-0 judging. I know my judge's position and length biases because I measured them, and my eval set is versioned with the pipeline so prompt changes can't ship without a regression check."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-BR-11** — a scenario question whose worked answer quotes this lab
+- **The numbers to quote:** 429s resolved with backoff+jitter in seconds
+
+**The pitch, one line:** the provider-throttling story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
