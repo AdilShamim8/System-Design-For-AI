@@ -127,3 +127,10 @@ How do you handle feature freshness for real-time features like "last 5 transact
 - **Feast Documentation.** The leading open-source feature store. https://feast.dev
 - **Tecton Engineering Blog.** Production feature store patterns at scale. https://www.tecton.ai/blog/
 - **Gojek Engineering (2020), "Feast: Feature Store for ML."** How Gojek uses Feast in production. https://gojek.engineering/
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-ML-6 (training/serving skew); coding-3's point-in-time join
+- **The number to carry:** features are code, versioned and tested like code
