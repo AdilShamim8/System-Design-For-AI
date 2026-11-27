@@ -79,3 +79,9 @@ Chapter B.7 (beyond text) and Lab b8 (multimodal embeddings). For system design,
 **Used in:** Lab b8 (primary dataset).
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: Q-ML-13 (edge deployment): distillation + int8 = 10–25MB at 90% of server accuracy — the mobile story with sizes. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
