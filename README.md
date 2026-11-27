@@ -25,7 +25,7 @@ By the end you can say: *"I built it, I broke it, I fixed it, and I can defend e
 1. **Design** an AI system end-to-end: from "what's the actual problem?" to boxes-and-arrows architecture to "what breaks at 3AM?"
 2. **Build** working prototypes of the four core AI products: recommenders, fraud/risk models, RAG chatbots, and agents.
 3. **Debug** the failures that only happen in production: data leakage, drift, hallucination, runaway costs.
-4. **Pass** AI system-design interviews: a repeatable 6-step framework, 67 practice questions, 8 coding problems, and 12 full mock interviews with grading rubrics.
+4. **Pass** AI system-design interviews: a repeatable 6-step framework, 67 practice questions, 12 coding problems, and 16 full mock interviews with grading rubrics.
 
 ## How the course works — one loop, five steps
 
@@ -36,8 +36,8 @@ Every topic follows the same five steps. This structure is the whole course:
 | 1. **Read** | [`chapters/`](./chapters/) | Read one short story-driven chapter that makes the concept click | 38 chapters |
 | 2. **Do** | [`labs/`](./labs/) | Build it yourself, on a **real public dataset** (movie ratings, taxi trips, real fraud data…) | 25 labs + 3 capstones (28 total) |
 | 3. **Break** | [`field-notes/`](./field-notes/) | Study a real, documented AI failure — Amazon's biased hiring tool, the chatbot that lost in court — and the lesson it teaches | 12 incidents |
-| 4. **Perform** | [`interview-prep/`](./interview-prep/) | Answer scenario questions, run timed mocks, drill the coding screen | 67 questions · 8 coding problems · 12 mocks |
-| 5. **Review** | [`cheatsheets/`](./cheatsheets/) + [`flashcards/`](./interview-prep/flashcards/) | One-page reference cards and 171 flashcards so it sticks | 12 cards · 7 decks |
+| 4. **Perform** | [`interview-prep/`](./interview-prep/) | Answer scenario questions, run timed mocks, drill the coding screen | 67 questions · 12 coding problems · 16 mocks |
+| 5. **Review** | [`cheatsheets/`](./cheatsheets/) + [`flashcards/`](./interview-prep/flashcards/) | One-page reference cards and 232 flashcards so it sticks | 14 cards · 10 decks |
 
 **New here?** That table is all you need to remember. Start at step 1 for Module 0, and the course will pull you through the rest.
 
@@ -98,10 +98,10 @@ Everything you built becomes interview material in [`interview-prep/`](./intervi
 
 - **The framework** — a 6-step answer structure with minute-by-minute timing ([`01-the-framework.md`](./interview-prep/01-the-framework.md))
 - **67 scenario questions** with worked answers across two rounds: [ML](./interview-prep/02-ml-questions.md), [GenAI](./interview-prep/03-genai-questions.md), [agents](./interview-prep/04-agentic-questions.md), [cross-cutting](./interview-prep/05-cross-cutting-questions.md), and [classical-to-AI bridge](./interview-prep/06-classical-bridge-questions.md) — plus senior-level [round 2](./interview-prep/02-ml-questions-round2.md) banks
-- **8 ML coding problems** with worked solutions — the coding screen, rehearsed ([`coding/`](./interview-prep/coding/))
-- **12 full mock interviews** — 45-minute walkthroughs with curveballs and grading rubrics ([`mock-interviews/`](./interview-prep/mock-interviews/)), plus the [interviewer's guide](./interview-prep/interviewer-guide.md) for running them
+- **12 ML coding problems** with worked solutions — the coding screen, rehearsed ([`coding/`](./interview-prep/coding/))
+- **16 full mock interviews** — 45-minute walkthroughs with curveballs and grading rubrics ([`mock-interviews/`](./interview-prep/mock-interviews/)), plus the [interviewer's guide](./interview-prep/interviewer-guide.md) for running them
 - **STAR story bank + deep-dive defense** — your labs, told as stories, and the five attack patterns that follow ([`09a`](./interview-prep/09a-star-story-bank.md), [`09b`](./interview-prep/09b-deep-dive-defense.md))
-- **12 estimation drills**, a **seniority ladder** (what junior vs. staff answers sound like), 30/60/90-day **study plans**, a **7-day sprint**, and 171 **flashcards** across 7 decks
+- **12 estimation drills**, a **seniority ladder** (what junior vs. staff answers sound like), 30/60/90-day **study plans**, a **7-day sprint**, and 232 **flashcards** across 10 decks
 - **Process guides** — company tiers, negotiation, rejection recovery, the 72-hour countdown, and salary research ([`13`–`18`](./interview-prep/13-company-tiers.md))
 
 ## Prefer a website?
@@ -128,7 +128,7 @@ Everything is also plain markdown — GitHub renders it all, including the diagr
 
 **What if I get stuck?** Three rules: (1) actually read the error message, (2) struggle for 30 minutes before opening the lab's `SOLUTION.md`, (3) still stuck? Open a GitHub issue with the lab name and the error. Getting stuck is the mechanism, staying stuck is not.
 
-**Is this good for interviews?** That's a third of the course by design: a field-tested answer framework, 67 graded scenarios, 8 coding problems, 12 timed mocks, the STAR story bank, and flashcards — plus the real numbers from your own labs, which no other candidate will have.
+**Is this good for interviews?** That's a third of the course by design: a field-tested answer framework, 67 graded scenarios, 12 coding problems, 16 timed mocks, the STAR story bank, and flashcards — plus the real numbers from your own labs, which no other candidate will have.
 
 ## Contributing & acknowledgments
 
