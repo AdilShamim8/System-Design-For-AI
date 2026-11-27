@@ -70,3 +70,14 @@ Write the one-pager ops will actually use:
 ## What you can now claim in an interview
 
 "I load-test to find the cliff before traffic does: ramped concurrency with per-stage timing, diagnosed the bottleneck from which stage grows while others stay flat, and wrote the capacity playbook — safe operating point with headroom, autoscale triggers on p95, and a graceful degradation ladder ending in cache-only rather than timeouts. For AI services, the provider's rate limit is part of your capacity planning."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-BR-11** — a scenario question whose worked answer quotes this lab
+- **The numbers to quote:** the degradation ladder beats failing hard
+
+**The pitch, one line:** the graceful-degradation story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
