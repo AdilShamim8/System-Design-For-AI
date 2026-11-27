@@ -112,3 +112,15 @@ Write the artifact — this lab's deliverable, reusable in every future design r
 ## What you can now claim in an interview
 
 "I've fine-tuned a real model, built the RAG alternative, and computed the break-even: behavior goes in weights, knowledge goes in the index, prompts are the first knob, and the crossover volume — not fashion — decides self-hosting. I can defend that with numbers from a lab I ran, and I always run the few-shot baseline before any fine-tune."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-GEN-13** — a scenario question whose worked answer quotes this lab
+- **Mock 10** — a mock interview where this lab's system is the design
+- **The numbers to quote:** 70% routed down-tier, no measurable quality loss
+
+**The pitch, one line:** the routing economics story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
