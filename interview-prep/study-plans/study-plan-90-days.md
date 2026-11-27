@@ -38,3 +38,12 @@
 ## If you slip (you will)
 
 The plan degrades gracefully: cut extensions first, then the optional labs (a5, a8→skim, b7, b8), never the spine (a1–a3, b1–b4, c1, x1–x2, one capstone). A finished spine beats an abandoned whole — in coursework as in systems.
+
+---
+
+## The interview layer, extended (added with the round-2 expansion)
+
+- Weeks 11–12: process guides (13–18) — tiers, salary research, negotiation; enter the market with 5–8 processes
+- the full pyramid: all banks, all mocks, the takehome guide, and two capstone defenses rehearsed
+- All twelve mocks are now in rotation; nine through twelve (voice, fine-tune-vs-RAG, safety, platform) are the senior-level set — do them second.
+- Flashcards: five more decks since this plan was written (metrics, process, coding) — add the metrics deck to your daily ten minutes.
