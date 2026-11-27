@@ -25,3 +25,13 @@ Galactica's failure was a **product-framing failure wearing a model-quality cost
 
 - Coverage: The Verge and Ars Technica on the suspension (Nov 2022); Meta AI's Galactica paper (Taylor et al., 2022) and project page.
 - Context: Chapters B.0, B.8; Labs b2, b4.
+
+---
+
+## The interview angle
+
+- **Use it in:** the 'should we trust LLM output?' round; knowledge-cutoff questions
+- **The lesson, one line:** Galactica confidently fabricated citations — fluency is not knowledge; retrieval and citation are the load-bearing parts
+- **The interview line:**
+
+> 'the model's confidence and the model's correctness are uncorrelated — that's why the citations are checked, not assumed'
