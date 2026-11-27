@@ -102,3 +102,15 @@ Write the tool-contract rubric as a checklist (this is the lab's takeaway artifa
 ## What you can now claim in an interview
 
 "I write tool contracts for a non-deterministic client that can't read docs: negative-purpose descriptions, fully constrained params, errors-as-data, side-effect gates on a reversibility × cost grid, and idempotency for anything retryable. I measured the failure-class collapse between contract generations — the Chevy $1 car was a contract failure before it was a guardrail one."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-BR-12** — a scenario question whose worked answer quotes this lab
+- **Mock 12** — a mock interview where this lab's system is the design
+- **The numbers to quote:** the six-item tool contract; idempotency at money boundaries
+
+**The pitch, one line:** the tool-contract story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
