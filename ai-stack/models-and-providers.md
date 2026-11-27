@@ -33,3 +33,7 @@
 - **The trap:** provider-specific features (native tool schemas, JSON modes, prompt caching quirks) creep in silently. Wrap the client (b7's pattern) and keep the wrapper thin.
 
 **Read next:** [frameworks.md](./frameworks.md) (what sits between you and the model), [gpu-compute.md](./gpu-compute.md) (when self-hosting pays).
+
+---
+
+**Interview relevance:** Q-CC-14 (the vendor contract): pinning, retention terms, SLA structure — the fine print IS the architecture
