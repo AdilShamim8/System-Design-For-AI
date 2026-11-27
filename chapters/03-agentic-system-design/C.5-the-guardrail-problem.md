@@ -90,3 +90,10 @@ Tools: read_file, grep, write_file, run_tests, open_pr. What input guardrails? W
 - **NeMo Guardrails (NVIDIA).** https://github.com/NVIDIA/NeMo-Guardrails
 - **OWASP Top 10 for LLM Applications (2024).** https://owasp.org/www-project-top-10-for-large-language-model-applications/
 - **Air Canada Chatbot Case (2024), *Moffatt v. Air Canada*, 2024 BCCRT 149.** https://decisions.civlresolutiontb.ca/crt/crtd/en/item/522164/index.do
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-AG-13/14; Mock 11's layered stack; c3's numbers
+- **The number to carry:** the layer stack: filter → prompt → check → gate, each measured
