@@ -76,3 +76,10 @@ You're building a RAG platform. Not a RAG demo — a platform. Multiple customer
 - **See chapters B.2, B.3, B.4, B.5, X.1, X.3 for component patterns.**
 - **Pinecone Multi-tenancy Documentation.** https://www.pinecone.io/learn/multi-tenancy/
 - **LangSmith / Langfuse.** Observability platforms for RAG. https://docs.smith.langchain.com/
+
+---
+
+## Interview lens
+
+- **Arms you for:** Mock 7; Mock 12; Q-CC-11 (residency)
+- **The number to carry:** platform economics: ten tenants on one stack or ten stacks
