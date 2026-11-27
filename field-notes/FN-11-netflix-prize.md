@@ -25,3 +25,13 @@ Three separable lessons live in this one story. **Model quality ≠ system value
 
 - Netflix's own engineering retrospective on the Prize; the BellKor's Pragmatic Chaos win (Sept 2009); Narayanan & Shmatikov, "Robust De-anonymization of Large Sparse Datasets" (IEEE S&P 2008).
 - Context: Chapters A.0, A.2, X.1, X.2; Labs a1, a2, a8; datasets/recommendation.md.
+
+---
+
+## The interview angle
+
+- **Use it in:** Q-ML-5 (the A/B that refused to die); offline-vs-online questions
+- **The lesson, one line:** the prize was won on the visible metric while the business outcome didn't move — optimizing the proxy isn't optimizing the goal
+- **The interview line:**
+
+> 'I ask what the metric is a proxy FOR, and how they've validated the proxy — before I optimize it'
