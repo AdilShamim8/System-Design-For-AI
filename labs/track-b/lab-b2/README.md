@@ -155,3 +155,15 @@ Ask the system something *not in the corpus* ("Who won the 2031 Super Bowl?"). W
 ## What you can now claim in an interview
 
 "I built a RAG pipeline from scratch — chunker, embedder, index, retriever, cited generation — and graded retrieval against labeled data (hit@4 ≈ [your number]). I debug it stage-by-stage: attribute the failure to retrieval vs. generation before changing anything, and I know the three miss types by name because I read my own misses."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-GEN-1** — a scenario question whose worked answer quotes this lab
+- **STAR story 3** — a behavioral story built from this lab
+- **The numbers to quote:** refusal 60%→90% from prompt structure alone
+
+**The pitch, one line:** the refusal-is-a-feature story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
