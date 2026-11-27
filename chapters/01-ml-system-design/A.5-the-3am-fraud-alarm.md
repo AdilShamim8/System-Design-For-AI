@@ -95,3 +95,10 @@ Consider: crypto fraud is harder because transactions can't be reversed (no char
 - **Stripe Radar Documentation.** Fraud detection in production. https://stripe.com/docs/radar
 - **PayPal Engineering Blog.** Real-time fraud detection patterns. https://www.paypal-engineering.com/
 - **Gama, J., et al. (2014), "A Survey on Concept Drift Aiming," ACM Computing Surveys 46(4).** https://dl.acm.org/doi/10.1145/2523813
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-ML-2, Q-ML-8 (thresholds as cost decisions); Mock 3
+- **The number to carry:** the cost matrix decides the threshold; the business owns the cost matrix
