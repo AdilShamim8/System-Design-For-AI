@@ -138,3 +138,16 @@ Retraining is not free: engineering time, evaluation risk, rollout risk (Chapter
 ## What you can now claim in an interview
 
 "I run PSI and KS per feature with explicit thresholds, monitor output distributions as the early-warning signal, separate data bugs from world-change before touching retraining, and size retraining cadence from a dollar model — because I've run the full loop on a manufactured incident and know where each signal lies."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-ML-2** — a scenario question whose worked answer quotes this lab
+- **coding-6** — a coding problem that compresses this lab into a screen
+- **cheatsheet #8** — the reference card that carries this lab's numbers
+- **The numbers to quote:** PSI bands <0.1/0.1–0.2/>0.2; tiered alerting
+
+**The pitch, one line:** the drift story with the alert ladder — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
