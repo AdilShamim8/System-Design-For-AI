@@ -1,6 +1,6 @@
 # Flashcards — The Interview Process
 
-24 cards. The game around the game: loops, screens, timelines, offers, and the meta-decisions.
+23 cards. The game around the game: loops, screens, timelines, offers, and the meta-decisions.
 ---
 
 **The standard AI-system-design loop — the five rounds.**
