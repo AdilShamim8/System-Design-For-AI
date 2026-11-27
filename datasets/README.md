@@ -31,3 +31,9 @@ Why a dataset catalog in a system-design course? Because **the dataset is a desi
 ## A note on honesty about data
 
 Datasets rot: URLs move, licenses change, files get pulled (the Netflix Prize data was withdrawn from distribution after a privacy lawsuit; The Pile was taken down from official hosting in 2024 after publisher complaints). Every card carries the date its facts were last checked. If a link is dead, open an issue — that's a real lesson about data infrastructure too.
+
+---
+
+## In interviews (all cards)
+
+Each dataset card now carries an **In interviews** section naming the questions, mocks, and coding problems where that dataset's numbers are the evidence. The pattern to internalize: 'my lab measured X on [dataset]' beats any citation — the data is public; your numbers are yours.
