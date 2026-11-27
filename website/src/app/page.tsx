@@ -382,7 +382,7 @@ function HomeView({ onStart }: { onStart: (t: Tab) => void }) {
         {[
           { value: "38", label: "Chapters" },
           { value: "6", label: "Tracks" },
-          { value: "20+", label: "Practice Questions" },
+          { value: "67", label: "Practice Questions" },
           { value: "$0", label: "Forever" },
         ].map((s) => (
           <div key={s.label} className="text-center">
@@ -1259,6 +1259,94 @@ const SAMPLE_QUESTIONS = [
     chapters: ["X.1", "B.2", "C.5"],
     answer:
       "Prompt injection is not a bug you fix — it's a property of how LLMs work. Defense in depth: (1) Input sanitization — scan for injection patterns. (2) Context labeling — mark retrieved content as untrusted data, not instructions. (3) Output validation — verify refund claims against the system before sending. (4) Action confirmation — require explicit user confirmation through a non-LLM channel for financial actions. (5) Retrieval source tagging — don't retrieve user-submitted content for high-stakes queries. No single layer suffices; the combination is what makes it safe.",
+  },
+  {
+    id: "ML-R2-1",
+    track: "ml",
+    difficulty: "hard",
+    title: "The Model That Got Better (Suspiciously)",
+    scenario:
+      "Offline AUC rose from 0.84 to 0.89 after a routine feature refresh. No new features were added. The team wants to ship Friday. You smell a leak. Find it in under an hour.",
+    chapters: ["A.1", "X.2"],
+    answer:
+      "Check in order, cheapest first: (1) feature importance — one feature suddenly dominating is the signature; (2) that feature's timestamp semantics — is it computed with knowledge of the future? (3) the train/test boundary — did the refresh change the split? (4) the null check — shuffle the suspect feature; if AUC collapses, you've found it. Ship nothing until the null test runs; every unexplained metric jump is a leak until proven otherwise.",
+  },
+  {
+    id: "GEN-R2-1",
+    track: "genai",
+    difficulty: "hard",
+    title: "The Embedding Migration",
+    scenario:
+      "Your RAG system's embedding model is being deprecated. 80M chunks, 12 downstream consumers. The new model is 4 points better on eval. Run the migration without a 3-week outage.",
+    chapters: ["B.3", "B.6"],
+    answer:
+      "It's twelve migrations, not one. Freeze the old model as a versioned alias; dual-write new vectors during backfill; per-consumer cutover behind a flag, search LAST (the only consumer where mixing old and new vectors in one query breaks correctness — cross-model cosine similarity is meaningless); eval before and after each cutover. The 4-point gain is aggregate — some queries get worse, and the per-consumer eval is your rollback trigger.",
+  },
+  {
+    id: "AGT-R2-1",
+    track: "agentic",
+    difficulty: "hard",
+    title: "The Fleet at 3 AM",
+    scenario:
+      "4,000 conversational agents in production. At 02:14, a template service starts returning unrendered placeholders. Agents are producing malformed replies to every user. Nobody is awake. What's the 3 AM story?",
+    chapters: ["C.1", "X.5"],
+    answer:
+      "Detection: output-schema validation fires within seconds — the SLO breach pages the oncall, whose runbook's first line is mitigation, not diagnosis. Mitigation: the gateway applies the last-known-good template from local cache — rollback is config, not code, because templates are versioned. Blast-radius: per-tenant circuit breakers degrade agents to canned responses rather than garbage. Diagnosis: the trace on the first failed generation shows the placeholder in seconds. Every element was an architecture decision made months before the incident.",
+  },
+  {
+    id: "XC-R2-1",
+    track: "cross-cutting",
+    difficulty: "hard",
+    title: "Multi-Region RAG Is a Lie (Mostly)",
+    scenario:
+      "A multinational contract requires EU data residency: EU documents stay in EU. But your embedding model serves from us-east, your reranker too, and your eval set is global. What does 'residency' actually require?",
+    chapters: ["X.1", "B.3"],
+    answer:
+      "Split the data by what the contract constrains: personal data (documents, queries, outputs) must stay in-region; models (weights, the reranker) are not personal data and can serve globally. Architecture: regional data planes (vector stores, generation with fallback chains), global control plane, per-region eval sets. The degenerate case is a product behavior you must design: if an EU query needs a US-only doc, the system says it can't answer from that source — refusal as a residency feature.",
+  },
+  {
+    id: "BR-R2-1",
+    track: "ml",
+    difficulty: "medium",
+    title: "The Consistency Lecture, RAG Edition",
+    scenario:
+      "Your RAG index is replicated across 3 regions. A doc updates in region 1; region 3 serves stale chunks for 90 seconds. Legal says a customer was misled by a stale policy doc. Re-explain consistency for the AI era.",
+    chapters: ["B.2", "B.5", "X.0"],
+    answer:
+      "Eventual consistency was a database property; in RAG it's a legal exposure. The fixes: version-stamped citations (every answer carries its corpus version — staleness is provable, not arguable), two-tier consistency (synchronous re-embedding for the small legally-sensitive corpus, async for the tail), cache invalidation keyed on corpus version, and a 'this answer reflects documents as of T' footer for compliance content. Consistency becomes a user-visible contract.",
+  },
+  {
+    id: "GEN-R2-2",
+    track: "genai",
+    difficulty: "hard",
+    title: "Structured Output That Cannot Lie",
+    scenario:
+      "Your LLM gateway returns JSON for a billing system. Once every ~3,000 requests: malformed JSON. Once every ~20,000: valid JSON with price_cents as a string. Billing is strict. Make the contract unbreakable.",
+    chapters: ["B.6", "X.3"],
+    answer:
+      "Four layers: (1) constrained decoding — schema enforcement at the API level eliminates the malformed case; (2) gateway validation with typed errors — never a silent retry that might double-charge (idempotency keys everywhere); (3) one repair retry with the validation error in the prompt, then refuse and escalate — a human fixing 1-in-20,000 beats a model improvising a price; (4) validation-failure rate as a first-class SLO. Price fields get a type check AND a range check — a valid number 10x too large is the failure that reaches customers.",
+  },
+  {
+    id: "AGT-R2-2",
+    track: "agentic",
+    difficulty: "medium",
+    title: "Agent or Workflow?",
+    scenario:
+      "A stakeholder wants 'an agent' for invoice processing: 3 document types, 5 extraction fields, validation rules, a $500 approval threshold, 2,000/day. You suspect a workflow engine would be better. Make the case.",
+    chapters: ["C.1", "C.2", "B.6"],
+    answer:
+      "Agentify only the steps whose cases you cannot enumerate; workflow everything else. Invoices: the path IS enumerable (parse → extract → validate → route → approve) — the variance lives in extraction, not routing. So: deterministic workflow spine + LLM at the two fuzzy steps + human gates at the money boundary. The math: LLM at every step roughly triples monthly cost and adds three non-determinism surfaces to an audit-relevant process. If invoices came in 40 formats with quarterly rule changes, the agent case returns.",
+  },
+  {
+    id: "XC-R2-2",
+    track: "cross-cutting",
+    difficulty: "medium",
+    title: "Beyond Accuracy",
+    scenario:
+      "Your RAG system hits its quality bar: 92% faithfulness, 94% citation accuracy. The business asks 'so what should we improve now?' Nobody has an answer. Define the next-tier metrics.",
+    chapters: ["X.2", "X.3", "B.8"],
+    answer:
+      "Accuracy was table stakes. Next tier: latency as experienced (TTFT + p95, with abandonment by bucket — a late right answer is a lost user), refusal quality (false refusals on legitimate questions — corrosive and invisible in faithfulness metrics), cost per resolved interaction (the efficiency frontier), coverage (% of intents handled — the growth metric; every refusal is next quarter's roadmap), and staleness (median cited-doc age — a faithful answer citing deprecated policy is a liability wearing a quality score).",
   },
 ];
 
