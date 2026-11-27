@@ -137,3 +137,16 @@ Then answer in writing (this is the system-design deliverable of the lab):
 ## What you can now claim in an interview
 
 "I built a demand forecaster on real taxi data with point-in-time-correct features, demonstrated a leakage bug that inflated metrics by [your number]%, and can design the streaming-feature-to-batch-forecast pipeline with its late-data and backfill failure modes — because I wrote the miniature version myself."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-ML-6** — a scenario question whose worked answer quotes this lab
+- **coding-3** — a coding problem that compresses this lab into a screen
+- **STAR story 1** — a behavioral story built from this lab
+- **The numbers to quote:** leaky rolling feature inflated MAE 50–60%
+
+**The pitch, one line:** the leak you found yourself — behavioral gold — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
