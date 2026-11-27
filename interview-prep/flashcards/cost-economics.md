@@ -1,6 +1,6 @@
 # Flashcards — Cost Economics
 
-21 cards. The money layer: pricing mechanics, the levers in order, the CFO conversations. Pairs with cheatsheet #6, drill bank 07b, Q-CC-10, and Mock 10.
+20 cards. The money layer: pricing mechanics, the levers in order, the CFO conversations. Pairs with cheatsheet #6, drill bank 07b, Q-CC-10, and Mock 10.
 ---
 
 **The three cost layers every service must report.**
