@@ -19,7 +19,7 @@ Split-table count = 0 for the structure-aware version (that's the whole point). 
 
 ## Dataset
 
-Any structured corpus: a handful of real docs with headers/tables/code. The [qa-knowledge](../../datasets/qa-knowledge.md) card's SQuAD paragraphs work; a raw markdown dump of 3–4 of this repo's own chapters is ideal (dogfooding).
+Any structured corpus: a handful of real docs with headers/tables/code. The [qa-knowledge](../../../datasets/qa-knowledge.md) card's SQuAD paragraphs work; a raw markdown dump of 3–4 of this repo's own chapters is ideal (dogfooding).
 
 ## After your attempt
 
