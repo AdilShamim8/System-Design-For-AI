@@ -124,3 +124,10 @@ Consider: legal queries need high recall (don't miss any relevant case) and high
 - **Khattab, O., & Zaharia, M. (2020), "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT," SIGIR 2020.** arXiv:2004.12832 — https://arxiv.org/abs/2004.12832
 - **Cohere Rerank Documentation.** https://docs.cohere.com/docs/reranking
 - **BAAI/bge-reranker-v2-m3.** https://huggingface.co/BAAI/bge-reranker-v2-m3
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-BR-5 (rerank tradeoff); the latency-vs-quality deep-dive
+- **The number to carry:** cross-encoder rerank: 40–150ms for top-20 — the price and when it's worth paying
