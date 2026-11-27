@@ -1,4 +1,4 @@
-# Flashcards — Seven Decks, One Habit
+# Flashcards — Ten Decks, One Habit
 
 | Deck | Cards | Covers |
 |---|---|---|
@@ -9,6 +9,9 @@
 | [Metrics & Evaluation](./metrics-evaluation.md) | 25 | what to measure, what it hides, the eval answers |
 | [The Interview Process](./interview-process.md) | 23 | loops, screens, offers, timelines, the meta-game |
 | [The Coding Round](./coding-round.md) | 21 | the coding screen's reflexes and traps |
+| [The Classical Bridge](./classical-bridge.md) | 22 | the classics re-asked for AI — what survives, what changes |
+| [Senior & Staff Tells](./senior-staff-tells.md) | 20 | the sentences and moves that mark levels |
+| [Cost Economics](./cost-economics.md) | 21 | the money layer: levers, unit economics, the CFO conversations |
 
 **The method:** cover the answer, say it OUT LOUD, uncover. Cards missed twice get copied into your journal. Ten minutes daily beats two hours on Sunday — spaced repetition is the mechanism, not effort.
 
