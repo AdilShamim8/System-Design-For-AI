@@ -79,3 +79,9 @@ Chapter S.4 (voice assistant) draws on these. Audio is the most throughput-hungr
 **Used in:** Optional audio lab.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: Mock 9 (the clinical voice assistant): streaming ASR with word confidences becomes the review UI — say the pipeline with latencies. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
