@@ -10,12 +10,14 @@ Everything before this folder made you capable. This folder makes you *demonstra
 | Question banks: [ML](./02-ml-questions.md) · [GenAI](./03-genai-questions.md) · [Agents](./04-agentic-questions.md) · [Cross-cutting](./05-cross-cutting-questions.md) · [Classical bridge](./06-classical-bridge-questions.md) | 42 scenario questions with worked answers, by track | Write YOUR answer before reading the worked one |
 | Round-2 banks: [ML](./02-ml-questions-round2.md) · [GenAI](./03-genai-questions-round2.md) · [Agents](./04-agentic-questions-round2.md) · [Cross-cutting](./05-cross-cutting-questions-round2.md) · [Bridge](./06-classical-bridge-questions-round2.md) | 25 more, senior-level: sequencing, operations, and the business boundary | After round 1; the level-up material |
 | [07-estimation-drills.md](./07-estimation-drills.md) | 12 capacity-math drills with full solutions | Do all on paper before any interview |
+| [07b-estimation-drills-round2.md](./07b-estimation-drills-round2.md) | 12 more, AI-native: bills, indexes, GPU fleets, canaries — priced | After round 1; the AI-economics set |
 | [08-curveball-questions.md](./08-curveball-questions.md) | The follow-ups interviewers actually ask | After the banks; pairs with mocks |
 | [09-behavioral-questions.md](./09-behavioral-questions.md) | AI-engineer behavioral questions + your lab stories | T-1 week |
 | [09a-star-story-bank.md](./09a-star-story-bank.md) | Six STAR stories built from this course's labs, with follow-up drills | Write yours alongside; rehearse out loud |
 | [09b-deep-dive-defense.md](./09b-deep-dive-defense.md) | The five deep-dive attack patterns and the answers that survive | With the story bank; pairs with mocks |
 | [09c-behavioral-round2.md](./09c-behavioral-round2.md) | Ten AI-specific behavioral screens (BQ-7–16) | After 09; the AI-only questions |
 | [10-takehome-guide.md](./10-takehome-guide.md) | Take-home assignments: scoping through defense | When you get one |
+| [10b-takehome-examples.md](./10b-takehome-examples.md) | Three worked take-homes: eval design, mini recommender, safety layer | With the guide — the reference solutions |
 | [11-seniority-ladder.md](./11-seniority-ladder.md) | Same question, four levels (junior→staff) | Calibrate your target level |
 | [interview-calibration.md](./interview-calibration.md) | Observable behaviors per level, the tell-tale sentences, one-gap diagnosis | When grading yourself or others |
 | [12-common-mistakes.md](./12-common-mistakes.md) | The ways candidates lose, condensed | T-48h |
