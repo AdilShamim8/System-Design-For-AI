@@ -39,3 +39,7 @@ Every layer of this course follows one contract. Read before contributing; it ex
 ## The interview-layer additions (styling rules for the round-2 expansion)
 
 The interview layer's newer files (round-2 banks, coding problems, STAR bank, process guides, drills round 2) follow three added conventions: (1) **numbers carry provenance** — every figure is either from this course's labs (name the lab) or is flagged as a rule of thumb with its origin; (2) **question IDs are stable** — Q-ML-10..14, Q-GEN-10..14, Q-AG-10..14, Q-CC-10..14, Q-BR-9..13, BQ-7..16 — cross-references elsewhere use these IDs, never renumber; (3) **the survives/collapses pattern** — behavioral and defense guidance always shows both the answer that works and the answer that fails, because the contrast is what makes the guidance usable under pressure.
+
+## Round-5 conventions (the depth pass)
+
+The round-5 files add two more patterns: (1) **one-pagers are self-contained** — each classic-system page must survive being read cold, with no dependency on the bridge bank (the bank links TO them, never the reverse being required); (2) **rapid-fire kernels are the unit** — answers are graded kernel-hit or kernel-miss, and the kernel line in 08b is always one sentence; (3) **mock files stay quartet-shaped** — prompt, walkthrough, curveballs, rubric, grounding — sixteen files, identical skeleton, no exceptions.
