@@ -107,3 +107,10 @@ Consider: the embedding model determines the quality of semantic matching. The v
 - **Johnson, J., Douze, M., & Jegou, H. (2017), "Billion-scale similarity search with GPUs," arXiv:1702.08734.** The FAISS paper. https://arxiv.org/abs/1702.08734
 - **Pinecone Learning Center.** Practical vector search guides. https://www.pinecone.io/learn/
 - **pgvector Documentation.** PostgreSQL extension for vector search. https://github.com/pgvector/pgvector
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-GEN-10 (the embedding migration); Mock 7; cheatsheet #4
+- **The number to carry:** vectors × dims × 4 bytes × overhead = the capacity plan
