@@ -37,3 +37,7 @@ Batching is the multiplier: single-stream vs. continuous-batched throughput on t
 
 - "How much VRAM to serve 70B to 100 concurrent users with 8K context?" — walk it: weights (4-bit ≈ 35 GB) + KV-cache (~0.5–2 GB per active 8K session × concurrent) → 2× 80 GB cards, comfortably. Showing the *structure* of the estimate beats the exact answer (07-estimation-drills.md trains this).
 - "Why is GPU utilization 30%?" — usually batch size (under-batching) or a data-path bottleneck feeding a starving GPU (Lab x3's per-stage diagnosis, in a new costume).
+
+---
+
+**Interview relevance:** Mock 10 (the fine-tune's fleet), drill 16: GPU-hours are the unit, not dollars-per-day
