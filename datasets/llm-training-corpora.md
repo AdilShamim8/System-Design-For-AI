@@ -79,3 +79,9 @@ You will not train a foundation model in this course, but Chapter B.0's mental m
 **Used in:** B.0 reading; Mock 5 background.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: Mock 10 (fine-tune vs RAG): corpus churn rate is the disqualifier for fine-tuning as a knowledge store — knowledge in weights decays daily. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
