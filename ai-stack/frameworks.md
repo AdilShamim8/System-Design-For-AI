@@ -31,3 +31,7 @@ Frameworks sell speed-to-demo. What they cost is *opacity*: when the abstraction
 - Anything you can't debug from its traces is disqualified, regardless of stars.
 
 **Read next:** [observability-eval.md](./observability-eval.md) — the traces a framework must give you.
+
+---
+
+**Interview relevance:** the 'what would you build it in?' follow-up — say one, name the tradeoff, move on
