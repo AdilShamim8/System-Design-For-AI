@@ -31,3 +31,7 @@ flowchart LR
 ## Tool families for each role
 
 Feature store: Feast, Tecton, or disciplined Postgres+dbt · Training: any · Registry: MLflow, W&B · Serving: FastAPI (Lab a1's pattern) → Triton at scale · Monitoring: Evidently + Prometheus/Grafana (Lab x1).
+
+---
+
+**Interview use:** the serving-path questions (Q-ML-3/4, Mock 3): draw this from memory — feature store → model → prediction log; the drift loop closes it
