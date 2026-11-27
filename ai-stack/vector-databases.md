@@ -30,3 +30,7 @@
 - "Show me filtered ANN at *my* filter selectivity" (pre-filter vs. post-filter changes results, not just speed).
 - "What's the p99 at 50 QPS with 500 concurrent filters?" (Lab x3's methodology, applied to their product.)
 - "What happens to in-flight queries during a re-index?" (Your b3 re-chunking day will ask this for real.)
+
+---
+
+**Interview relevance:** Mock 7, cheatsheet #4, drill 14: the capacity math that decides the argument
