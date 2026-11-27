@@ -37,3 +37,7 @@ flowchart LR
 ## Tool families for each role
 
 Gateway: custom on FastAPI/Envoy, or vendor gateways · Cache: Redis+embeddings · Routing policy: config-as-code · Observability: OpenTelemetry + Langfuse-class. Full design: Mock 4.
+
+---
+
+**Interview use:** Mock 4 and Mock 12: routing, caching, budgets, and the fallback chain — the platform diagram that serves both questions
