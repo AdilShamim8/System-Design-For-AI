@@ -143,3 +143,15 @@ One paragraph to read slowly. CTR is a *proxy*. The business cares about retenti
 ## What you can now claim in an interview
 
 "I compute sample size before shipping, verify power by simulation, and can show you a 1,000-run experiment where optional stopping inflated false positives from 5% to [your number]%. I design tests with one primary metric, guardrails with thresholds, and an AA pass — because I've seen every one of these save a bad decision."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-ML-5** — a scenario question whose worked answer quotes this lab
+- **STAR story 2** — a behavioral story built from this lab
+- **The numbers to quote:** AA test; optional stopping 5%→20% false positives; 780K/arm
+
+**The pitch, one line:** the experimentation story that wins rounds — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
