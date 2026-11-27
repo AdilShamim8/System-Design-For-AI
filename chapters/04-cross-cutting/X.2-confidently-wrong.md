@@ -85,3 +85,10 @@ Lawyers use it to find relevant cases. What's your confidence threshold for "thi
 - **Guo, C., et al. (2017), "On Calibration of Modern Neural Networks," ICML 2017.** arXiv:1706.04599 — https://arxiv.org/abs/1706.04599
 - **Platt, J. C. (1999), "Probabilistic Outputs for Support Vector Machines."** Platt scaling. https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/platt-proba.pdf
 - **Air Canada Chatbot Case (2024), *Moffatt v. Air Canada*, 2024 BCCRT 149.** https://decisions.civlresolutiontb.ca/crt/crtd/en/item/522164/index.do
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-ML-5 (the A/B); STAR story 2; a8's numbers
+- **The number to carry:** offline wins are rumors; pre-register the metric and the bar
