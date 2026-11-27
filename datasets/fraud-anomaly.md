@@ -79,3 +79,9 @@ Fraud is the domain where class imbalance, asymmetric costs, and delayed labels 
 **Used in:** Lab a3 alternative when you want readable features.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: Mock 3 and Q-ML-2: the 284,807-rows/492-frauds imbalance IS the cost-matrix story; your a3 threshold (0.06, not 0.5) is the punchline. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
