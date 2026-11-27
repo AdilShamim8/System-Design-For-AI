@@ -52,3 +52,9 @@ The restraint question. The strongest answer in any AI interview: "We shouldn't 
 ---
 
 **Drill:** pick five of these and have a partner (or a recording) throw them at you *during* a mock — the curveballs are where the mock's realism comes from. The [mock interviews](./mock-interviews/) embed these deliberately.
+
+---
+
+## Round-2 pairings
+
+The round-2 banks ship with their own curveballs embedded — the mocks 9–12 curveball sections are the deepest set (the phonetic drug-confusion trap in mock 9, the deprecated-teacher supply chain in mock 10, the 85%-recall negotiation in mock 11, the SQL-registry deadline in mock 12). Drill sequence: this file first (the patterns), then the mock curveballs cold (the pattern applied). The pass bar on any curveball is structural, not correct: reframe → mechanism → tradeoff. A wrong answer with that shape scores above a right answer without it.
