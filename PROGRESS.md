@@ -1,6 +1,6 @@
 # Your Progress Tracker
 
-Fork this repo (or copy this file) and check boxes off as you go. This file is your single source of truth for where you are. Total commitment: **38 chapters · 28 labs (25 + 3 capstones) · 12 field notes · 10 question banks · 12 mock interviews · 8 coding problems**.
+Fork this repo (or copy this file) and check boxes off as you go. This file is your single source of truth for where you are. Total commitment: **38 chapters · 28 labs (25 + 3 capstones) · 12 field notes · 10 question banks · 16 mock interviews · 12 coding problems**.
 
 **Legend:** `[ ]` todo · `[x]` done · `[~]` in progress. Every module is done when all its boxes are checked AND you can complete its "explain it back" without re-reading.
 
@@ -169,6 +169,10 @@ Fork this repo (or copy this file) and check boxes off as you go. This file is y
 - [ ] Mock 10 — Fine-tune or RAG: the decision with numbers
 - [ ] Mock 11 — The safety screen: companion app for teens
 - [ ] Mock 12 — Design the internal agent platform
+- [ ] Mock 13 — Design the AI code-review bot
+- [ ] Mock 14 — Design live speech translation
+- [ ] Mock 15 — Design ads ranking and the auction
+- [ ] Mock 16 — Design the shopping assistant
 
 **Reference:**
 
@@ -176,7 +180,10 @@ Fork this repo (or copy this file) and check boxes off as you go. This file is y
 - [ ] Read `interview-prep/11-seniority-ladder.md` — know what level you interview at
 - [ ] Read `interview-prep/12-common-mistakes.md`
 - [ ] Round-2 question banks (ML / GenAI / agents / cross-cutting / bridge) — the senior-level scenarios
-- [ ] Coding problems 1–8 (`interview-prep/coding/`) — one per day in your final fortnight
+- [ ] Coding problems 1–12 (`interview-prep/coding/`) — one per day in your final fortnight
+- [ ] The one-pager library (`interview-prep/one-pagers/`) — all ten spines drawn cold
+- [ ] The rapid-fire bank (`interview-prep/08b-rapid-fire.md`) — with a partner, once
+- [ ] The manager screens (`interview-prep/09d-manager-screens.md`) — M-1 and M-4 written fully
 - [ ] Write your five STAR stories from `09a-star-story-bank.md`; drill the five attack patterns from `09b`
 - [ ] Flashcards: foundations & numbers / ML / GenAI / agents / metrics / process / coding-round
 - [ ] Choose and follow a study plan (30 / 60 / 90 days) — or the 7-day sprint if the interview is imminent
