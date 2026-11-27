@@ -1,4 +1,4 @@
-# ML Coding Round — 8 Problems, Production-Flavored
+# ML Coding Round — 12 Problems, Production-Flavored
 
 **What this is:** the coding screen that AI-infra and ML-platform interviews actually give: a dataset, a time budget, and a production constraint that changes the answer. Not LeetCode in disguise — every problem here is a compressed version of a lab in this course, so the system-design knowledge and the code reinforce each other.
 
@@ -19,5 +19,9 @@
 | 6 | [Drift monitor in 50 lines](./coding-6-drift-monitor/README.md) | PSI correctness, alert logic | 35 min | Lab a7 |
 | 7 | [Agent loop with budgets](./coding-7-agent-loop/README.md) | budget enforcement, error recovery | 45 min | Lab c1 |
 | 8 | [Eval harness for a prompt change](./coding-8-eval-harness/README.md) | golden set, judge, regression gate | 45 min | Labs b2/b3 |
+| 9 | [Join scores to outcomes honestly](./coding-9-metrics-join/README.md) | attribution semantics, merge_asof | 40 min | Lab a3 |
+| 10 | [Measure injection compliance](./coding-10-injection-fuzzer/README.md) | guard-stack rates, false blocks | 45 min | Lab c3 |
+| 11 | [Fuse lexical + vector with RRF](./coding-11-hybrid-fusion/README.md) | fusion math, NDCG@10 | 35 min | Lab a5 |
+| 12 | [Simulate the cost curve](./coding-12-cost-optimizer/README.md) | routing + caches, unit economics | 45 min | Labs b1/b5/b6 |
 
 **The meta-rule:** in these screens the interviewer is grading whether your code *knows it lives in a system* — time-split before model, idempotency before cleverness, budgets before loops. A correct-but-naive answer scores lower than a simpler answer with the right guards.
