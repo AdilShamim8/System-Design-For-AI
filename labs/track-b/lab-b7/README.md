@@ -112,3 +112,15 @@ Assemble the full contract on paper: prompt version + schema version + model, al
 ## What you can now claim in an interview
 
 "I treat LLM output as untrusted input at a trust boundary: schema validation, bounded repair loops with error feedback, dead-letter queues instead of silent guesses, and a circuit breaker on failure-rate spikes. Format correctness is a mechanism; semantic correctness is an eval — I own them separately."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-GEN-12** — a scenario question whose worked answer quotes this lab
+- **Mock 1** — a mock interview where this lab's system is the design
+- **The numbers to quote:** output validation catches 2–5% of generations
+
+**The pitch, one line:** the guardrail-layer story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
