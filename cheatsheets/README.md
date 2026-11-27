@@ -16,5 +16,7 @@ One page per topic, dense on purpose, numbers date-stamped where they rot. These
 | 10 | [Security & guardrails](./10-security-guardrails.md) | agent/RAG safety conversations |
 | 11 | [Interview: last 48 hours](./11-interview-last-48h.md) | the final review before you walk in |
 | 12 | [Phone screen & onsite day](./12-phone-screen-onsite.md) | the day-of card: round pre-briefs, first 60 seconds, recovery moves |
+| 13 | [The manager round](./13-manager-round.md) | the hiring-manager screen: kernels, the closing five, cross-functional variants |
+| 14 | [Rapid-fire kernels](./14-rapid-fire-kernels.md) | the 40 kernels for the machine-gun stretch, one card |
 
 **How to study them:** don't read them in order — pull the one matching what you just built, during the lab's Review step. Before interviews, drill the flashcards (`interview-prep/flashcards/`) and keep #5 and #7 within arm's reach until the numbers are yours.
