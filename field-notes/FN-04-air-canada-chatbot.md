@@ -26,3 +26,13 @@ The design failure is treating a **generative system as if its outputs were mark
 - Tribunal decision: Moffatt v. Air Canada, 2024 BCCRT 149 (BC Civil Resolution Tribunal, Feb 2024).
 - Coverage: BBC News, The Guardian, Ars Technica (Feb–June 2024).
 - Context: Chapters B.8, X.3; Labs b2, b4; capstone cap1.
+
+---
+
+## The interview angle
+
+- **Use it in:** Q-GEN-1 (docs bot, legal watching); Mock 9; any liability follow-up
+- **The lesson, one line:** the tribunal held the airline responsible for its chatbot's invented policy — liability follows deployment
+- **The interview line:**
+
+> 'cite-or-refuse isn't a prompt nicety, it's the difference between a feature and a deposition'
