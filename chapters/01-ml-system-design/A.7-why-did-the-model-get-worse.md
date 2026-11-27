@@ -93,3 +93,10 @@ What drift signals do you monitor? How do you handle "what's harmful" being a mo
 - **Gama, J., et al. (2014), "A Survey on Concept Drift Aiming," ACM Computing Surveys 46(4).** https://dl.acm.org/doi/10.1145/2523813
 - **Databricks Engineering Blog.** Production drift detection patterns. https://www.databricks.com/blog/category/engineering
 - **Google Cloud (2024), "ML monitoring and alerting."** https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-ML-2's drift diagnosis; coding-6; cheatsheet #8
+- **The number to carry:** data drift vs concept drift, named in one sentence each
