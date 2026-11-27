@@ -93,3 +93,10 @@ Papers have abstract, introduction, methods, results, discussion. Queries range 
 - **LangChain Text Splitters Documentation.** https://python.langchain.com/docs/how_to/#text-splitters
 - **Greg Kamradt (2024), "Chunking Strategies for LLM Applications."** Systematic comparison of chunking strategies.
 - **LlamaIndex Documentation.** Chunking patterns for RAG. https://docs.llamaindex.ai/
+
+---
+
+## Interview lens
+
+- **Arms you for:** coding-5; Q-GEN-10's dual-write; Mock 7's re-index story
+- **The number to carry:** structure first, size second; tables and code blocks never split
