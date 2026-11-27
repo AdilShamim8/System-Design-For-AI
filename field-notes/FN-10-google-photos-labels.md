@@ -26,3 +26,13 @@ A textbook **long-tail training-data failure**: image classifiers are only as go
 - Original reporting: various, June–July 2015, triggered by Jacky Alcine's screenshots; Wired's follow-up on the label block (2018) — https://www.wired.com/
 - Buolamwini & Gebru, "Gender Shades" (ACM FAccT 2018) — the systematic study behind the pattern.
 - Context: Chapters X.2, B.7; Labs a1, b8.
+
+---
+
+## The interview angle
+
+- **Use it in:** the fairness/multimodal round; edge-case discovery
+- **The lesson, one line:** the mislabeling wasn't random — it failed where training data was thinnest; per-slice evaluation exists for exactly this
+- **The interview line:**
+
+> 'I evaluate by segment because the aggregate accuracy is a mask — the failure lives in the tail, and the tail has faces'
