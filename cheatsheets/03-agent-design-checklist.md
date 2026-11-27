@@ -36,3 +36,7 @@ budgets: steps · tokens · cost · wall-clock — enforced OUTSIDE the model
 input filter → tool contracts → budget guards → output validation → human escalation
 ```
 Unguarded agents comply with 30–60% of injections; the stack gets single digits (Lab c5 numbers). **The kill switch is a feature** (FN-03).
+
+---
+
+**Where this card shows up in the interview layer:** Q-AG-10–14 · Mock 5/12 · coding-7 · STAR stories 4–5
