@@ -94,3 +94,9 @@ Chapter B.8 and Lab b4 are about *your* evals; these are the field's shared yard
 **Used in:** B.8; X.2 reading.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: Q-CC-12 (the eval platform): public benchmarks calibrate the judge; your golden set calibrates your product — both, versioned. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
