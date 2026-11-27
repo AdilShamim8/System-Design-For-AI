@@ -76,3 +76,15 @@ Look at your trace: every handoff is a *contract* — researcher's `FINDINGS:` p
 ## What you can now claim in an interview
 
 "I built both the monolith and the orchestrator-specialist version and measured them: teams win on context isolation, per-role model routing, and change isolation; monoliths win on simple tasks by skipping handoff overhead. My handoffs are schema-validated contracts because LLM-to-LLM interfaces need the same validation as any other boundary — most 'multi-agent bugs' are handoff drift."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-AG-13** — a scenario question whose worked answer quotes this lab
+- **Mock 11** — a mock interview where this lab's system is the design
+- **The numbers to quote:** unguarded compliance 30–60% → single digits with the stack
+
+**The pitch, one line:** the injection-defense story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
