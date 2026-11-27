@@ -20,7 +20,7 @@ Hit rate and wrong-hit rate measured *separately* across the sweep. Operating τ
 
 ## Dataset
 
-Use any small embedding model (`all-MiniLM-L6-v2`, the b3/b5 default) and 50–100 hand-written question pairs (or sample from SQuAD via the [qa-knowledge card](../../datasets/qa-knowledge.md)). No vector DB — this screen is about the policy, not the index.
+Use any small embedding model (`all-MiniLM-L6-v2`, the b3/b5 default) and 50–100 hand-written question pairs (or sample from SQuAD via the [qa-knowledge card](../../../datasets/qa-knowledge.md)). No vector DB — this screen is about the policy, not the index.
 
 ## After your attempt
 
