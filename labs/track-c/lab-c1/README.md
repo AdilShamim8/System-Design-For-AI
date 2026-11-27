@@ -139,3 +139,16 @@ def log_trace(question, trace, outcome):
 ## What you can now claim in an interview
 
 "I built the agent loop from scratch — dispatch table, JSON protocol, step budget, trace logging — and triggered its four production killers deliberately: infinite loops, hallucinated calls, context bloat, budget blowout. Frameworks are convenience; the loop, the guards, and the traces are the product."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-AG-10** — a scenario question whose worked answer quotes this lab
+- **coding-7** — a coding problem that compresses this lab into a screen
+- **STAR story 4** — a behavioral story built from this lab
+- **The numbers to quote:** budgets outside the model; errors-as-data; +1-step recovery
+
+**The pitch, one line:** the agent loop, owned — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
