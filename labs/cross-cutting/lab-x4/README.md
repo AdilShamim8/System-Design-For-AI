@@ -70,3 +70,14 @@ The interview version: present the doc out loud in 10 minutes — the same struc
 ## What you can now claim in an interview
 
 "I write design docs in a fixed seven-section structure — requirements with numbers, choices with reasons, three scariest failures with detection paths, eval gates, and unit cost — and I can present it in ten minutes or defend it for forty-five. I've graded my own docs against a rubric and rewritten the weak sections with numbers from labs I actually ran."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Mock 11** — a mock interview where this lab's system is the design
+- **The numbers to quote:** the drill that finds the gaps before users do
+
+**The pitch, one line:** the red-team story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
