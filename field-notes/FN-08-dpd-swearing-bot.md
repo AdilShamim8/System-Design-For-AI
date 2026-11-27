@@ -25,3 +25,13 @@ Two engineering morals. First, **the layering itself**: a scripted system with a
 
 - Widely covered Jan 2024 (BBC News, The Guardian), including Ashley Beauchamp's original screenshots.
 - Context: Chapters C.5, X.5; Labs c5, x1.
+
+---
+
+## The interview angle
+
+- **Use it in:** the output-guardrail question (b7); brand-safety follow-ups
+- **The lesson, one line:** the swearing was a debug feature misread as a response — output surfaces inherit the model's failure modes; validate what you publish
+- **The interview line:**
+
+> 'I treat every model output as untrusted input to the next layer — validation isn't optional plumbing, it's the product'
