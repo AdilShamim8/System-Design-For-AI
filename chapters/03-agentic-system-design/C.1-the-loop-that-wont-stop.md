@@ -417,3 +417,10 @@ This chapter is self-contained, but if you want to go deeper:
 - **Anthropic (2024), "Introducing the Model Context Protocol."** The MCP spec, an open standard for connecting LLMs to external tools and data sources. Like USB-C for AI. https://www.anthropic.com/news/model-context-protocol
 - **Anthropic (2024), "Building Effective Agents."** A practical guide to agent patterns from Anthropic. Covers orchestration, tool design, and guardrails. https://www.anthropic.com/research/building-effective-agents
 - **Lilian Weng (2023), "LLM Powered Autonomous Agents."** A comprehensive survey of agent architectures. Dense but thorough. https://lilianweng.github.io/posts/2023-06-23-agent/
+
+---
+
+## Interview lens
+
+- **Arms you for:** coding-7; Q-AG-10; STAR story 4
+- **The number to carry:** budgets live outside the model — steps, tokens, wall-clock
