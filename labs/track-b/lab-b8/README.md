@@ -89,3 +89,14 @@ A product feature: "find similar products" + "moderate images that don't match t
 ## What you can now claim in an interview
 
 "I built image-text search on a real captioned corpus and measured it both directions: text→image hit@5 ≈ [your number] against 2K distractors, image→image measurably stronger — the modality gap, in my own numbers. I know the failure taxonomy (counting, attributes, relations) and which product mitigations each one needs."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-ML-7** — a scenario question whose worked answer quotes this lab
+- **The numbers to quote:** multimodal embeddings for cold-start candidates
+
+**The pitch, one line:** the cold-start catalog story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
