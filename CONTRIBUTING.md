@@ -69,3 +69,7 @@ The course now spans five layers, and each has its own contribution shape:
 ## The interview layer accepts contributions too
 
 Question banks round 2 and the coding problems are the highest-value contribution surface: (1) **new questions** must follow the ID scheme and include a worked answer with lab grounding; (2) **new coding problems** need README + SOLUTION with a self-check and the dataset link; (3) **story bank additions** should be real experiences — this course's stories are templates, and your real story beats a fictional one. See `docs/STYLING.md` for the round-2 conventions.
+
+## Round-5 contribution surfaces
+
+The depth pass opened three new contribution lanes: (1) **one-pagers** — a new classic system page must follow the six-block skeleton (three sentences, spine, numbers, failure modes, arms-you-for, AI twist) and cite its sources the way the existing ten do; (2) **rapid-fire kernels** — new questions need the one-sentence kernel and a home deck; (3) **mocks 17+** — the quartet skeleton is mandatory, and the rubric must grade junior/mid/senior/staff (see STYLING.md round-5 conventions).
