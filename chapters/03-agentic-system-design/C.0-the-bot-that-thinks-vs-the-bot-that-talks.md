@@ -119,3 +119,10 @@ What guardrails does the agent version need? (Don't delete events without confir
 - **Yao, S., et al. (2022), "ReAct: Synergistic Reasoning and Acting in Language Models," ICLR 2023.** arXiv:2210.03629 — https://arxiv.org/abs/2210.03629
 - **Anthropic (2024), "Building Effective Agents."** https://www.anthropic.com/research/building-effective-agents
 - **Lilian Weng (2023), "LLM Powered Autonomous Agents."** https://lilianweng.github.io/posts/2023-06-23-agent/
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-AG-12 (agent or workflow?); the scoping behavioral round
+- **The number to carry:** agentify only what you cannot enumerate
