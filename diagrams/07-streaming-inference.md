@@ -29,3 +29,7 @@ A payment event lands in the log → the stream job updates velocity counters in
 ## Tool families for each role
 
 Log: Kafka · Streams: Flink/Spark Streaming · Online store: Redis · Lake: parquet + warehouse. Related: diagrams 1, 6.
+
+---
+
+**Interview use:** Q-ML-4 (forecasting at scale) and X.0's pipes: the streaming path with late-data grace periods and point-in-time guarantees marked
