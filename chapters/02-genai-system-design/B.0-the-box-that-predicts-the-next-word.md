@@ -147,3 +147,10 @@ You're building a customer support bot. Estimate the monthly cost for 50,000 con
 - **Anthropic API Documentation.** Pricing, context windows, prompt caching. https://docs.anthropic.com/
 - **OpenAI API Documentation.** Pricing, models, function calling. https://platform.openai.com/docs/
 - **Google AI / Gemini Documentation.** https://ai.google.dev/docs
+
+---
+
+## Interview lens
+
+- **Arms you for:** the follow-up every GenAI round opens with
+- **The number to carry:** next-token prediction → why temperature, context, and hallucination exist
