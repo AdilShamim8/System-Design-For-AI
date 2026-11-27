@@ -42,3 +42,7 @@
 ## The same evening
 
 Send one short thank-you per interviewer — one sentence referencing the specific technical thread from THEIR round. Not a template. Then close the laptop: the 48-hour rule applies to outcomes too — no re-litigating answers at midnight.
+
+---
+
+**Where this card shows up in the interview layer:** the day itself — round pre-briefs and recovery moves
