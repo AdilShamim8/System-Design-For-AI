@@ -122,3 +122,16 @@ Fraud isn't weather; it *responds* to your model. Two adversarial realities, one
 ## What you can now claim in an interview
 
 "I pick thresholds from a cost matrix, not from F1; I evaluate fraud with PR curves and time-based splits; and I can explain label maturity, adversarial drift, and why my offline metrics overstate production performance — with a cost curve I computed myself."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-ML-2** — a scenario question whose worked answer quotes this lab
+- **Q-ML-8** — a scenario question whose worked answer quotes this lab
+- **coding-1** — a coding problem that compresses this lab into a screen
+- **The numbers to quote:** optimal threshold 0.06; label maturity windows
+
+**The pitch, one line:** the cost-matrix threshold story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
