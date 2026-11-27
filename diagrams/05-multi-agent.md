@@ -28,3 +28,7 @@ flowchart TB
 ## Tool families for each role
 
 Orchestration: LangGraph-class, or two loops + a protocol (c3's ~20 lines). Full design: Q-AG-2 + Mock 5.
+
+---
+
+**Interview use:** Q-AG-12's 'when is multi-agent worth it': coordination cost vs isolation benefit — draw only when the isolation argument needs it
