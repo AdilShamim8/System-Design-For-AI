@@ -79,3 +79,10 @@ What do you trace? What do you eval? What drift signals matter? What do you log 
 - **Langfuse Documentation.** https://langfuse.com/docs
 - **Arize Phoenix.** https://docs.arize.com/phoenix
 - **OpenTelemetry.** https://opentelemetry.io/docs/
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-AG-11 (audit logs); Q-CC-12 (the eval platform)
+- **The number to carry:** traces are the product — debugging, evals, and audits consume the same stream
