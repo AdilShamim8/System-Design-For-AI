@@ -27,3 +27,7 @@ flowchart LR
 ## Tool families for each role
 
 Stores: Feast, Tecton; or Postgres + dbt + Redis with discipline · CDC: Debezium · Aggregation: Flink/Spark. Related: diagrams 7 and ai-stack/data-pipelines.md.
+
+---
+
+**Interview use:** Q-ML-6 (training/serving skew): one definition, two runtimes, parity monitoring — the diagram answers the question before you finish it
