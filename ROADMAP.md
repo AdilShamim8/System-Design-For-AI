@@ -41,3 +41,15 @@ Navigation and infrastructure: 6 role-based learning paths, the datasets catalog
 - [x] The interview selection map (00) — the master router
 - [x] Interview connections on all 28 labs, interview lens on all 38 chapters, interview angles on all 12 field notes, interview notes on all 12 dataset cards, cross-refs on all 12 cheatsheets, 9 diagrams, and the ai-stack guides
 - [x] CI: content-integrity workflow (chapter counts, lab structure, link targets, fence balance)
+
+---
+
+## Shipped: the round-5 depth pass
+
+- [x] Coding problems 9–12: metrics attribution join, injection fuzzer, RRF fusion, cost-optimizer simulation
+- [x] Mocks 13–16: AI code-review bot, live speech translation, ads ranking + auction, shopping assistant
+- [x] Flashcard decks 8–10: the classical bridge, senior and staff tells, cost economics (232 cards across 10 decks)
+- [x] The manager screens (09d), the rapid-fire bank (08b — 40 kernels)
+- [x] Cheatsheets 13–14 (manager round, rapid-fire kernels); the whiteboard templates
+- [x] The one-pager library: ten classic systems, one page each
+- [x] Process templates 19–22: pipeline tracker, day-of checklist, first 90 days, continuous practice
