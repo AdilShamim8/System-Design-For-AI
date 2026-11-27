@@ -26,3 +26,13 @@ The deepest lesson in ML fairness lives here: **the conflict is mathematical, no
 - ProPublica, "Machine Bias" (Angwin et al., May 2016) — https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
 - Kleinberg, Mullainathan, Raghavan, "Inherent Trade-Offs in the Fair Determination of Risk Scores" (ITCS 2017); Chouldechova, "Fair prediction with disparate impact" (2017).
 - Context: Chapter X.2; Labs a1, a8.
+
+---
+
+## The interview angle
+
+- **Use it in:** the fairness deep-dive; calibration across groups (A.4 adjacent)
+- **The lesson, one line:** a single score threshold means different error rates across groups — that's math, not malice; the choice of where to set it is a values decision made visible
+- **The interview line:**
+
+> 'I can equalize false positives or false negatives across groups, not both — that tradeoff belongs to the business, documented'
