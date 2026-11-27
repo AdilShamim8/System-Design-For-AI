@@ -36,3 +36,7 @@ ops:    eval gates · corpus versioning · cache · freshness (CDC) · monitorin
 ## The debugging order (b2's law)
 Gold chunk retrieved? → no: retrieval problem (miss taxonomy: vocab / distractor / multi-hop).
 Yes → generation problem (prompt/model). Attribute first, fix second.
+
+---
+
+**Where this card shows up in the interview layer:** Q-GEN-1/10/11 · Mock 1/9 · coding-4/5 · STAR story 3
