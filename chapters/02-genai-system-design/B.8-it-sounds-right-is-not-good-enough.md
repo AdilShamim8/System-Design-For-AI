@@ -82,3 +82,10 @@ The stakes are high (wrong advice has legal consequences). What dimensions do yo
 - **Zheng, L., et al. (2023), "Judging LLM-as-a-Judge with MT-Bench," NeurIPS 2023.** arXiv:2306.05685 — https://arxiv.org/abs/2306.05685
 - **Hendrycks, D., et al. (2021), "Measuring Massive Multitask Language Understanding" (MMLU), ICLR 2021.** arXiv:2009.03300 — https://arxiv.org/abs/2009.03300
 - **TruLens Documentation.** https://www.trulens.org/
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-GEN-14 (eval as a product); Mock 1's centerpiece; STAR story 6
+- **The number to carry:** retrieval graded exact, generation judged — two tiers, one eval set
