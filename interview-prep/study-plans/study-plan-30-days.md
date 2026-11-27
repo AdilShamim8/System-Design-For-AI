@@ -32,3 +32,12 @@
 ## The rule that makes 30 days work
 
 **Every day produces one spoken artifact** — an answer, a drill, a story, a mock. Reading is prep; speaking is practice. If a day ends with nothing said out loud, that day didn't count.
+
+---
+
+## The interview layer, extended (added with the round-2 expansion)
+
+- Week 4: the round-2 bank for YOUR domain + STAR story bank (09a) + cheatsheet 12 for the day-of
+- the sprint exists for exactly this calendar — 17-the-7-day-sprint.md if the interview lands first
+- All twelve mocks are now in rotation; nine through twelve (voice, fine-tune-vs-RAG, safety, platform) are the senior-level set — do them second.
+- Flashcards: five more decks since this plan was written (metrics, process, coding) — add the metrics deck to your daily ten minutes.
