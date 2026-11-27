@@ -342,3 +342,10 @@ This chapter is self-contained, but if you want to go deeper:
 - **Li, L., Chu, W., Langford, J., & Schapire, R. E. (2010), "A Contextual-Bandit Approach to Personalized News Article Recommendation," WWW '10.** The explore-exploit problem formalized. The foundation for how production systems decide what new content to show.
 - **Rendle, S. (2010), "Factorization Machines," ICDM '10.** A workhorse model for sparse recommendation data. Used in production at many companies for tabular features with sparse categorical variables.
 - **Burke, R. (2002), "Hybrid Recommender Systems: Survey and Experiments," User Modeling and User-Adapted Interaction 12(4):331–370.** The taxonomy of blending collaborative and content-based filtering. Older but still the clearest survey of hybrid approaches.
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-ML-1, Q-ML-7, Mock 2, coding-2 — the recommender family
+- **The number to carry:** the three-stage pattern (Covington et al.) by name
