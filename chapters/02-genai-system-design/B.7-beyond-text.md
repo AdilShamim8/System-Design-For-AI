@@ -107,3 +107,10 @@ Consider: medical images need specialized models (not general-purpose multimodal
 - **OpenAI GPT-4V Documentation.** Multimodal capabilities and pricing. https://platform.openai.com/docs/guides/vision
 - **Google Gemini Documentation.** Native multimodal model. https://ai.google.dev/docs
 - **OpenAI Whisper.** ASR model. https://openai.com/research/whisper
+
+---
+
+## Interview lens
+
+- **Arms you for:** Mock 9 (the voice assistant); the multimodal follow-ups
+- **The number to carry:** modality fusion happens at retrieval AND generation — design both
