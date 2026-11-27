@@ -26,3 +26,7 @@ in-process, prototype, lab ─────────────────�
 
 ## The rule that beats benchmarks
 Below ~100M vectors, **everything works**; choose on: filtered-search semantics, upsert ergonomics, ops burden, team familiarity. Benchmarks (ANN-Benchmarks, MTEB-adjacent retrieval tests) matter at scale — mock 7 has the full design conversation.
+
+---
+
+**Where this card shows up in the interview layer:** Q-GEN-10 · Mock 7/12 · Q-BR-13 · drill 14
