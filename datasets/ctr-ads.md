@@ -49,3 +49,9 @@ Click-through-rate prediction is where ML meets hard latency budgets and calibra
 **Used in:** Optional Lab a4/a2 extension.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: Q-ML-3's miscalibrated bids: AUC 0.80 that still overbids cheap inventory — calibration as the money bug. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
