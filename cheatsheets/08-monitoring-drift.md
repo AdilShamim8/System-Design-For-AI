@@ -26,3 +26,7 @@ Per request: `{ts, query, features/chunks, scores/answer, timings, model_version
 - Everything stable, business down → presentation/position bias (a8's proxy gap)
 - Latency fine, cost up → context bloat or reranker churn (x2)
 - One tenant degraded → their corpus/index, not the platform (cap2)
+
+---
+
+**Where this card shows up in the interview layer:** Q-ML-2/10 · coding-6 · STAR story 1 · drill 20
