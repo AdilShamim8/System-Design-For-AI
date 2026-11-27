@@ -53,3 +53,9 @@ Data model & consistency · feature/prompt versioning · failure modes & degrada
 ## The skeleton in one breath
 
 *Clarify who and how much → estimate in tens → draw the boxes and walk one request → dive where they point, failure-first → say what it cost → say how you'd run it.* Now go make it automatic: [the mocks](./mock-interviews/).
+
+---
+
+## The framework, adapted for the coding round
+
+The 6 steps compress for ML coding screens (the [coding/](./coding/README.md) problems follow this shape): **clarify becomes the split** (name it and defend it in one sentence before writing code — a random split on temporal data is already wrong), **constraints become the metric** (state what you'll report before you train), **the design becomes the leak check** (could production have known each feature at prediction time?), **failure modes become calibration and thresholds** (reliability, cost-based cutoff), **numbers become your narration** (every non-obvious line gets one spoken reason — silence reads as lost, not thoughtful). The whiteboard discipline and the coding discipline are the same discipline: structure first, numbers attached, production-aware throughout.
