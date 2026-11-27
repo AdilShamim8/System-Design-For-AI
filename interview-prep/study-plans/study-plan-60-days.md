@@ -34,3 +34,12 @@ Journal after each (three sentences). Those journal entries become behavioral st
 ## The 60-day difference from 30
 
 You have time to *run* labs, so every claim you make in interviews has your own numbers behind it. Guard that: if the schedule slips, cut reading, never cut labs — the labs are the part the flashcards and mocks can't replace.
+
+---
+
+## The interview layer, extended (added with the round-2 expansion)
+
+- Weeks 7–8: coding problems 1–8 (one/day), the interviewer's guide — run ONE mock as the interviewer
+- round-2 banks across all five domains; the calibration guide to place your level honestly
+- All twelve mocks are now in rotation; nine through twelve (voice, fine-tune-vs-RAG, safety, platform) are the senior-level set — do them second.
+- Flashcards: five more decks since this plan was written (metrics, process, coding) — add the metrics deck to your daily ten minutes.
