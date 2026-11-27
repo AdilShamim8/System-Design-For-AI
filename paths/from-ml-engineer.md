@@ -49,3 +49,16 @@
 - Sounding like 2019 MLOps: mention eval-driven development, semantic caching, and routing — not just "retrain on schedule."
 
 **First 48 hours:** read B.2 and C.1, do Lab b1 (measure tokens and cost on real API pricing), and read FN-02 (Zillow) — the best existing-skills warning shot in the repo: great model, sound pipeline, business destroyed by uncertainty the system never priced in.
+
+---
+
+## Interview readiness (this path's exit criteria)
+
+By the end of this path, before you enter the market:
+
+1. **The framework is automatic.** You can run the 6 steps ([01-the-framework](../interview-prep/01-the-framework.md)) on an unseen prompt without notes.
+2. **You have six numbers.** At least six measured numbers from YOUR labs, spoken precisely ("60% to 90%", "PSI 0.1/0.2", "~$0.11/resolved") — the [interview connections](../labs/README.md) section of each lab tells you which ones.
+3. **Two mocks at strong-hire.** Any two from [mock-interviews/](../interview-prep/mock-interviews/), out loud, timed, graded against the rubric — then one more a week later to prove it wasn't luck.
+4. **Your five STAR stories are told in 90 seconds each**, with the [deep-dive defense](../interview-prep/09b-deep-dive-defense.md) drilled once per story.
+5. **The coding screen is rehearsed** — three of the eight [coding problems](../interview-prep/coding/README.md) done cold, timed, narrated.
+6. **The process layer is loaded** — [company tiers](../interview-prep/13-company-tiers.md) read, [salary research](../interview-prep/18-salary-research.md) done for your market, and the [7-day sprint](../interview-prep/17-the-7-day-sprint.md) bookmarked for when an interview lands on short notice.
