@@ -53,3 +53,15 @@ Ship to any free tier. Then the step almost everyone skips: **get one real human
 ## What this capstone earns you
 
 A portfolio artifact with *teeth*: not "I built a RAG bot" (thousands can say that) but "I built one with measured hit rates, faithfulness gates, an attack-to-layer guardrail table, and cost-per-successful-answer — here are the numbers." In interviews, the follow-up questions you *want* are exactly the ones this capstone answers.
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Mock 1** — a mock interview where this lab's system is the design
+- **Mock 9** — a mock interview where this lab's system is the design
+- **The numbers to quote:** the shipped system you defend end-to-end
+
+**The pitch, one line:** the capstone: your 'most complex system' story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
