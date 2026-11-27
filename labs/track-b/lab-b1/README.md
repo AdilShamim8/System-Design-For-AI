@@ -138,3 +138,15 @@ Run the same call 30 times and compute p50/p95/p99 of TTFT and total (reuse Lab 
 ## What you can now claim in an interview
 
 "I measure LLM latency in three clocks — TTFT, TPS, total — and compute cost per request from real published prices. For a typical RAG workload I can tell you input tokens dominate, which tier to route to, and the four levers in order of leverage — because I've run the numbers, not read them."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-CC-10** — a scenario question whose worked answer quotes this lab
+- **Mock 10** — a mock interview where this lab's system is the design
+- **The numbers to quote:** provider pricing measured, not guessed; $0–5 total lab spend
+
+**The pitch, one line:** the cost math with real prices — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
