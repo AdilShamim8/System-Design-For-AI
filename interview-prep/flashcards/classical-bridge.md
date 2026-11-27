@@ -1,6 +1,6 @@
 # Flashcards — The Classical Bridge
 
-22 cards. The classics re-asked for AI: what survives, what changes, and the one sentence that shows you know both. Pairs with the bridge banks (06, 06-round2).
+21 cards. The classics re-asked for AI: what survives, what changes, and the one sentence that shows you know both. Pairs with the bridge banks (06, 06-round2).
 ---
 
 **The bridge pattern, stated once.**
