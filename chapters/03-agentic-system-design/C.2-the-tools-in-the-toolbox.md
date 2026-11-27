@@ -98,3 +98,10 @@ Tools: `read_file(path)`, `grep(pattern)`, `write_file(path, content)`, `run_tes
 - **Anthropic (2024), "Introducing the Model Context Protocol."** https://www.anthropic.com/news/model-context-protocol
 - **Schick, T., et al. (2023), "Toolformer," NeurIPS 2023.** arXiv:2302.04761 — https://arxiv.org/abs/2302.04761
 - **MCP Documentation.** https://modelcontextprotocol.io/
+
+---
+
+## Interview lens
+
+- **Arms you for:** Mock 12 (the registry); Q-BR-12 (idempotency at money boundaries)
+- **The number to carry:** the six-item tool contract, by heart
