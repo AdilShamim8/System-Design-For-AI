@@ -85,3 +85,10 @@ It reads PDFs and enters data into a web form. What tools? What sandboxing (can 
 - **OpenAI (2025), "Operator."** https://openai.com/index/introducing-operator/
 - **Jimenez, C. E., et al. (2024), "SWE-bench," ICLR 2024.** arXiv:2310.06770 — https://arxiv.org/abs/2310.06770
 - **Yang, J., et al. (2024), "SWE-agent," NeurIPS 2024.** arXiv:2405.15793 — https://arxiv.org/abs/2405.15793
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-AG-13 (the sandbox tier list); c4's isolation cost
+- **The number to carry:** isolate the hands: the model decides outside, execution is jailed
