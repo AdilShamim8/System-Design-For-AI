@@ -176,3 +176,11 @@ Last updated: 2026-08-10.
 **Attack-to-layer table** — the security artifact mapping each known attack to the guardrail layer that catches it. (Lab c5)
 
 **Eval gate** — the CI check blocking any prompt/model/tool change that regresses the versioned eval set. (Lab b4, c5)
+
+**AA test** — A vs A, same everything — any 'significant' winner proves the experiment machinery is broken; the cheapest debugger in experimentation
+
+**label maturity window** — the delay between prediction and trustworthy label (chargebacks ~90 days); metrics inside the window are preliminary and get revised
+
+**golden set** — the frozen, versioned eval sample (100–300 stratified real queries) that gates changes; retrieval graded exactly, generation judged — the asset that appreciates
+
+**drift (data vs concept)** — data drift: inputs moved (schema, population); concept drift: same inputs, new relationship to the label (the adversary adapted) — the fix differs per type
