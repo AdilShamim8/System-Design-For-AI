@@ -22,3 +22,9 @@ Twelve documented incidents where AI systems failed in public, with dates, cause
 **A honesty note on sources:** each note lists the primary reporting we relied on (publication, title, year — with links where stable). Details are as reported at the time; when accounts differ, we follow the primary investigation. If you find an error, open an issue — precision about failures is the whole point of this folder.
 
 **How they connect to the course:** every note names its chapters and labs. After reading, you should be able to trace each incident to a mechanism you have *built* in a lab — the strongest way to remember a lesson is to have implemented its prevention.
+
+---
+
+## The interview angle (all twelve notes)
+
+Every field note now ends with a **The interview angle** section: where the incident shows up in the interview layer, the one-line lesson, and the quotable interview line. The twelve incidents are the strongest 'real-world grounding' material you own — a candidate who says "liability follows deployment — that's the Air Canada precedent" is citing case law, not opinions.
