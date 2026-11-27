@@ -87,3 +87,14 @@ Sketch (paper or matplotlib) the one-screen dashboard: three panels for the thre
 ## What you can now claim in an interview
 
 "I run AI monitoring on three horizons — input drift, output drift, business metrics — each with reference bands, sustain windows, owners, and runbooks. I simulate boring months against my alert rules and delete anything that fires on normal traffic, because a noisy alert channel is an ignored alert channel."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-ML-4** — a scenario question whose worked answer quotes this lab
+- **The numbers to quote:** one metric for the model, one for the pipes
+
+**The pitch, one line:** the pipeline-blame story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
