@@ -1,0 +1,85 @@
+name: content-integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify chapter counts per track
+        run: |
+          python3 - <<'EOF'
+          import os, sys, glob
+          EXPECT = {"00-start-here": 4, "01-ml-system-design": 8, "02-genai-system-design": 9,
+                    "03-agentic-system-design": 7, "04-cross-cutting": 6, "05-design-studio": 4}
+          ok = True
+          for d, exp in EXPECT.items():
+              got = len([f for f in glob.glob(f"chapters/{d}/*.md") if os.path.basename(f) != "README.md"])
+              status = "OK" if got == exp else "FAIL"
+              print(f"{status}: chapters/{d}: expected {exp}, found {got}")
+              ok &= (got == exp)
+          sys.exit(0 if ok else 1)
+          EOF
+
+      - name: Verify lab structure (README + DATA + SOLUTION)
+        run: |
+          python3 - <<'EOF'
+          import glob, os, sys
+          LAB_DIRS = (glob.glob("labs/track-*/lab-*") + glob.glob("labs/cross-cutting/lab-*")
+                      + glob.glob("labs/capstones/cap*"))
+          missing = []
+          for d in sorted(LAB_DIRS):
+              for f in ("README.md", "DATA.md", "SOLUTION.md"):
+                  if not os.path.exists(os.path.join(d, f)):
+                      missing.append(f"{d}/{f}")
+          print(f"checked {len(LAB_DIRS)} labs")
+          if missing:
+              print("MISSING:"); [print("  " + m) for m in missing]; sys.exit(1)
+          print("all labs complete")
+          EOF
+
+      - name: Check markdown link targets resolve
+        run: |
+          python3 - <<'EOF'
+          import os, re, sys
+          broken = []
+          for root, dirs, files in os.walk("."):
+              dirs[:] = [d for d in dirs if not d.startswith((".", "node_modules", "website"))]
+              for fn in files:
+                  if not fn.endswith(".md"): continue
+                  p = os.path.join(root, fn)
+                  text = open(p, encoding="utf-8", errors="ignore").read()
+                  for m in re.finditer(r"\]\((\.\.?/[^)#]+?)(#[^)]*)?\)", text):
+                      target = os.path.normpath(os.path.join(os.path.dirname(p), m.group(1)))
+                      if not os.path.exists(target):
+                          broken.append(f"{p}: {m.group(1)}")
+          if broken:
+              print("BROKEN LINKS:"); [print("  " + b) for b in broken[:30]]; sys.exit(1)
+          print("all relative markdown links resolve")
+          EOF
+
+      - name: Check code fences are balanced
+        run: |
+          python3 - <<'EOF'
+          import os, re, sys
+          bad = []
+          for root, dirs, files in os.walk("."):
+              dirs[:] = [d for d in dirs if not d.startswith((".", "node_modules", "website"))]
+              for fn in files:
+                  if not fn.endswith(".md"): continue
+                  p = os.path.join(root, fn)
+                  n = len(re.findall(r"^```", open(p, encoding="utf-8", errors="ignore").read(), re.M))
+                  if n % 2: bad.append(f"{p}: {n} fences")
+          if bad:
+              print("UNBALANCED FENCES:"); [print("  " + b) for b in bad]; sys.exit(1)
+          print("all code fences balanced")
+          EOF
