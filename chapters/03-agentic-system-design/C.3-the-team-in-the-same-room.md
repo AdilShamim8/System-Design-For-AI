@@ -126,3 +126,10 @@ Consider: market research involves finding sources (researcher), analyzing data 
 - **Park, J. S., et al. (2023), "Generative Agents: Interactive Simulacra of Human Behavior," UIST 2023.** arXiv:2304.03442 — https://arxiv.org/abs/2304.03442
 - **LangChain LangGraph Documentation.** Multi-agent orchestration framework. https://langchain-ai.github.io/langgraph/
 - **Li, S., et al. (2023), "Multi-Agent Collaboration: Harnessing the Power of Intelligent LLM Agents," arXiv:2306.03314.** https://arxiv.org/abs/2306.03314
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-AG-14 (capability audit); Mock 12's approval grid
+- **The number to carry:** multi-agent adds coordination cost — buy it only when isolation is the point
