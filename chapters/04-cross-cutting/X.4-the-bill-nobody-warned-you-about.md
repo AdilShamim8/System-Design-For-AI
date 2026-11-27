@@ -336,3 +336,10 @@ This chapter is self-contained, but if you want to go deeper:
 - Groq (for hosted open models): groq.com/pricing
 
 The pattern of cost optimization is durable; the specific numbers are not. Date-stamp any pricing you cite.
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-CC-10 (cost accounting); Q-GEN-13; Mock 10
+- **The number to carry:** fully-loaded ≈ 2x the sticker price — say it with the cost tree
