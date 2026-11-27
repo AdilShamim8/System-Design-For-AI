@@ -87,3 +87,10 @@ What's your hypothesis? How do you handle subjective search quality? How do you 
 - **Kohavi, R., Tang, D., & Xu, Y. (2020), *Trustworthy Online Controlled Experiments*, Cambridge University Press.** https://www.cambridge.org/core/books/trustworthy-online-controlled-experiments/
 - **Netflix Tech Blog.** A/B testing methodology at scale. https://netflixtechblog.com/
 - **Gomez-Uribe, C. A., & Hunt, N. (2015), "The Netflix Recommender System," ACM TMIS.** https://dl.acm.org/doi/10.1145/2843948
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-ML-14 (the promotion gate); Mock 3's shadow/canary design
+- **The number to carry:** shadow proves plumbing; canary proves outcomes
