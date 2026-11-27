@@ -31,3 +31,7 @@ Blend multiple candidate sources (popularity, CF, content, session). Evaluate: P
 
 ## Interview openers that signal structure
 "What's the label? Who's the user? What's the latency budget? What happens when it's wrong — who pays, how much?" — then draw boxes, then talk models *last*.
+
+---
+
+**Where this card shows up in the interview layer:** Q-ML-1/4/6 · coding-1/2/3 · Mock 2/3/6 · STAR stories 1–2
