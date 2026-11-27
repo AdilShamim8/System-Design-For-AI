@@ -75,3 +75,16 @@ Raw cost per request flatters a system that answers badly and cheaply. Pull in y
 ## What you can now claim in an interview
 
 "I model AI service costs as a tree — embedding, retrieval, generation input/output, eval overhead, amortized fixed — tracked per tenant, with cache savings and cost-per-successful-answer as the headline metrics. I can answer 'why did the whale's bill double' from the dashboard, price a tenant from the curve, and I know which scenario each architectural lever actually moves."
+
+---
+
+## Interview connections
+
+This lab is interview material. Where its numbers show up in the interview layer:
+
+- **Q-CC-10** — a scenario question whose worked answer quotes this lab
+- **Mock 4** — a mock interview where this lab's system is the design
+- **Mock 12** — a mock interview where this lab's system is the design
+- **The numbers to quote:** fully-loaded ≈ 2x sticker price; tenant cost trees
+
+**The pitch, one line:** the unit-economics story — say the numbers, not the adjectives; they are yours, and nobody else in the room has them.
