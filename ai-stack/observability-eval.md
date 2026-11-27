@@ -29,3 +29,7 @@
 - Decide thresholds (a7's month-simulation and x1's runbook are judgment + data, not installs).
 
 **The order of operations this course implies:** logs → evals → drift → platform. Reverse it and you've bought a dashboard farm with nothing to render.
+
+---
+
+**Interview relevance:** Q-AG-11 (audit), Q-CC-12 (eval platform): traces and evals consume the same stream
