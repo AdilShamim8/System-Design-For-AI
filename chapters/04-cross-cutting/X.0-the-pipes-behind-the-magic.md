@@ -122,3 +122,10 @@ Consider: fraud detection needs both real-time (block the transaction now) and b
 - **MLflow Documentation.** https://mlflow.org/docs/latest/
 - **Kubeflow Documentation.** https://www.kubeflow.org/docs/
 - **Sculley, D., et al. (2015), "Hidden Technical Debt in Machine Learning Systems," NeurIPS 2015.** https://proceedings.neurips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html
+
+---
+
+## Interview lens
+
+- **Arms you for:** Q-ML-4; Q-CC-10's pipelines; x1's blame lesson
+- **The number to carry:** one metric for the model, one for the pipes
