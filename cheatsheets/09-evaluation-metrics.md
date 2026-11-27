@@ -27,3 +27,7 @@ Outcome grade + **trajectory grade** (right answer via garbage path = scheduled 
 
 ## Fairness slices (FN-01, FN-05, FN-10)
 Disaggregate by group *by default*. Know which fairness definition your metrics encode (calibration vs error-rate balance can't both hold — choose deliberately).
+
+---
+
+**Where this card shows up in the interview layer:** Q-GEN-14 · Q-CC-12/13 · coding-8 · Mock 1 · STAR story 6
