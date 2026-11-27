@@ -30,3 +30,7 @@ Your RAG corpus, feature tables, and agent memory all share one requirement: **c
 - **The nightly-full-reindex** at corpus sizes where incremental works (waste multiplied by churn rate).
 - **The pipeline that only you can run** (undocumented, laptop-shaped — your labs should each be a script in git; that discipline *is* the lesson).
 - **Feature logic duplicated** between training and serving code (Chapter A.1's skew law; the fix is one definition, two runtimes — the feature store's actual job: Feast/Tecton-class or a disciplined Postgres + dbt equivalent).
+
+---
+
+**Interview relevance:** Q-ML-4, Q-BR-10 (CDC for embeddings): the pipeline questions' backbone
