@@ -1,6 +1,6 @@
 # Your Progress Tracker
 
-Fork this repo (or copy this file) and check boxes off as you go. This file is your single source of truth for where you are. Total commitment: **38 chapters · 27 labs · 12 field notes · 9 question banks · 8 mock interviews**.
+Fork this repo (or copy this file) and check boxes off as you go. This file is your single source of truth for where you are. Total commitment: **38 chapters · 28 labs (25 + 3 capstones) · 12 field notes · 10 question banks · 12 mock interviews · 8 coding problems**.
 
 **Legend:** `[ ]` todo · `[x]` done · `[~]` in progress. Every module is done when all its boxes are checked AND you can complete its "explain it back" without re-reading.
 
@@ -165,14 +165,22 @@ Fork this repo (or copy this file) and check boxes off as you go. This file is y
 - [ ] Mock 6 — Design a search ranker
 - [ ] Mock 7 — Design a vector-database service
 - [ ] Mock 8 — Design an AI feature for a fintech app
+- [ ] Mock 9 — Design a voice assistant for clinical notes
+- [ ] Mock 10 — Fine-tune or RAG: the decision with numbers
+- [ ] Mock 11 — The safety screen: companion app for teens
+- [ ] Mock 12 — Design the internal agent platform
 
 **Reference:**
 
 - [ ] Read `interview-prep/01-the-framework.md` and rehearse the framework cold
 - [ ] Read `interview-prep/11-seniority-ladder.md` — know what level you interview at
 - [ ] Read `interview-prep/12-common-mistakes.md`
-- [ ] Flashcards: foundations & numbers / ML / GenAI / agents
-- [ ] Choose and follow a study plan (30 / 60 / 90 days)
+- [ ] Round-2 question banks (ML / GenAI / agents / cross-cutting / bridge) — the senior-level scenarios
+- [ ] Coding problems 1–8 (`interview-prep/coding/`) — one per day in your final fortnight
+- [ ] Write your five STAR stories from `09a-star-story-bank.md`; drill the five attack patterns from `09b`
+- [ ] Flashcards: foundations & numbers / ML / GenAI / agents / metrics / process / coding-round
+- [ ] Choose and follow a study plan (30 / 60 / 90 days) — or the 7-day sprint if the interview is imminent
+- [ ] Before entering the market: company tiers (13), salary research (18); after the first loop: negotiation (14), rejection recovery (15)
 
 ---
 
