@@ -79,3 +79,9 @@ For Chapter A.1 (features over time), Lab a6 (demand forecasting pipeline), and 
 **Used in:** Capstone cap2 alternative corpus.
 
 ---
+
+---
+
+## In interviews
+
+This dataset is evidence. Where it shows up: Q-ML-4 (driver forecasting) and a6's leak lesson: the 50–60% inflated-MAE leak you personally measured. The move that lands: quote YOUR run's numbers on it — "my lab measured..." beats any citation, because nobody else in the room has your numbers.
