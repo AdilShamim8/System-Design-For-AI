@@ -28,3 +28,7 @@ Per-tenant ledgers from day one; fixed costs amortize cruelly over small tenants
 ## Benchmarks to quote
 - RAG at mid tier, 10K req/day ≈ $4–5K/month; routed small-tier ≈ $800–1,500 (our lab numbers — recompute with your prices)
 - Agent episodes: 3–6 calls each; runaway episodes = 100s of normal ones — budget guards are cost controls (c1)
+
+---
+
+**Where this card shows up in the interview layer:** Q-GEN-13 · Q-CC-10 · Mock 10 · drills 13/21
