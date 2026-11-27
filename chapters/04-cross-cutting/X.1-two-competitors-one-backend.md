@@ -96,3 +96,10 @@ Multiple companies use it to screen candidates. Candidate A applies to Company X
 - **Lakera AI.** Prompt injection research. https://lakera.ai/
 - **NeMo Guardrails (NVIDIA).** Open-source guardrail framework. https://github.com/NVIDIA/NeMo-Guardrails
 - **Pinecone Multi-tenancy Documentation.** https://www.pinecone.io/learn/multi-tenancy/
+
+---
+
+## Interview lens
+
+- **Arms you for:** Mock 7 (the vector DB service); Q-CC-11's residency
+- **The number to carry:** tenancy is an isolation decision with a capacity bill
